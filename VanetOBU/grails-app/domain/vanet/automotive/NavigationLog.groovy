@@ -15,7 +15,7 @@ class NavigationLog {
 	Double obdSpeed
 	Boolean isAirbagOpen = false
 
-	NavigationLog lastNavegationLog
+	NavigationLog lastNavigationLog
 	Rsu rsu
 	
 	static belongsTo = [car:Car]
@@ -31,7 +31,7 @@ class NavigationLog {
 		lat(nullable:true)
 		obdSpeed(nullable:true)
 		isAirbagOpen()
-		lastNavegationLog(nullable:true)
+		lastNavigationLog(nullable:true)
 		rsu(nullable:true)
 		car(nullable:true)
     }

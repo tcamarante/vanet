@@ -29,7 +29,7 @@ class BootStrap {
 				println hasCar
 				// Enviando ao servidor para salvar no banco
 				try{
-					def resp = rest.post("http://localhost:8090/VanetRSU/car/save"){
+					def resp = rest.post("http://localhost:8081/VanetRSU/car/save"){
 						contentType "application/vnd.org.jfrog.artifactory.security.Group+json"
 						json currentCar
 					}
@@ -55,24 +55,24 @@ class BootStrap {
 //		ConvertersConfigurationHolder.setDefaultConfiguration(JSON.class, new ChainedConverterConfiguration<JSON>(cfg, cfg.proxyHandler));
 //
 //		
-		JSON.registerObjectMarshaller( NavigationLog ) {
-			def returnSet = [:]
-			returnSet.id = it.id
-			returnSet.collectTime = it.collectTime
-			returnSet.obuTime = it.obuTime
-			returnSet.rsuTime = it.rsuTime
-			returnSet.serverTime = it.serverTime
-			returnSet.gpsSpeed = it.gpsSpeed
-			returnSet.gpsTime = it.gpsTime
-			returnSet.lon = it.lon
-			returnSet.lat = it.lat
-			returnSet.obdSpeed = it.obdSpeed
-			returnSet.isAirbagOpen = it.isAirbagOpen
-			returnSet.lastNavegationLog = it.lastNavegationLog
-			returnSet.rsu = it.rsu
-			returnSet.car = ["id":it.car?.id,"code":it.car?.code]
-			return returnSet
-		}
+//		JSON.registerObjectMarshaller( NavigationLog ) {
+//			def returnSet = [:]
+//			returnSet.id = it.id
+//			returnSet.collectTime = it.collectTime
+//			returnSet.obuTime = it.obuTime
+//			returnSet.rsuTime = it.rsuTime
+//			returnSet.serverTime = it.serverTime
+//			returnSet.gpsSpeed = it.gpsSpeed
+//			returnSet.gpsTime = it.gpsTime
+//			returnSet.lon = it.lon
+//			returnSet.lat = it.lat
+//			returnSet.obdSpeed = it.obdSpeed
+//			returnSet.isAirbagOpen = it.isAirbagOpen
+//			returnSet.lastNavegationLog = it.lastNavegationLog
+//			returnSet.rsu = it.rsu
+//			returnSet.car = ["id":it.car?.id,"code":it.car?.code]
+//			return returnSet
+//		}
 
     }
     def destroy = {

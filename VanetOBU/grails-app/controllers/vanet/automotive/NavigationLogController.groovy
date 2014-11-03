@@ -3,15 +3,18 @@ package vanet.automotive
 
 
 import static org.springframework.http.HttpStatus.*
-import grails.rest.RestfulController;
-import grails.transaction.Transactional
+import grails.converters.JSON
 import grails.plugins.rest.client.RestBuilder
+import grails.rest.RestfulController
+import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class NavigationLogController  extends RestfulController{
 
 	static responseFormats = ['json', 'xml']
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+	
+	def accidentDetectionService
 	
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -102,12 +105,12 @@ class NavigationLogController  extends RestfulController{
 	def saveObdLog(){
 		
 		println params
-		println params."Obs Time".toLong()//.toDate()
 		
 		def rest = new RestBuilder()
 		def date = Calendar.instance
 		date.setTimeInMillis(params."Obs Time".toLong()*1000)
 		Car carInstance = Car.findAll().first()
+//		def lastLog = NavigationLog.find("from NavigationLog nl where nl.car = :car order by id desc", [car:carInstance])
 		
 		NavigationLog navigationLogInstance = new NavigationLog(
 //			params."Throttle Position", 
@@ -124,30 +127,40 @@ class NavigationLogController  extends RestfulController{
 			gpsTime:params."GPS Time"?.toLong(),
 			isAirbagOpen:(params."Trouble Codes".find("99 94")!=null),
 			lon:params."Longitude",
-//			lastNavegationLog: NavigationLog.createCriteria().get {
-//						car{
-//							eq("code",params.id)
-//						}
-//						projections {
-//							max "infoTime"
-//						}
-//					} as Long,
+			lastNavigationLog: NavigationLog.find("from NavigationLog nl where nl.car = :car order by id desc", [car:carInstance]),
 			car: carInstance
 		)
-		navigationLogInstance.metaClass.carCode = navigationLogInstance.car.code
+		
+//		navigationLogInstance.lastNavegationLog = lastLog
+		
+		accidentDetectionService.accidentVerify(navigationLogInstance)
+		
+		navigationLogInstance.validate()
+		if (navigationLogInstance.hasErrors()) {
+			respond navigationLogInstance.errors, view:'create'
+			return
+		}
+
+		navigationLogInstance.save flush:true
+		
+		def jsonObject = JSON.parse((navigationLogInstance as JSON).toString())
+		jsonObject.put("carCode", navigationLogInstance.car.code)
+
 		// Enviando ao servidor para salvar no banco
 		// TODO: contar pacotes enviados
 		def resp
 		try{
-			resp = rest.post("http://localhost:8090/VanetRSU/navigationLog/save"){
+			resp = rest.post("http://localhost:8081/VanetRSU/navigationLog/save"){
 				//auth System.getProperty("artifactory.user"), System.getProperty("artifactory.pass")
 				contentType "application/vnd.org.jfrog.artifactory.security.Group+json"
-				json navigationLogInstance
+				json jsonObject.toString()
 			}
 		}catch(ConnectException e){
 			println("Não foi possível enviar pacote")
 			// TODO: contar pacotes perdidos
 		}
+
+		respond resp.json, [status:CREATED]
 		
 //		[
 //			Throttle Position:144 %,
@@ -163,7 +176,6 @@ class NavigationLogController  extends RestfulController{
 //			Obs Time:1412944269
 //		]
 		
-		respond resp.json, [status:CREATED]
 	
 	}
 	

@@ -1,7 +1,12 @@
 package vanet.monitoring
 
-import grails.transaction.Transactional
 import static grails.async.Promises.*
+import grails.transaction.Transactional
+
+import org.apache.commons.lang.RandomStringUtils
+
+import vanet.alert.Alert
+import vanet.automotive.NavigationLog
 
 @Transactional
 class AccidentDetectionService {
@@ -43,7 +48,17 @@ class AccidentDetectionService {
 		}
     }
 	
-	def accidentAlert(int i){
+	def accidentAlert(NavigationLog navigationLogInstance){
+		def alert = new Alert(code:RandomStringUtils.random(5, true, true),// Gerando uma chave aleatória de 5 caracteres
+								messageCode: 2, // 1-OK, 2-Atencao provavel acidente, 3- Acidente, 4-Outros
+								message: "Provavel acidente detectado!", //Utilizado apenas com codigo 4
+								ip:InetAddress.getLocalHost().getHostAddress().toString(),
+								car:navigationLogInstance.car,
+								lat:navigationLogInstance.lat,
+								lng:navigationLogInstance.lon,
+								alertDate:new Date()
+							)
+		broadcastService.send(alert)
 		// sendVanetAccidentAlert()
 		println("Possível acidente detectado!")
 		sleep(3)//30 segundos
@@ -62,6 +77,37 @@ class AccidentDetectionService {
 			return
 		}
 	}
+	
+	def accidentVerify(NavigationLog currentLog) {
+		NavigationLog lastLog = currentLog.lastNavigationLog
+		task{
+			if(currentLog && lastLog){
+
+				if(currentLog.isAirbagOpen){
+					accidentAlert(currentLog)
+				}
+				
+				def lastVel=lastLog.obdSpeed/3.6
+				println("lastVel = "+lastVel+" m/s")
+				def currentVel=currentLog.obdSpeed/3.6
+				println("currentVel = "+currentVel+" m/s")
+				def deltaSpeed = currentVel-lastVel
+				println("deltaSpeed = "+deltaSpeed+" m/s")
+				def deltaTime = currentLog.collectTime - lastLog.collectTime
+				println("deltaTime = "+deltaTime+" s")
+					
+				def a = deltaSpeed/deltaTime
+				println("accel = "+a+"m/s2")
+				
+				if(a < -62.6){
+					accidentAlert(currentLog)
+				}
+				println("------------------------------------")
+				i++
+			}
+		}
+	}
+	
 	
 	def readVel(int i){
 		return velocities[i]/3.6

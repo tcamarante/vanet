@@ -42,7 +42,7 @@ class NavigationLogController extends RestfulController{
             return
         }
 		
-		navigationLogInstance.carCode = request.JSON.car.code
+		navigationLogInstance.carCode = request.JSON.carCode
 		navigationLogInstance.rsuTime = System.currentTimeMillis()
 		
 		navigationLogInstance.validate()

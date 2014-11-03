@@ -1,5 +1,6 @@
 package vanet.monitoring
 
+import vanet.automotive.NavigationLog;
 import grails.transaction.Transactional
 import static grails.async.Promises.*
 
@@ -70,4 +71,35 @@ class AccidentDetectionService {
 	def readAirbag(int i){
 		return airbags[i]
 	}
+	
+	def accidentVerify(NavigationLog currentLog) {
+		NavigationLog lastLog = currentLog.lastNavigationLog
+		task{
+			if(currentLog && lastLog){
+
+				if(currentLog.isAirbagOpen){
+					accidentAlert(i)
+				}
+				
+				def lastVel=lastLog.obdSpeed/3.6
+				println("lastVel = "+lastVel+" m/s")
+				def currentVel=currentLog.obdSpeed/3.6
+				println("currentVel = "+currentVel+" m/s")
+				def deltaSpeed = currentVel-lastVel
+				println("deltaSpeed = "+deltaSpeed+" m/s")
+				def deltaTime = currentLog.collectTime - lastLog.collectTime
+				println("deltaTime = "+deltaTime+" s")
+					
+				def a = deltaSpeed/deltaTime
+				println("accel = "+a+"m/s2")
+				
+				if(a < -62.6){
+					accidentAlert(i)
+				}
+				println("------------------------------------")
+				i++
+			}
+		}
+	}
+
 }

@@ -14,6 +14,8 @@ class NavigationLogController extends RestfulController{
 
 	static responseFormats = ['json', 'xml']
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+	
+	def accidentDetectionService
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -40,7 +42,10 @@ class NavigationLogController extends RestfulController{
         }
 
 		navigationLogInstance.serverTime = System.currentTimeMillis()
-		navigationLogInstance.car = Car.findByCode(request.JSON.car?.code)
+		navigationLogInstance.car = Car.findByCode(request.JSON.carCode)
+		navigationLogInstance.lastNavigationLog = NavigationLog.find("from NavigationLog nl where nl.car = :car order by id desc", [car:navigationLogInstance.car]) 
+		
+		accidentDetectionService.accidentVerify(navigationLogInstance)
 		
 		navigationLogInstance.validate()
         if (navigationLogInstance.hasErrors()) {
