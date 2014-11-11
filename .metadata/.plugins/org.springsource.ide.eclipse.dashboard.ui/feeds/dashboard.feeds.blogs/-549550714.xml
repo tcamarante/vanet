@@ -5,7 +5,419 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2014-10-31T19:33:14Z</updated>
+  <updated>2014-11-07T09:55:00Z</updated>
+  <entry>
+    <title>Webinar Replay: Security for Microservices with Spring and OAuth2</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/11/07/webinar-replay-security-for-microservices-with-spring-and-oauth2" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-11-07:1812</id>
+    <updated>2014-11-07T09:55:00Z</updated>
+    <content type="html">&lt;p&gt; Speaker: Dave Syer &lt;/p&gt;
+
+&lt;p&gt;Slides: &lt;a href="http://projects.spring.io/spring-security-oauth/"&gt;http://projects.spring.io/spring-security-oauth/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;OAuth2 is a lightweight security protocol that is well-suited for use with HTTP, the protocol at the heart of many modern architectures. Spring Security OAuth2 has a load of new features, not the least of which being the `@Configuration` support in version 2.0. Combine these with Spring Boot and you have a platform which can get you a secure HTTP service application in about 20 lines of code. This presentation shows how the combination of rapid development and production-ready features in the modern Spring stack are a perfect mixture for developing secure components in a system composed of microservices. We explore the new features in Spring OAuth2, guide you through the choice of which to use and when, and show how easy they are to enable quickly.&lt;/p&gt;
+
+&lt;p&gt; Learn more about Spring Security OAUTH: &lt;a href="http://projects.spring.io/spring-security-oauth"&gt;http://projects.spring.io/spring-security-oauth&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; Learn more about Spring Cloud: &lt;a href="http://projects.spring.io/spring-security-oauth"&gt;http://projects.spring.io/spring-security-oauth&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/yePeJ6NDZQk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud 1.0.0.M2 Available Now</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/11/05/spring-cloud-1-0-0-m2-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2014-11-05:1811</id>
+    <updated>2014-11-05T13:43:00Z</updated>
+    <content type="html">&lt;p&gt;If you are building microservices with Spring you will be interested
+to see that &lt;a href="http://projects.spring.io/spring-cloud"&gt;Spring Cloud&lt;/a&gt;
+1.0.0.M2 hit the streets yesterday and today, and can now be found in
+the Spring &lt;a href="http://repo.spring.io"&gt;repository&lt;/a&gt;. Visit the individual
+project pages links in the main
+&lt;a href="http://projects.spring.io/spring-cloud"&gt;umbrella page&lt;/a&gt; or look at
+their &lt;a href="https://github.com/spring-cloud"&gt;github repositories&lt;/a&gt; for
+detailed instructions about how to get started using the individual
+components. There is also a
+&lt;a href="http://projects.spring.io/spring-cloud/spring-cloud.html"&gt;Reference Guide&lt;/a&gt;
+covering the core modules.&lt;/p&gt;
+
+&lt;p&gt;Since Spring Cloud is an umbrella project we have a "release train" of
+related updates to all the sub-projects (like with Spring Data). The
+1.0.0.M2 release has updates to
+&lt;a href="http://cloud.spring.io/spring-cloud-config/"&gt;spring Cloud Config&lt;/a&gt;,
+&lt;a href="http://cloud.spring.io/spring-cloud-netflix/"&gt;Spring Cloud Netflix&lt;/a&gt;,
+&lt;a href="http://cloud.spring.io/spring-cloud-bus/"&gt;Spring Cloud Bus&lt;/a&gt;,
+&lt;a href="http://cloud.spring.io/spring-cloud-security/"&gt;Spring Cloud Security&lt;/a&gt;
+and &lt;a href="http://cloud.spring.io/spring-cloud-cli/"&gt;Spring Cloud CLI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is also a new member of the family, so a warm welcome welcome
+please for
+&lt;a href="http://cloud.spring.io/spring-cloud-aws/"&gt;Spring Cloud for Amazon Web Services&lt;/a&gt;.
+This toolkit eases the integration with hosted Amazon Web Services. It
+offers a convenient way to interact with AWS provided services using
+well-known Spring idioms and APIs, such as the messaging or caching
+API. Developers can build their application around the hosted services
+without having to care about infrastructure or maintenance. It has
+been contributed by our friends at &lt;a href="http://mimacom.com"&gt;Mimacom AG&lt;/a&gt;,
+and we expect to be working closely with them as Spring Cloud moves
+towards its first umbrella release.&lt;/p&gt;
+
+&lt;p&gt;There are plenty of samples, including the demos from recent webinars
+and conferences, in the separate
+&lt;a href="https://github.com/spring-cloud-samples"&gt;spring-cloud-samples&lt;/a&gt;
+organization at GitHub. In particular there is a "scripts" aggregator
+project which has git submodules for all the samples and libraries, and
+there is a 1.0.0.M2 branch if you want to play with them using a stable
+binary build. In the scripts project you will also find a load of
+Groovy CLI applications in a "demo" folder, and shell scripts for
+building and running locally, and for deploying the apps to Cloud
+Foundry.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring  - November 4th, 2014</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/11/04/this-week-in-spring-november-4th-2014" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-11-04:1809</id>
+    <updated>2014-11-04T12:53:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;!  This week I'm on the road talking to enthusiastic Spring developers  in Casablanca,  Morocco at the &lt;a href="http://www.jmaghreb.io/"&gt;JMaghreb&lt;/a&gt; conference  and then it's  off to London (again!) for the amazing &lt;a href="http://spring.io/blog/2014/10/29/pivotal-at-spring-exchange-2014-in-london-uk"&gt;Spring eXchange&lt;/a&gt;. If you're at either, be sure to say hi! &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Artem Bilan, Spring Integration ninja and a personal hero of mine, has &lt;a href="http://spring.io/blog/2014/10/31/spring-integration-java-dsl-1-0-rc1-released"&gt;just announced the Spring Integration RC1&lt;/a&gt; release. I don't know if you've seen the Java configuration DSL, but it makes writing complex integration flows a breeze! It takes advantage of Java 8's lamba support. Check it out! Remember, microservices aren't exclusively REST centric. If you're trying to build a microservice and expose it over any other mechanism, I'd start with Spring Integration.&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring ninja Thomas Risberg just &lt;a href="http://spring.io/blog/2014/11/03/spring-for-apache-hadoop-2-0-3-released"&gt;announced Spring for Hadoop 2.0.3&lt;/a&gt;! This release adds support for  Apache Hadoop 2.5.1 (hadoop25) and Pivotal HD 2.1 (phd21).&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://spring.io/blog/2014/11/03/spring-data-evans-sr1-released"&gt;Spring Data ninja Christoph Strobl just announced Spring Data Evans service release 1 (SR1)&lt;/a&gt;. The new release contains many important updates and is a recommended upgrade.&lt;/li&gt;
+&lt;li&gt;I'll be doing a webinar  with ZeroTurnaround's Adam Koblentz introducing how to use &lt;a href="http://spring.io/blog/2014/10/28/webinar-spring-boot-and-jrebel-6-0"&gt;Spring (and Spring  Boot in particular) and JRebel 6&lt;/a&gt;. Spring Boot makes Java as productive as it can get, but sometimes you need a little bit more to get around Java's traditionally awful support for things like live-reloading code during development (to expedite iteration). In this webinar, we'll look at how that's done with JRebel!&lt;/li&gt;
+&lt;li&gt;Check out the replay of my webinar about &lt;a href="http://spring.io/blog/2014/11/04/webinar-replay-building-bootful-uis-with-spring-boot-and-vaadin"&gt;Building “Bootful” UIs with Spring Boot and Vaadin &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Check out the replay of Russ Danner's  webinar introducing &lt;a href="http://spring.io/blog/2014/10/30/webinar-replay-content-enabled-web-and-mobile-applications-with-spring-groovy-and-crafter"&gt;how to build content-enabled web and mobile applications&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;I loved Matt Raible's epic post introducing how he built &lt;a href="http://raibledesigns.com/rd/entry/building_a_rest_api_with"&gt;a REST API using Spring MVC, SPring Data REST (HAL support), Swagger, Liquibase, and JAXB&lt;/a&gt;, all of it of course &lt;a href="http://start.spring.io"&gt;through Spring Boot&lt;/a&gt;. This post earned a bookmark! &lt;/li&gt;
+&lt;li&gt;Did you see Thomas Risberg's epic talk on &lt;em&gt;Spring Boot for Hadoop&lt;/em&gt; at the meetup last week in Boston? If not, &lt;a href="http://github.com/trisberg/bostonhadoop"&gt;check out the code and slides on GitHub&lt;/a&gt;! They're illuminating! &lt;/li&gt;
+&lt;li&gt;Dennis Schulte,  over on the CodeCentric blog put together a &lt;em&gt;very&lt;/em&gt; nice post on &lt;a href="http://blog.codecentric.de/en/2014/10/log-management-spring-boot-applications-logstash-elastichsearch-kibana/"&gt;using Logstash, ElasticSearch, and Spring Boot&lt;/a&gt;. Check it out!&lt;/li&gt;
+&lt;li&gt;I spent some time helping a misguided few with the &lt;a href="http://spring.io/blog/2014/11/04/a-quality-qualifier"&gt;nuances of Spring's &lt;code&gt;@Qualifier&lt;/code&gt; annotation&lt;/a&gt; and published the details on the Spring blog. Hopefully this is helpful for somebody out there!&lt;/li&gt;
+&lt;li&gt;Ben Hale, who leads the Java experience on Cloud Foundry and who is a Spring rockstar in his own right, did a &lt;a href="http://blog.newrelic.com/2014/10/27/cloud-foundry-java-buildpack-new-relic-2/"&gt;guest post for New Relic on the 1-click deployment experience to setup New Relic on a Cloud Foundry based application&lt;/a&gt;. Definitely worth a read! If you want a look at what New Relic means for Spring developers, may I humbly recommend &lt;a href="http://www.youtube.com/watch?v=ixnlDL6wli4"&gt;this webinar that New Relic's Ashly Puls and I did earlier this year&lt;/a&gt;?&lt;/li&gt;
+&lt;li&gt;Recently, community member Marc Schipperheyn opened up a &lt;a href="http://jira.spring.io/browse/SPR-12266"&gt;JIRA seeking guidance of the role of Spring in modern single-page application-style web applications&lt;/a&gt;. The ensuing discussion is &lt;em&gt;very&lt;/em&gt; illuminating for numerous reasons besides that it'll inspire changes in our documentation! Check it out and your $02.00 if you've got it to contribute!&lt;/li&gt;
+&lt;li&gt;Our pal Petri Kainulainen  put together a nice &lt;a href="http://www.petrikainulainen.net/programming/spring-framework/spring-from-the-trenches-resetting-auto-increment-columns-before-each-test-method/"&gt;post on resetting auto-increment columns before Spring-based unit tests&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;Our pal Rafal Borowiec is back at it again, this time with a post that looks at how to &lt;a href="http://www.javacodegeeks.com/2014/10/spring-boot-actuator-custom-endpoint-with-mvc-layer-on-top-of-it.html"&gt;create Spring Boot actuator endpoints&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Are you using Apache Camel? Did you know that it &lt;a href="http://camel.apache.org/spring-boot.html"&gt;now provides a Spring Boot-based auto-configuration&lt;/a&gt;? &lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>A quality @Qualifier</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/11/04/a-quality-qualifier" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-11-04:1808</id>
+    <updated>2014-11-04T11:52:00Z</updated>
+    <content type="html">&lt;p&gt;Sometimes,  &lt;em&gt;teh  Twitterz&lt;/em&gt; is an amazing place. Just last week I spent some time helping clarify the behavior of Spring's &lt;code&gt;@Qualifier&lt;/code&gt;  annotation, which is both older than JSR 330 &lt;em&gt;and&lt;/em&gt; offers a  richer superset of JSR 330's &lt;code&gt;@Qualifier&lt;/code&gt; annotation.  These misguided few seemed to be under the impression that Spring's annotation didn't offer the same degree of type-safety as the JSR 330 annotation. I don't know if it's because they simply hadn't read up on the support (which is fairly new, since it's only been around since 2007), or if it's because they work for companies that make their money if you stop using Spring, but either way it was an excellent opportunity for a refresher! &lt;/p&gt;
+
+&lt;p&gt;The qualifier annotation helps disambiguate bean references when Spring would otherwise not be able to do so. Spring's XML configuration supports a version of this, but without the type-safety, of course. We'll focus in this example on using Java configuration and component-scanning to register beans. As more people move to Spring's 8-year old Java configuration style this question seems to more frequently come up. Spring Boot is a Java configuration-first approach to building applications, and this technique may just come in handy in a pinch in a larger application based on Spring Boot.  &lt;/p&gt;
+
+&lt;p&gt;It's use is simple. Suppose you have two beans that implement the &lt;code&gt;MarketPlace&lt;/code&gt; interface. If you declare  an array of &lt;code&gt;MarketPlace&lt;/code&gt;s - then Spring will provide all beans that implement that interface:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;@&lt;span class="kt"&gt;Autowired&lt;/span&gt;
+&lt;span class="k"&gt;private&lt;/span&gt; &lt;span class="kt"&gt;MarketPlace&lt;/span&gt;[] marketPlaces; &lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you want to inject just one, you need to disambiguate the references. You can, in the simple case, just do so by bean ID: &lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;@&lt;span class="kt"&gt;Autowired&lt;/span&gt; 
+@Qualifier( &lt;span class="s2"&gt;"ios"&lt;/span&gt;) &lt;span class="c1"&gt;// the use is unique to Spring. It's darned convenient, too!&lt;/span&gt;
+&lt;span class="k"&gt;private&lt;/span&gt; &lt;span class="kt"&gt;MarketPlace&lt;/span&gt; marketPlace ;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This assumes you've elsewhere defined a bean whose ID is &lt;code&gt;ios&lt;/code&gt;. This use is unique to Spring. You can  also  use &lt;code&gt;@Qualifier&lt;/code&gt; to create a type-safe binding that links the bean definition to the injection site by the qualities of the qualifier annotation. Here's an example based on pureplay Spring annotations:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;
+&lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="k"&gt;spring&lt;/span&gt;;
+
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;org.springframework.beans.factory.annotation.Autowired&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;org.springframework.beans.factory.annotation.Qualifier&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;org.springframework.context.annotation.AnnotationConfigApplicationContext&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;org.springframework.context.annotation.ComponentScan&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;org.springframework.context.annotation.Configuration&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;org.springframework.stereotype.Component&lt;/span&gt;;
+
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;javax.annotation.PostConstruct&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;java.lang.annotation.ElementType&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;java.lang.annotation.Retention&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;java.lang.annotation.RetentionPolicy&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;java.lang.annotation.Target&lt;/span&gt;;
+
+&lt;span class="k"&gt;import static&lt;/span&gt; &lt;span class="k"&gt;spring.Spring.Platform&lt;/span&gt;;
+
+@&lt;span class="kt"&gt;Configuration&lt;/span&gt;
+@&lt;span class="kt"&gt;ComponentScan&lt;/span&gt;
+&lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Spring&lt;/span&gt; {
+
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;(&lt;span class="kt"&gt;String&lt;/span&gt;[] &lt;span class="nv"&gt;args&lt;/span&gt;) {
+        &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="kt"&gt;AnnotationConfigApplicationContext&lt;/span&gt;(&lt;span class="kt"&gt;Spring&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;class);
+    }
+
+    &lt;span class="kt"&gt;@Autowired&lt;/span&gt;
+    &lt;span class="kt"&gt;@Platform&lt;/span&gt;(&lt;span class="kt"&gt;Platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;OperatingSystems&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;ANDROID&lt;/span&gt;)
+    &lt;span class="k"&gt;private&lt;/span&gt; &lt;span class="kt"&gt;MarketPlace&lt;/span&gt; android;
+
+    &lt;span class="kt"&gt;@Autowired&lt;/span&gt;
+    &lt;span class="kt"&gt;@Platform&lt;/span&gt;(&lt;span class="kt"&gt;Platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;OperatingSystems&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;IOS&lt;/span&gt;)
+    &lt;span class="k"&gt;private&lt;/span&gt; &lt;span class="kt"&gt;MarketPlace&lt;/span&gt; ios;
+
+    &lt;span class="kt"&gt;@PostConstruct&lt;/span&gt;
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;qualifyTheTweets&lt;/span&gt;() {
+        &lt;span class="kt"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;out&lt;span class="o"&gt;.&lt;/span&gt;println(&lt;span class="s2"&gt;"ios:"&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;ios);
+        &lt;span class="kt"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;out&lt;span class="o"&gt;.&lt;/span&gt;println(&lt;span class="s2"&gt;"android:"&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;android);
+    }
+
+    &lt;span class="c1"&gt;// the type has to be public!&lt;/span&gt;
+    &lt;span class="kt"&gt;@Target&lt;/span&gt;({&lt;span class="kt"&gt;ElementType&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;FIELD&lt;/span&gt;,
+            &lt;span class="kt"&gt;ElementType&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;METHOD&lt;/span&gt;,
+            &lt;span class="kt"&gt;ElementType&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;TYPE&lt;/span&gt;,
+            &lt;span class="kt"&gt;ElementType&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;PARAMETER&lt;/span&gt;})
+    &lt;span class="kt"&gt;@Retention&lt;/span&gt;(&lt;span class="kt"&gt;RetentionPolicy&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;RUNTIME&lt;/span&gt;)
+    &lt;span class="kt"&gt;@Qualifier&lt;/span&gt;
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="k"&gt;@interface&lt;/span&gt; &lt;span class="nc"&gt;Platform&lt;/span&gt; {
+
+        &lt;span class="kt"&gt;OperatingSystems&lt;/span&gt; &lt;span class="nf"&gt;value&lt;/span&gt;();
+
+        &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="k"&gt;enum&lt;/span&gt; &lt;span class="nc"&gt;OperatingSystems&lt;/span&gt; {
+            &lt;span class="no"&gt;IOS&lt;/span&gt;,
+            &lt;span class="no"&gt;ANDROID&lt;/span&gt;
+        }
+    }
+}
+
+&lt;span class="k"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;MarketPlace&lt;/span&gt; {
+}
+
+@&lt;span class="kt"&gt;Component&lt;/span&gt;
+@Platform(&lt;span class="kt"&gt;Platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;OperatingSystems&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;IOS&lt;/span&gt;)
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;AppleMarketPlace&lt;/span&gt; &lt;span class="k"&gt;implements&lt;/span&gt; &lt;span class="no"&gt;MarketPlace&lt;/span&gt; {
+
+    &lt;span class="kt"&gt;@Override&lt;/span&gt;
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;toString&lt;/span&gt;() {
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;"apple"&lt;/span&gt;;
+    }
+}
+
+@&lt;span class="kt"&gt;Component&lt;/span&gt;
+@Platform(&lt;span class="kt"&gt;Platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;OperatingSystems&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;ANDROID&lt;/span&gt;)
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;GoogleMarketPlace&lt;/span&gt; &lt;span class="k"&gt;implements&lt;/span&gt; &lt;span class="no"&gt;MarketPlace&lt;/span&gt; {
+
+    &lt;span class="kt"&gt;@Override&lt;/span&gt;
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;toString&lt;/span&gt;() {
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;"android"&lt;/span&gt;;
+    }
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To compile and run this example, make sure you have &lt;code&gt;org.springframework.boot:spring-boot-starter:1.1.8.RELEASE&lt;/code&gt; on the CLASSPATH.&lt;/p&gt;
+
+&lt;p&gt;This example shows the definition of two &lt;code&gt;MarketPlace&lt;/code&gt; implementations, one for &lt;code&gt;GoogleMarketPlace&lt;/code&gt; and one for the &lt;code&gt;AppleMarketPlace&lt;/code&gt;. We define an annotation &lt;code&gt;@Platform&lt;/code&gt; that takes a parameter of type &lt;code&gt;Platform.OperatingSystems&lt;/code&gt;. This annotation is itself annotated with &lt;code&gt;@Qualifier&lt;/code&gt; which tells Spring to treat it as a qualifier. The bean definitions are annotated accordingly: the &lt;code&gt;GoogleMarketPlace&lt;/code&gt; is annotated with &lt;code&gt;@Platform(Platform.OperatingSystems.ANDROID)&lt;/code&gt; and the &lt;code&gt;AppleMarketPlace&lt;/code&gt; is annotated with &lt;code&gt;@Platform(Platform.OperatingSystems.IOS)&lt;/code&gt;. Injecting either one (in the &lt;code&gt;Spring&lt;/code&gt; class) then becomes as simple as using the &lt;code&gt;@Qualifier&lt;/code&gt; annotation at the injection site. I'm using field injection here, though this is just a scratchpad to flesh things out. Obviously, in any sort of &lt;em&gt;real&lt;/em&gt; code you should prefer constructor and setter injection. &lt;/p&gt;
+
+&lt;p&gt;Spring natively supports JSR 330, as well. After all, we did help lead that initiative. Here's the equivalent example using JSR 330 alternatives. &lt;code&gt;@Component&lt;/code&gt; becomes &lt;code&gt;@Named&lt;/code&gt;, &lt;code&gt;@Autowired&lt;/code&gt; becomes &lt;code&gt;@Inject&lt;/code&gt; and &lt;code&gt;@Qualifier&lt;/code&gt; becomes &lt;code&gt;@javax.inject.Qualifier&lt;/code&gt;, but otherwise this should look very familiar.&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;
+&lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="k"&gt;jsr330&lt;/span&gt;;
+
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;org.springframework.context.annotation.AnnotationConfigApplicationContext&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;org.springframework.context.annotation.ComponentScan&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;org.springframework.context.annotation.Configuration&lt;/span&gt;;
+
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;javax.annotation.PostConstruct&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;javax.inject.Inject&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;javax.inject.Named&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;java.lang.annotation.ElementType&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;java.lang.annotation.Retention&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;java.lang.annotation.RetentionPolicy&lt;/span&gt;;
+&lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="k"&gt;java.lang.annotation.Target&lt;/span&gt;;
+
+&lt;span class="k"&gt;import static&lt;/span&gt; &lt;span class="k"&gt;jsr330.Jsr330.Platform&lt;/span&gt;;
+
+@&lt;span class="kt"&gt;Configuration&lt;/span&gt;
+@&lt;span class="kt"&gt;ComponentScan&lt;/span&gt;
+&lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Jsr330&lt;/span&gt; {
+
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;(&lt;span class="kt"&gt;String&lt;/span&gt;[] &lt;span class="nv"&gt;args&lt;/span&gt;) {
+        &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="kt"&gt;AnnotationConfigApplicationContext&lt;/span&gt;(&lt;span class="kt"&gt;Jsr330&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;class);
+    }
+
+    &lt;span class="kt"&gt;@Inject&lt;/span&gt;
+    &lt;span class="kt"&gt;@Platform&lt;/span&gt;(&lt;span class="kt"&gt;Platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;OperatingSystems&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;ANDROID&lt;/span&gt;)
+    &lt;span class="k"&gt;private&lt;/span&gt; &lt;span class="kt"&gt;MarketPlace&lt;/span&gt; android;
+
+    &lt;span class="kt"&gt;@Inject&lt;/span&gt;
+    &lt;span class="kt"&gt;@Platform&lt;/span&gt;(&lt;span class="kt"&gt;Platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;OperatingSystems&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;IOS&lt;/span&gt;)
+    &lt;span class="k"&gt;private&lt;/span&gt; &lt;span class="kt"&gt;MarketPlace&lt;/span&gt; ios;
+
+    &lt;span class="kt"&gt;@PostConstruct&lt;/span&gt;
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;qualifyTheTweets&lt;/span&gt;() {
+        &lt;span class="kt"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;out&lt;span class="o"&gt;.&lt;/span&gt;println(&lt;span class="s2"&gt;"ios:"&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;ios);
+        &lt;span class="kt"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;out&lt;span class="o"&gt;.&lt;/span&gt;println(&lt;span class="s2"&gt;"android:"&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;android);
+    }
+
+    &lt;span class="c1"&gt;// the type has to be public!&lt;/span&gt;
+    &lt;span class="kt"&gt;@Target&lt;/span&gt;({&lt;span class="kt"&gt;ElementType&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;FIELD&lt;/span&gt;,
+            &lt;span class="kt"&gt;ElementType&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;METHOD&lt;/span&gt;,
+            &lt;span class="kt"&gt;ElementType&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;TYPE&lt;/span&gt;,
+            &lt;span class="kt"&gt;ElementType&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;PARAMETER&lt;/span&gt;})
+    &lt;span class="kt"&gt;@Retention&lt;/span&gt;(&lt;span class="kt"&gt;RetentionPolicy&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;RUNTIME&lt;/span&gt;)
+    &lt;span class="kt"&gt;@javax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;inject&lt;span class="o"&gt;.&lt;/span&gt;Qualifier&lt;/span&gt;
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="k"&gt;@interface&lt;/span&gt; &lt;span class="nc"&gt;Platform&lt;/span&gt; {
+
+        &lt;span class="kt"&gt;OperatingSystems&lt;/span&gt; &lt;span class="nf"&gt;value&lt;/span&gt;();
+
+        &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="k"&gt;enum&lt;/span&gt; &lt;span class="nc"&gt;OperatingSystems&lt;/span&gt; {
+            &lt;span class="no"&gt;IOS&lt;/span&gt;,
+            &lt;span class="no"&gt;ANDROID&lt;/span&gt;
+        }
+    }
+}
+
+&lt;span class="k"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;MarketPlace&lt;/span&gt; {
+}
+
+@&lt;span class="kt"&gt;Named&lt;/span&gt;
+@Platform(&lt;span class="kt"&gt;Platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;OperatingSystems&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;IOS&lt;/span&gt;)
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;AppleMarketPlace&lt;/span&gt; &lt;span class="k"&gt;implements&lt;/span&gt; &lt;span class="no"&gt;MarketPlace&lt;/span&gt; {
+
+    &lt;span class="kt"&gt;@Override&lt;/span&gt;
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;toString&lt;/span&gt;() {
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;"apple"&lt;/span&gt;;
+    }
+}
+
+@&lt;span class="kt"&gt;Named&lt;/span&gt;
+@Platform(&lt;span class="kt"&gt;Platform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;OperatingSystems&lt;/span&gt;&lt;span class="no"&gt;&lt;span class="o"&gt;.&lt;/span&gt;ANDROID&lt;/span&gt;)
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;GoogleMarketPlace&lt;/span&gt; &lt;span class="k"&gt;implements&lt;/span&gt; &lt;span class="no"&gt;MarketPlace&lt;/span&gt; {
+
+    &lt;span class="kt"&gt;@Override&lt;/span&gt;
+    &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;toString&lt;/span&gt;() {
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;"android"&lt;/span&gt;;
+    }
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To compile and run this example, make sure you have &lt;code&gt;org.springframework.boot:spring-boot-starter:1.1.8.RELEASE&lt;/code&gt; &lt;em&gt;and&lt;/em&gt; &lt;code&gt;javax.inject:javax.inject:1&lt;/code&gt; on the CLASSPATH.&lt;/p&gt;
+
+&lt;p&gt;Is any of this new? No. That's the point. This has been possible since Spring 2.5 (which we released in 2007). It's surprising that people still don't know about this functionality, but hopefully this blog makes it easier for people to get started. As a next step, &lt;a href="http://docs.spring.io/spring/docs/2.5.x/reference/beans.html#beans-autowired-annotation-qualifiers"&gt;check out the documentation (from 2.5 onwards!)&lt;/a&gt; which covers every gory detail - including the XML alternative - in depth!&lt;/p&gt;
+
+&lt;p&gt;I should mention that - in practice - I haven't needed to do this a lot in my code. Maybe a dozen times in the last 7 years. It can be handy, though! &lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Webinar Replay: Building “Bootful” UIs with Spring Boot and Vaadin</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/11/04/webinar-replay-building-bootful-uis-with-spring-boot-and-vaadin" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-11-04:1810</id>
+    <updated>2014-11-04T09:09:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: Josh Long, Pivotal and Peter Lehto, Vaadin &lt;/p&gt;
+
+&lt;p&gt;It's been a long day, but you've done it: you've got a Spring Boot powered backend and now you need to build the UI that'll power the workforce and deliver next week. Vaadin, a UI framework that marries the ease of use of server-side Java and the rich, dynamic nature of client-side JavaScript, integrates well with Spring Boot and offers UI polish that would be hard to secure any other way. Join Spring developer advocate Josh Long and Vaadin evangelists for a look at how Vaadin and Spring Boot can get you to production quicker, and easier.&lt;/p&gt;
+
+&lt;p&gt;Learn more about Spring Boot &lt;a href="http://projects.spring.io/spring-boot"&gt;http://projects.spring.io/spring-boot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more about Vaadin &lt;a href="http://www.vaadin.com"&gt;http://www.vaadin.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/PngL2OJAOfk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Data Evans SR1 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/11/03/spring-data-evans-sr1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Christoph Strobl</name>
+    </author>
+    <id>tag:spring.io,2014-11-03:1807</id>
+    <updated>2014-11-03T13:08:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the Spring Data team I am pleased to announce the availability of the first service release of the Evans release train. The team around the participating modules completed &lt;a href="http://jira.spring.io/issues/?filter=14836"&gt;41 issues&lt;/a&gt; including serveral bug fixes. We want to thank everyone for taking the time to report, volunteer fixing and testing those issues - this is invaluable feedback we could not do without!&lt;/p&gt;
+
+&lt;p&gt;The release includes the following 11 modules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spring Data Commons 1.9.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/1.9.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.9.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.9.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.9.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data JPA 1.7.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/1.7.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.7.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.7.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.7.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data MongoDB 1.6.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/1.6.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.6.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.6.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.6.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Neo4j 3.2.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/3.2.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.2.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.2.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.2.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Solr 1.3.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/1.3.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.3.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.3.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.3.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Couchbase 1.2.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/1.2.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.2.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.2.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.2.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Cassandra 1.1.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/1.1.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.1.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.1.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.1.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Elasticsearch 1.1.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/1.1.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.1.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.1.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.1.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Gemfire 1.5.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-gemfire/1.5.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.5.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.5.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.5.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Redis 1.4.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/1.4.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.4.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.4.1.RELEASE/reference/pdf/spring-data-redis-reference.pdf"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.4.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data REST 2.2.1 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/2.2.1.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.2.1.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.2.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.2.1.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Evans SR 1 is a recommended upgrade as it contains important bug fixes. Dijkstra users still on a service release are encouraged to upgrade as well. The next release coming will be the first milestone of release train &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-Fowler"&gt;Fowler&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;In case you happen to be in London this week, don't miss the oportunity to meet us at &lt;a href="https://skillsmatter.com/conferences/1941-spring-exchange-2014"&gt;Spring eXchange 2014&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring for Apache Hadoop 2.0.3 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/11/03/spring-for-apache-hadoop-2-0-3-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Thomas Risberg</name>
+    </author>
+    <id>tag:spring.io,2014-10-31:1806</id>
+    <updated>2014-11-03T10:36:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that Spring for Apache Hadoop 2.0.3 has just been released and is now available from Maven Central and the Spring Repository. This release includes some bug fixes and updates some dependency versions. The dependencies are updated to match the next 1.0.3 release of the Spring IO platform. More details can be found in the &lt;a href="http://docs.spring.io/spring-hadoop/docs/2.0.3.RELEASE/changelog.txt"&gt;changelog&lt;/a&gt; or in the &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10801&amp;amp;version=14702"&gt;JIRA release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this release, we are adding support for Apache Hadoop 2.5.1 (hadoop25) and Pivotal HD 2.1 (phd21). &lt;/p&gt;
+
+&lt;p&gt;Here is a complete list of the latest version designation to use for the various  distro "flavors" published. The Apache Hadoop releases are available in Maven Central and all other releases are available in the &lt;a href="http://repo.spring.io/libs-release/"&gt;Spring Repository&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2.0.3.RELEASE - Apache Hadoop 2.2.x [2.2.0]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-hadoop12 - Apache Hadoop 1.2.x [1.2.1]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-hadoop24 - Apache Hadoop 2.4.x [2.4.1]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-hadoop25 - Apache Hadoop 2.5.x [2.5.1]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-phd1 - Pivotal HD 1.1 [2.0.5-alpha-gphd-2.1.0.0]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-phd20 - Pivotal HD 2.0 [2.2.0-gphd-3.0.1.0]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-phd21 - Pivotal HD 2.1 [2.2.0-gphd-3.1.0.0]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-cdh4 - Cloudera CDH4 MR1 [2.0.0-mr1-cdh4.6.0]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-cdh5 - Cloudera CDH5 YARN [2.3.0-cdh5.1.3]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-hdp13 - Hortonworks Data Platform 1.3 [1.2.0]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-hdp20 - Hortonworks Data Platform 2.0 [2.2.0]&lt;/li&gt;
+&lt;li&gt;2.0.3.RELEASE-hdp21 - Hortonworks Data Platform 2.1 [2.4.0]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We plan on adding support for Apache Hadoop 2.6, Hortonworks HDP 2.2 and Cloudera CDH 5.2 in a future release.&lt;/p&gt;
+
+&lt;p&gt;The project page is at - &lt;a href="http://projects.spring.io/spring-hadoop/"&gt;http://projects.spring.io/spring-hadoop/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Integration Java DSL 1.0 RC1 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2014/10/31/spring-integration-java-dsl-1-0-rc1-released" />
@@ -474,14 +886,14 @@ We look forward to your feedback.&lt;/p&gt;</content>
       <name>Artem Bilan</name>
     </author>
     <id>tag:spring.io,2014-10-26:1797</id>
-    <updated>2014-10-27T14:40:59Z</updated>
+    <updated>2014-10-27T14:40:00Z</updated>
     <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
 
 &lt;p&gt;We are pleased to announce that the Spring Integration 4.1 Release Candidate is available.
 Please use the &lt;a href="http://repo.springsource.org/milestone"&gt;Milestone Repository&lt;/a&gt; with Maven or Gradle, or download a &lt;a href="http://repo.spring.io/milestone/org/springframework/integration/spring-integration/4.1.0.RC1"&gt;distribution archive&lt;/a&gt;, to give it a spin.&lt;/p&gt;
 
 &lt;p&gt;The release includes many new features and improvements, as well as a number of bug fixes. The GA release
-is planned for the first week of November.&lt;/p&gt;
+is planned in early November.&lt;/p&gt;
 
 &lt;p&gt;First of all, thank you all who provided feedback for the
 &lt;a href="https://spring.io/blog/2014/09/05/spring-integration-4-1-milestone-1-available"&gt;4.1 Milestone 1&lt;/a&gt; and
@@ -665,8 +1077,8 @@ list of "What's new" in the 4.1 release, see the &lt;a href="http://docs.spring.
       <name>Artem Bilan</name>
     </author>
     <id>tag:spring.io,2014-10-23:1794</id>
-    <updated>2014-10-23T18:37:03Z</updated>
-    <content type="html">&lt;p&gt;We are pleased to announce the availability of the Release Candidate for Spring AMQP 1.4; the GA is planned to be released during the first week of November.&lt;/p&gt;
+    <updated>2014-10-23T18:37:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce the availability of the Release Candidate for Spring AMQP 1.4; the GA is planned to be released in early November.&lt;/p&gt;
 
 &lt;p&gt;First of all, thank you all who provided feedback for the &lt;a href="https://spring.io/blog/2014/09/05/spring-amqp-for-java-1-4-milestone-1-available"&gt;milestone 1.4 M1 version&lt;/a&gt; and submitted reports (bugs or new features).
 Special thanks to &lt;a href="https://spring.io/team/snicoll/"&gt;Stéphane Nicoll&lt;/a&gt;, who had introduced annotation-based message
@@ -1073,481 +1485,6 @@ This week I'm talking to developers at the Neo4j &lt;b&gt; GraphConnect&lt;/b&gt
  I always love reading Adrian Colyer’s blogs. Recently, he’s been reviewing one interesting academic paper per week. This last week he looked at a paper that offers that there’s &lt;a href="http://blog.acolyer.org/2014/10/21/coverage-is-not-strongly-correlated-with-test-suite-effectiveness/"&gt;not so strong a link between code-coverage and what that implies for (assurances about) code quality&lt;/a&gt;. 
 &lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Reactor 2.0.0.M1 released with Reactive Streams integration!</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/10/21/reactor-2-0-0-m1-released-with-reactive-streams-integration" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Jon Brisbin</name>
-    </author>
-    <id>tag:spring.io,2014-10-21:1790</id>
-    <updated>2014-10-21T15:29:00Z</updated>
-    <content type="html">&lt;p&gt;The &lt;a href="https://github.com/reactor/reactor"&gt;Reactor&lt;/a&gt; team is frankly a little giddy at finally being able to announce an initial milestone release of Reactor 2.0! This update includes a fully-compliant &lt;a href="http://www.reactive-streams.org/"&gt;Reactive Streams&lt;/a&gt; implementation in the completely re-written &lt;code&gt;Stream&lt;/code&gt; and &lt;code&gt;Promise&lt;/code&gt; APIs! This is a huge step for Reactor users. It opens up integration with other Reactive Streams implementations like &lt;a href="http://www.typesafe.com/activator/template/akka-stream-scala"&gt;Akka Streams&lt;/a&gt;, &lt;a href="http://ratpack.io/"&gt;Ratpack&lt;/a&gt;, &lt;a href="https://github.com/ReactiveX/RxJava"&gt;RxJava&lt;/a&gt; and others. Reactor provides a solid foundation upon which to build modern &lt;code&gt;#uberfastdata&lt;/code&gt; applications with demanding high-throughput and low-latency requirements.&lt;/p&gt;
-
-&lt;h3&gt;
-&lt;a name="user-content-stream-and-promise" class="anchor" href="#stream-and-promise" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Stream and Promise&lt;/h3&gt;
-
-&lt;p&gt;The headline change in Reactor 2.0 is the Stream API. In fact, most other parts of the codebase were either just lightly refined or remain untouched between 1.1 and 2.0. Not so with &lt;code&gt;Stream&lt;/code&gt; and &lt;code&gt;Promise&lt;/code&gt;. These components have been completely rewritten from the ground up to take advantage of the Reactive Streams specification to provide fully-non-blocking backpressure in functional reactive streaming pipelines. &lt;/p&gt;
-
-&lt;h3&gt;
-&lt;a name="user-content-what-is-backpressure-in-a-reactive-system" class="anchor" href="#what-is-backpressure-in-a-reactive-system" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;What is backpressure in a reactive system?&lt;/h3&gt;
-
-&lt;p&gt;Dr. Roland Kuhn, of Akka fame, has spoken on the topic quite eloquently and if you're interested in exploring the reasoning behind non-blocking backpressure, we encourage you to watch his conference presentations on the topic, &lt;a href="https://www.google.com/search?q=site%3Ayoutube.com%20%22reactive%20streams%22%20%22roland%20kuhn%22&amp;amp;rct=j"&gt;most of which are available on YouTube&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;TL;DR&lt;/p&gt;
-
-&lt;p&gt;Backpressure is an inversion of the publisher and subscriber relationship where the &lt;code&gt;Subscriber&lt;/code&gt; says to the &lt;code&gt;Publisher&lt;/code&gt; "give me the next N available items" rather than a &lt;code&gt;Publisher&lt;/code&gt; saying to a &lt;code&gt;Subscriber&lt;/code&gt; "take all these items I have whether you can handle them or not". Since the &lt;code&gt;Publisher&lt;/code&gt; is passively providing elements of data to the &lt;code&gt;Subscriber&lt;/code&gt; rather than the other way around, it's not necessary (in a fully Reactive Streams pipeline) to buffer data since you'll never have more data inflight than what you can handle. In reality, some buffering or queueing is necessary but libraries like Reactor take away your need to worry about how this is accomplished so you can write fully reactive code that responds to data as it becomes available rather than trying to figure out what magic combination of &lt;code&gt;BlockingQueue&lt;/code&gt; or other kinds of inefficient schemes must be employed to ensure asynchronous components are properly segregated from one another.&lt;/p&gt;
-
-&lt;h3&gt;
-&lt;a name="user-content-reactor-implements-reactive-streams" class="anchor" href="#reactor-implements-reactive-streams" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Reactor implements Reactive Streams&lt;/h3&gt;
-
-&lt;p&gt;The Reactor team has put in the depressingly large number of hours necessary to implement a comprehensive implementation of the Reactive Streams specification. Reactor's &lt;code&gt;Stream&lt;/code&gt; component provides you with useful and understandable hooks on which to hang your business logic so that you only have to concern yourself with writing the appropriately-scoped functional component that will respond to a single element of data rather than having to dirty your code with a lot of boilerplate logistics to handle passing data from one Thread to another, performing bounded queueing and buffering, and the sundry other tasks usually necessary in working with reactive, asynchronous components.&lt;/p&gt;
-
-&lt;p&gt;An example of how this looks in your code can be found in the &lt;a href="https://github.com/SpringOne2GX-2014/reactive-geocoder"&gt;Reactive Geocoder Demo&lt;/a&gt; which the Reactor team discussed at this year's SpringOne in Dallas, Texas (&lt;a href="http://www.infoq.com/presentations/reactive-streams-reactor"&gt;replays&lt;/a&gt; are available on InfoQ for SpringOne2GX 2014 attendees and will become public some time later). &lt;/p&gt;
-
-&lt;p&gt;Following is a little snippet that shows how to create a new &lt;code&gt;Stream&lt;/code&gt;, attach business logic to it, then publish data into it. &lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// by default Streams use the Disruptor RingBufferDispatcher&lt;/span&gt;
-&lt;span class="n"&gt;HotStream&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;helloStream&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Streams&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;defer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;env&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-
-&lt;span class="n"&gt;helloStream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;map&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;"Hello "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"!"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-           &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;consume&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nl"&gt;log:&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-
-&lt;span class="n"&gt;helloStream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;broadcastNext&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"World"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;When you run this, you will see the text "Hello World!" logged. You should also notice that the logging has taken place from the RingBuffer thread and not from your main thread. In other words, you've just submitted a task to another Thread to be executed asynchronously, have the result transformed into something else, and then responded to the result using Reactive Streams non-blocking, demand-based backpressure without any kind of noisy Future-based, blocking code!&lt;/p&gt;
-
-&lt;p&gt;You can create "cold" streams as well, which are very similar to using RxJava's &lt;code&gt;Observable&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// stream contains the single value "Hello World!"&lt;/span&gt;
-&lt;span class="n"&gt;Stream&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;helloStream&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Streams&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;just&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"World"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-
-&lt;span class="n"&gt;helloStream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;map&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;"Hello "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"!"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-           &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;consume&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nl"&gt;log:&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;When you run this, you will see the text "Hello World!" logged, similarly to the previous example. The difference here is that we never had to call the &lt;code&gt;broadcastNext(String)&lt;/code&gt; method because that was handled for us when we attached our &lt;code&gt;Consumer&amp;lt;String&amp;gt;&lt;/code&gt;. You can create streams out of any value or collection of values just like creating an RxJava &lt;code&gt;Observable&lt;/code&gt;. This lets you mix standard Java Collection APIs with the reactive, streaming API.&lt;/p&gt;
-
-&lt;h3&gt;
-&lt;a name="user-content-stream-is-the-new-black" class="anchor" href="#stream-is-the-new-black" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Stream is the new Black&lt;/h3&gt;
-
-&lt;p&gt;Streaming APIs like Spark, Storm, and other Big Data libraries prove that working with data in a more functional and reactive way is more efficient when running on systems without unlimited resources (which is basically anything we run on in the cloud) as well as being more understandable (in many cases) owing to the declarative, self-documentating nature of the DSL used to build up the processing pipeline. When you boil your business logic down to its essence, you really do notice that not many things exist that can't be expressed as a transformation or consumer function. You either take input and produce output or you simply take input. Reactor's Stream API is steeped in this paradigm so provides you with a plethora (who can tell me this movie reference: "would you say I have a plethora of pinatas?") of options for processing data as it passes through your pipeline. Beyond simple functions like &lt;code&gt;map(Function&amp;lt;T,V&amp;gt;)&lt;/code&gt; and &lt;code&gt;filter(Predicate&amp;lt;T&amp;gt;)&lt;/code&gt; are the more sophisticated options like &lt;code&gt;buffer(int)&lt;/code&gt; or &lt;code&gt;buffer(int, long, TimeUnit)&lt;/code&gt;. The latter provides extrememly useful length and time-based "microbatching". For example, to microbatch a set of database updates that are expensive to send across a WAN connection, you might want to buffer them until you either have a set amount or a certain timeout has elapsed.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="c1"&gt;// create a stream backed by a load-balanced, round-robin assigned Dispatcher&lt;/span&gt;
-&lt;span class="n"&gt;Stream&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Update&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;updateStream&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Streams&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;defer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;env&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;env&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getDefaultDispatcherFactory&lt;/span&gt;&lt;span class="o"&gt;().&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
-
-&lt;span class="n"&gt;updateStream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;buffer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1024&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;350&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;TimeUnit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;MILLISECONDS&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;consume&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nl"&gt;driver:&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;batchUpdate&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This will collect streaming updates until either 1024 of them have been collected or 350 milliseconds have expired, whichever comes first. It will then trigger the downstream processing by passing a &lt;code&gt;List&amp;lt;Update&amp;gt;&lt;/code&gt; of either 1024 elements or however many were collected in 350ms. This allows you to write very, very efficient systems that deal with high volumes of data in batches to minimize network bandwidth usage and maximize throughput (while still maintaing a predicatble latency).&lt;/p&gt;
-
-&lt;p&gt;Along with microbatching &lt;code&gt;Stream&lt;/code&gt; provides facilities like &lt;code&gt;filter&lt;/code&gt;, &lt;code&gt;flatMap&lt;/code&gt;, &lt;code&gt;movingBuffer&lt;/code&gt;, &lt;code&gt;join&lt;/code&gt;, &lt;code&gt;merge&lt;/code&gt;, &lt;code&gt;sample&lt;/code&gt;, &lt;code&gt;sort&lt;/code&gt;, and many other operations which are largely self-explanatory. Much like Scala's collection API or RxJava's Observable, Reactor's &lt;code&gt;Stream&lt;/code&gt; provides functional and reactive ways to process data quickly, efficiently, and at extremely high volume while maintaining predictable, low latencies. It's not an exaggeration to say that you could write your entire application using the &lt;code&gt;Stream&lt;/code&gt; as a foundational component that is used to submit asynchronous tasks for execution and also to process traditional collections of data in a reactive way--and then mix the two approaches by combining live data with historical data.&lt;/p&gt;
-
-&lt;h3&gt;
-&lt;a name="user-content-parallel-processing" class="anchor" href="#parallel-processing" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Parallel processing&lt;/h3&gt;
-
-&lt;p&gt;It's sometimes necessary to split up a stream of data into parallel pipelines for doing concurrent processing. Reactor's &lt;code&gt;Stream&lt;/code&gt; provides an extremely convenient way to do this with the &lt;code&gt;parallel(int)&lt;/code&gt; operation. You simply attach your business logic to the &lt;code&gt;Stream&lt;/code&gt; provided after the &lt;code&gt;parallel&lt;/code&gt; call and data will be round-robined between the downstream pipelines for concurrent processing.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="n"&gt;HotStream&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;stream&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Streams&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;defer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;env&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-
-&lt;span class="c1"&gt;// by default uses number of CPUs as thread count&lt;/span&gt;
-&lt;span class="n"&gt;stream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;parallel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;substream&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;substream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;map&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;greeting&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;"Hello "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;greeting&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"!"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-                                      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;consume&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nl"&gt;log:&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;));&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Here's an interesting example of the Reactive Streams implementation showing itself in your code: when you run this you won't get any output. The &lt;code&gt;.parallel()&lt;/code&gt; operation doesn't create "demand" on the pipeline. In a Reactive Streams system, it's the end of the pipeline that pulls data into the operations rather than the producer that pushes it. Since there's no terminal operation at the end of this pipeline, there's no way for the data to get pulled through. In reality that's not usually a problem because you actually want to handle the data in a real application. In this example, we can just add a &lt;code&gt;.drain()&lt;/code&gt; call after &lt;code&gt;.parallel()&lt;/code&gt; to produce demand and pull data through. We likely wouldn't do this in a production system but for tests and demos we can take the easy out with a drain.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="n"&gt;stream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;parallel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;substream&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;substream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;map&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;greeting&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;"Hello "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;greeting&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"!"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-                                      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;consume&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nl"&gt;log:&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;drain&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3&gt;
-&lt;a name="user-content-whats-going-on-and-why-dont-i-see-what-i-expect" class="anchor" href="#whats-going-on-and-why-dont-i-see-what-i-expect" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;What's going on and why don't I see what I expect?&lt;/h3&gt;
-
-&lt;p&gt;With reactive systems it's sometimes frustrating to understand why things aren't working like you expect. While there's not a lot that a library can do to make the process of live debugging an asynchronous stream inside an IDE better, there's always the tried-and-true method of copious logging. Reactor adds a couple of somewhat hidden methods called &lt;code&gt;.debug()&lt;/code&gt; and &lt;code&gt;.log()&lt;/code&gt; that should help you figure out how your streams are constructed and what they're doing. The &lt;code&gt;.debug()&lt;/code&gt; method will provide you with an output of how a stream is wired. It will show what actions are connected to what and what capacities are currently available in each. The &lt;code&gt;.log()&lt;/code&gt; method attaches a logging action to your stream and outputs subscribe and publish events.&lt;/p&gt;
-
-&lt;p&gt;If we add a &lt;code&gt;.log()&lt;/code&gt; call before our &lt;code&gt;.parallel()&lt;/code&gt; from the above example, we'll get additional logging to tell us what's happening:&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="n"&gt;stream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;log&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;parallel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;substream&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;substream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;map&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;greeting&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="s"&gt;"Hello "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;greeting&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"!"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-                                      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;consume&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nl"&gt;log:&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;drain&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Will produce:&lt;/p&gt;
-
-&lt;pre&gt;
-[ringBuffer-1] INFO  r.r.a.LoggerAction - onSubscribe: {capacity=0/8188 [0%], current=0, pending=0, waiting=0}
-[main] INFO  r.r.a.LoggerAction - subscribe: ConcurrentAction-{dispatcher=RingBuffer:8192, max-capacity=8188}
-[ringBuffer-1] INFO  r.r.a.LoggerAction - request: 9223372036854775807
-[ringBuffer-1] INFO  r.r.a.LoggerAction - onNext: World
-[ringBufferGroup-2] INFO  r.r.StreamTests - Hello World!
-&lt;/pre&gt;
-
-&lt;h3&gt;
-&lt;a name="user-content-artifacts" class="anchor" href="#artifacts" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Artifacts&lt;/h3&gt;
-
-&lt;p&gt;To upgrade an existing application to Reactor 2.0, you'll likely only need to tweak a few things. If you are using streams in Reactor 1.1, you'll find that Reactor 2.0 streams differ in their publication of values. The &lt;code&gt;.broadcastNext()&lt;/code&gt; method is defined on &lt;code&gt;Action&lt;/code&gt; subclasses and &lt;code&gt;HotStream&lt;/code&gt; but not some other operations. Reactor 1.1 used a &lt;code&gt;Deferred&lt;/code&gt; to publish values so your code will need to be tweaked to change the publisher type to something that has access to the &lt;code&gt;.broadcastNext()&lt;/code&gt; method. If you're using a plain &lt;code&gt;Reactor&lt;/code&gt; or the Spring and annotation-based event handling, you won't have to change hardly anything.&lt;/p&gt;
-
-&lt;p&gt;To access the milestone artifacts, use the &lt;code&gt;http://repo.spring.io/libs-milestone&lt;/code&gt; repository in your build system of choice. For example, if using Gradle (of course you're using Gradle, right?) just configure your &lt;code&gt;repositories&lt;/code&gt; block like so:&lt;/p&gt;
-
-&lt;div class="highlight highlight-groovy"&gt;&lt;pre&gt;&lt;span class="n"&gt;repositories&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;maven&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="n"&gt;url&lt;/span&gt; &lt;span class="s1"&gt;'http://repo.spring.io/libs-milestone'&lt;/span&gt; &lt;span class="o"&gt;}&lt;/span&gt;
-  &lt;span class="n"&gt;mavenCentral&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;To report bugs, follow the development of Reactor 2.0, read the wiki, or otherwise get involved in the Reactor community, visit the GitHub home of Reactor at &lt;a href="https://github.com/reactor/reactor"&gt;https://github.com/reactor/reactor&lt;/a&gt;. You can also read the JavaDoc online here: &lt;a href="http://reactor.github.io/docs/api/2.0.0.M1/index.html"&gt;http://reactor.github.io/docs/api/2.0.0.M1/index.html&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Whats new in Spring Data Evans?</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/10/15/whats-new-in-spring-data-evans" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Christoph Strobl</name>
-    </author>
-    <id>tag:spring.io,2014-09-17:1764</id>
-    <updated>2014-10-15T13:20:00Z</updated>
-    <content type="html">&lt;p&gt;Spring Data Release &lt;a href="https://spring.io/blog/2014/09/09/spring-data-release-train-evans-goes-ga"&gt;Evans&lt;/a&gt; has been around for a while and it's more than time to finally introduce you to the latest and greatest features we shipped with it.&lt;/p&gt;
-
-&lt;p&gt;There's a lot to cover since major enhancements have gone into the commons module. Those changes already have made it into some store modules and will go on and sneak their way into others over time, too. All of them are already available for at least &lt;a href="http://projects.spring.io/spring-data-jpa/"&gt;Spring Data JPA&lt;/a&gt;. That said, lets jump right in.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a name="user-content-advanced-support-for-java-8" class="anchor" href="#advanced-support-for-java-8" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Advanced support for Java 8&lt;/h2&gt;
-
-&lt;p&gt;Java8 has now been around for a while and previous Spring Data release trains already added fundamental support for some of those. With the Evans release train we extended the support significantly.&lt;/p&gt;
-
-&lt;p&gt;Java 8's &lt;a href="http://docs.oracle.com/javase/8/docs/api/java/util/Optional.html"&gt;&lt;code&gt;Optional&lt;/code&gt;&lt;/a&gt; has been a supported return since the &lt;a href="https://spring.io/blog/2014/05/21/what-s-new-in-spring-data-dijkstra"&gt;Dijkstra release&lt;/a&gt; freeing you of having &lt;code&gt;null&lt;/code&gt; checks spread across your code. We simply wrap and unwrap values for you when used as return types with repositories.&lt;/p&gt;
-
-&lt;p&gt;As of the Evans release &lt;a href="http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html"&gt;default methods&lt;/a&gt; can be used in repository interfaces to e.g. forward parts of the parameters handed into the method to other query methods.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;PersonRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Repository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Person&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-
-  &lt;span class="n"&gt;Optional&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findByLastname&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;lastname&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-
-  &lt;span class="k"&gt;default&lt;/span&gt; &lt;span class="n"&gt;Optional&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findByLastname&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt; &lt;span class="n"&gt;customer&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nf"&gt;findByLastname&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;customer&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;customer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getLastname&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;
-&lt;a name="user-content-enhanced-multi-store-support" class="anchor" href="#enhanced-multi-store-support" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Enhanced multi-store support&lt;/h2&gt;
-
-&lt;p&gt;Configuring your application to make use of different Spring Data modules has not been without issues so far. E.g. you  might want to combine JPA and MongoDB where &lt;code&gt;Customer&lt;/code&gt; happens to be a JPA Entity while &lt;code&gt;Order&lt;/code&gt; is a MongoDB Document both persisted via according repository interfaces.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Entity&lt;/span&gt;
-&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Customer&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-
-  &lt;span class="nd"&gt;@Id&lt;/span&gt; &lt;span class="nd"&gt;@GeneratedValue&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;firstname&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;lastname&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="c1"&gt;// ...&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-
-&lt;span class="nd"&gt;@Document&lt;/span&gt;
-&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Order&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-
-  &lt;span class="nd"&gt;@Id&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="n"&gt;Long&lt;/span&gt; &lt;span class="n"&gt;customerId&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="n"&gt;Date&lt;/span&gt; &lt;span class="n"&gt;orderDate&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="c1"&gt;// ...&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-
-&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;CustomerRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;CrudRepository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt;
-
-&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;OrderRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;CrudRepository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Order&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Until the Spring Data Evans release you had to manually configure the repository setup for MongoDB and JPA to mutually exclude the interfaces not relevant for the given store. Users usually used separate packages for that.&lt;/p&gt;
-
-&lt;p&gt;Now the repository setup detects that multiple Spring Data modules are on the classpath,  and automatically restricts the repository scanning and inspect the domain type used by a given repository for store specific annotations such as &lt;code&gt;@Entity&lt;/code&gt; and &lt;code&gt;@Document&lt;/code&gt; to determine the concrete implementation they belong to. E.g. the Spring Data MongoDB module would drop the (accidentally) detected &lt;code&gt;CustomerRepository&lt;/code&gt; as we don't find an &lt;code&gt;@Document&lt;/code&gt; annotation.&lt;/p&gt;
-
-&lt;h3&gt;
-&lt;a name="user-content-statically-limiting-results" class="anchor" href="#statically-limiting-results" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Statically limiting results&lt;/h3&gt;
-
-&lt;p&gt;Dynamically limiting results is no new concept since Spring Data has had &lt;code&gt;Pagable&lt;/code&gt; as abstraction since its inception and I bet nearly every Spring Data user is already familiar with something like this:&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Person&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findByLastname&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;lastname&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Pageable&lt;/span&gt; &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This method declaration provides quite some flexibility: clients define the page number, size and a sort order of the elements they want to access. This is great if these values change dynamically (e.g. when you traverse the result set page by page).&lt;/p&gt;
-
-&lt;p&gt;But what if you're always only interested in e.g. the first 10 results and you always want them to be ordered by lastname? This could've been achieved by statically defining a &lt;code&gt;PageRequest&lt;/code&gt; and reusing that for every method invocation. However, that still required the client to hand in the special &lt;code&gt;PageRequest&lt;/code&gt;. &lt;/p&gt;
-
-&lt;p&gt;As of Spring Data Evans we now offer you a convenient way to explicitly limit the result set to a certain number of elements by using the keywords &lt;code&gt;top&lt;/code&gt; and &lt;code&gt;first&lt;/code&gt; followed by an optional positive numeric value (defaulting to 1).&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Person&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findTop10ByLastnameOrderByFirstnameDesc&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;lastname&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;
-&lt;a name="user-content-mongodb-full-text-search" class="anchor" href="#mongodb-full-text-search" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;MongoDB Full Text Search&lt;/h2&gt;
-
-&lt;p&gt;The Evans RC1 release introduced basic &lt;a href="https://spring.io/blog/2014/07/17/text-search-your-documents-with-spring-data-mongodb"&gt;text index support&lt;/a&gt; for MongoDB 2.6. Using &lt;code&gt;@TextIndexed&lt;/code&gt; allows you to mark properties you want to have text search enabled for so that we can go on and create the index for you. Note, that placing &lt;code&gt;@TextIndexed&lt;/code&gt; on properties referring to complex types will index all properties of that type. Since scoring is a fundamental part of full text search the &lt;code&gt;@TextScore&lt;/code&gt; annotation will assert that any full text query returns the documents score allowing you to order them by relevance.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Document&lt;/span&gt;
-&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;BlogPost&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-
-  &lt;span class="nd"&gt;@Id&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="nd"&gt;@TextIndexed&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;weight&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="nd"&gt;@TextIndexed&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;weight&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="nd"&gt;@TextIndexed&lt;/span&gt; &lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;categories&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="nd"&gt;@TextScore&lt;/span&gt; &lt;span class="n"&gt;Float&lt;/span&gt; &lt;span class="n"&gt;score&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;That in place, we extended the repository support to accept a &lt;code&gt;TextCriteria&lt;/code&gt; instance that will define detailed options about the text search that shall be executed: the terms to be searched for, language options etc.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;BlogPostRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;CrudRepository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;BlogPost&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-
-    &lt;span class="n"&gt;Page&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;BlogPost&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findBy&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TextCriteria&lt;/span&gt; &lt;span class="n"&gt;criteria&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Pageable&lt;/span&gt; &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-
-    &lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;BlogPost&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findAllByOrderByScoreDesc&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TextCriteria&lt;/span&gt; &lt;span class="n"&gt;criteria&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The first query method is quite straight forward. It executes the given &lt;code&gt;TextCriteria&lt;/code&gt; and pages the results. The second query method definition combines the given &lt;code&gt;TextCriteria&lt;/code&gt; with a standard criteria definition derived from the method name. This shows that you can freely combine text search with standard query easily.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a name="user-content-mongodb-query-modifiers" class="anchor" href="#mongodb-query-modifiers" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;MongoDB query modifiers&lt;/h2&gt;
-
-&lt;p&gt;We added &lt;code&gt;@Meta&lt;/code&gt; allowing you to define output and behavior of a query. By setting e.g. &lt;code&gt;maxExecutionTime&lt;/code&gt; one can define the maximum duration a query may take (in milliseconds). Any execution that exceeds the limit will result in an error. You can also advice MongoDB to only scan through a maximum number of documents and return what has been found until reaching the limit by setting &lt;code&gt;maxScanDocuments&lt;/code&gt;, while &lt;code&gt;comment&lt;/code&gt; allows you to define text you can search for within the &lt;code&gt;system.profile&lt;/code&gt; collection in case you got profiling enabled for your MongoDB instance. &lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Meta&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;maxExcecutionTime&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;comment&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"onlyLimitedTime"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Customer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;findByFirstname&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;firstname&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;
-&lt;a name="user-content-configuration-options-for-redis-sentinel" class="anchor" href="#configuration-options-for-redis-sentinel" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Configuration options for Redis Sentinel&lt;/h2&gt;
-
-&lt;p&gt;Redis 2.8 introduced high-availability support know as &lt;a href="http://redis.io/topics/sentinel"&gt;Sentinels&lt;/a&gt;. The Redis module of Spring Data Evans adds support to easily configure connecting to a sentinel setup so that your client will be able to continue working in case of re-elections of master nodes in a Redis cluster.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;RedisSentinelConfiguration&lt;/code&gt; defines where the Sentiels are located so that the &lt;code&gt;ConnectionFactory&lt;/code&gt; can set up pooling accordingly. In case of Jedis it will create a &lt;code&gt;JedisSentinelPool&lt;/code&gt; for automatic failover. This means that in case your master node goes down, you'll receive, as soon as the Sentinels agreed on a new master,  a connection to the new master without the need of any further interaction. &lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Configuration&lt;/span&gt;
-&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;RedisSentinelApplicationConfig&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-
-  &lt;span class="nd"&gt;@Bean&lt;/span&gt;
-  &lt;span class="n"&gt;RedisConnectionFactory&lt;/span&gt; &lt;span class="nf"&gt;connectionFactory&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;JedisConnectionFactory&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sentinelConfig&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-
-  &lt;span class="nd"&gt;@Bean&lt;/span&gt;
-  &lt;span class="n"&gt;RedisSentinelConfiguration&lt;/span&gt; &lt;span class="nf"&gt;sentinelConfig&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;RedisSentinelConfiguration&lt;/span&gt;&lt;span class="o"&gt;().&lt;/span&gt;&lt;span class="na"&gt;master&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"mymaster"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;sentinel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"localhost"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;26379&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;sentinel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"localhost"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;26380&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-      &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;sentinel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"localhost"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;26381&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The upcoming Spring Boot 1.2, will even take this even further by automatically picking up the &lt;code&gt;RedisSentinelConfiguration&lt;/code&gt; if present and initialize the &lt;code&gt;RedisConnectionFactory&lt;/code&gt; accordingly.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a name="user-content-schema-support-for-solr" class="anchor" href="#schema-support-for-solr" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Schema support for Solr&lt;/h2&gt;
-
-&lt;p&gt;Although the &lt;a href="https://cwiki.apache.org/confluence/display/solr/Schema+API"&gt;Solr Schema API&lt;/a&gt; is not finished yet, we already try to support as much of it as possible. With the Evans release you can now dynamically add missing fields to an existing (managed) schema. To achieve this, we read the existing field definition and compare it against the one derived from the properties of the domain type. To do so we extended the &lt;code&gt;@Indexed&lt;/code&gt; annotation a bit. It now allows some fine tuning of the fields to be created as values such as &lt;code&gt;indexed&lt;/code&gt;, &lt;code&gt;stored&lt;/code&gt; and &lt;code&gt;solrType&lt;/code&gt; can be explicitly defined.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Configuration&lt;/span&gt;
-&lt;span class="nd"&gt;@EnableSolrRepositories&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;schemaCreationSupport&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SolrConfiguration&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-
-  &lt;span class="nd"&gt;@Bean&lt;/span&gt;
-  &lt;span class="n"&gt;SolrServer&lt;/span&gt; &lt;span class="nf"&gt;solrServer&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;HttpSolrServer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"http://localhost:8983/solr"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-
-&lt;span class="nd"&gt;@SolrDocument&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;solrCoreName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"collection1"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;ManagedProduct&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-
-  &lt;span class="nd"&gt;@Id&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="nd"&gt;@Indexed&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;type&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"text_general"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-  &lt;span class="nd"&gt;@Indexed&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"cat"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;category&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;As always we are eager to hear from you! Reach out to us on &lt;a href="https://twitter.com/SpringData"&gt;Twitter&lt;/a&gt;, &lt;a href="http://stackoverflow.com/tags/spring-data"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="http://jira.spring.io"&gt;JIRA&lt;/a&gt; to request new features, suggest improvements or report a bug.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring  - Tuesday October 14th, 2014</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/10/14/this-week-in-spring-tuesday-october-14th-2014" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2014-10-14:1789</id>
-    <updated>2014-10-14T18:05:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I've been at Silicon Valley Code Camp, JAX London and Geekout UK talking to developers about how to build scalable, microservice-centric &lt;a href="http://start.spring.io"&gt;Spring Boot&lt;/a&gt; applications on &lt;a href="http://cloudfoundry.org/index.html"&gt;Cloud Foundry&lt;/a&gt;. It's been a lot fun talking to enthusiastic developers (on both sides of the Atlantic!).&lt;/p&gt;
-
-&lt;p&gt;Without further ado, let's get on with the roundup!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Spring Boot co-lead Phil Webb just announced the availability of &lt;a href="https://spring.io/blog/2014/10/11/spring-boot-1-2-0-m2-available-now"&gt;Spring Boot 1.2.0.M2&lt;/a&gt; which includes, among other things, auto-configuration for Jersey, log4j, &lt;code&gt;commons-dbcp&lt;/code&gt; support, a smarter &lt;em&gt;disk usage&lt;/em&gt; health indicator and improved RabbitMQ support&lt;/li&gt;
-&lt;li&gt;Spring and Groovy Tool Suite lead Martin Lippert &lt;a href="https://spring.io/blog/2014/10/13/spring-tool-suite-and-groovy-grails-tool-suite-3-6-2-released"&gt;has just announced the latest and greatest release, 3.6.2&lt;/a&gt;, which is a maintenance release that includes an update to the latest Eclipse Luna SR1 installation. &lt;/li&gt;
-&lt;li&gt;Also, Spring Boot co-lead &lt;a href="https://spring.io/blog/2014/10/11/spring-boot-1-1-8-released"&gt;Phil Webb just announced the 1.1.8 release of the 1.1x line of Spring Boot&lt;/a&gt; which includes a fix for the white-label error page cross-site scripting attack. &lt;/li&gt;
-&lt;li&gt;Federated security is an important part of any distributed, multi-client, (micro)service-oriented system. Spring Security and Spring Security OAuth, in particular, provide a compelling solution. Join the good Dr. Dave Syer for this &lt;a href="https://spring.io/blog/2014/10/01/webinar-security-for-microservices-with-spring-and-oauth2"&gt;upcoming webinar on microservice security using OAuth2&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Matt Stine will be doing a webinar introducing &lt;a href="https://spring.io/blog/2014/10/01/webinar-architecting-for-continuous-delivery-microservices-with-pivotal-cf-and-spring-cloud"&gt;how Pivotal Cloud Foundry and Spring Cloud make for a natural solution to building microservices&lt;/a&gt;. Don't miss this one!&lt;/li&gt;
-&lt;li&gt;Atlanta, GA, USA Tuesday Oct 21, Learn about Spring, Microservices, and Cloud Foundry at a &lt;a href="http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/atlanta#cities"&gt;one day roadshow event&lt;/a&gt; at Cox communications.&lt;/li&gt;
-&lt;li&gt;Munich, Germany, GA, Thursday Oct 23, Learn about Spring, Microservices, and Cloud Foundry at a &lt;a href="http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/munich"&gt;one day roadshow event&lt;/a&gt; at EMC's office in Ismaning, Germany. &lt;/li&gt;
-&lt;li&gt;I hope you'll join the Vaadin team and I on October 23rd for a &lt;a href="http://spring.io/blog/2014/10/01/webinar-building-bootful-uis-with-spring-boot-and-vaadin"&gt;look how to build Spring Boot-powered Vaadin applications&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The &lt;em&gt;Java et Moi&lt;/em&gt; blog has a nice (French language) post &lt;a href="http://javaetmoi.com/2014/10/annotation-sessionattributes-modelattribute-spring-mvc/"&gt;on  using Spring MVC's &lt;code&gt;@SessionAttribute&lt;/code&gt; annotation&lt;/a&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;I &lt;em&gt;really&lt;/em&gt; enjoyed this &lt;a href="http://altfatterz.blogspot.com/2014/10/software-configuration-with-spring-boot.html"&gt;very thorough look at contributing configuration property values&lt;/a&gt; to a Spring Boot application (as &lt;code&gt;--D&lt;/code&gt; arguments, environment variables, values in a property file, and values inside of JNDI)&lt;/li&gt;
-&lt;li&gt;Sudhir Dharmadhikari   has done a &lt;em&gt;very&lt;/em&gt; &lt;a href="http://iwaow.blogspot.com/2014/10/jhipster-super-baby-in-springroos-pouch.html"&gt;nice job introducing the &lt;code&gt;yeoman&lt;/code&gt; code-generator based JHipster&lt;/a&gt;, which builds on top of &lt;a href="http://spring.io/projects/spring-boot"&gt;Spring Boot&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Our pal Miroslav Kopecky is back, this &lt;a href="http://java.dzone.com/articles/scala-4-spring-mvc-without-0"&gt;time with a nice post on using Spring MVC (in Spring 4) using Java configuration&lt;/a&gt; (through Scala!)&lt;/li&gt;
-&lt;li&gt;
-&lt;a href="http://antirez.com/news/79"&gt;Redis Cluster is no longer vaporware&lt;/a&gt;! Check out the details.&lt;/li&gt;
-&lt;li&gt; Biju Kunjummen has put together &lt;a href="http://java.dzone.com/articles/spring-configuration-and"&gt;a very nice post on  the two styles of Java configuration&lt;/a&gt;: one where you declare dependencies as parameters to the &lt;code&gt;@Bean&lt;/code&gt;-annotated bean definition method, and one where you simply reference the other bean by calling a method.&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;Check out this post on &lt;a href="http://architects.dzone.com/articles/using-log4j2-slf4j-spring-4"&gt;avoiding dependency conflicts between Log4j2 and SLF4J&lt;/a&gt; in a Spring application.&lt;/li&gt;
-&lt;li&gt;Check out this post by Daniel Murygin which includes  a detailed walk-through &lt;a href="http://murygin.wordpress.com/2014/10/13/rest-web-service-file-uploads-spring-boot/"&gt;on building a fairly non-trivial REST service (that even handles file-uploads!) and client application using Spring Boot&lt;/a&gt;?&lt;br&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tool Suite and Groovy/Grails Tool Suite 3.6.2 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/10/13/spring-tool-suite-and-groovy-grails-tool-suite-3-6-2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2014-10-13:1788</id>
-    <updated>2014-10-13T14:20:11Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-
-&lt;p&gt;I am happy to announce the new release of our Eclipse-based tooling today:
-The Spring Tool Suite (STS) 3.6.2 and the Groovy/Grails Tool Suite (GGTS) 3.6.2.&lt;/p&gt;
-
-&lt;p&gt;This is a maintenance release that updates STS/GGTS to the just released Eclipse Luna SR1 release. This includes a number of fixes across the various projects that are included in the STS distribution, together with fixes for the Java8 compiler and tooling in Eclipse.&lt;/p&gt;
-
-&lt;p&gt;To download the distributions, please go visit:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Spring Tool Suite: &lt;a href="https://spring.io/tools/sts/all"&gt;https://spring.io/tools/sts/all&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Groovy/Grails Tool Suite: &lt;a href="https://spring.io/tools/ggts/all"&gt;https://spring.io/tools/ggts/all&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Detailed new and noteworthy notes can be found here: &lt;a href="http://docs.spring.io/sts/nan/v362/NewAndNoteworthy.html"&gt;STS/GGTS 3.6.2 New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;NOTE:
-Both tool suites ship on top of the latest Eclipse Luna 4.4 SR1 release as 64bit and 32bit based zip files only. There will be no native installers for STS/GGTS anymore.&lt;/p&gt;
-
-&lt;p&gt;Since the 3.6.0 release we shifted towards a slightly changed release schedule, shipping minor releases more frequently. Therefore 3.6.3 is scheduled to ship in December, followed by 3.6.4 in early March 2015, shortly after the Eclipse Luna SR2 release.&lt;/p&gt;
-
-&lt;p&gt;Enjoy!&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.2.0.M2 Available Now</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/10/11/spring-boot-1-2-0-m2-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2014-10-11:1786</id>
-    <updated>2014-10-11T03:55:53Z</updated>
-    <content type="html">&lt;p&gt;I am pleased to announce that Spring Boot 1.2.0.M2 is available now in the &lt;a href="http://repo.springsource.org/milestone"&gt;Spring milestone repository&lt;/a&gt;. This release adds a number of  improvements and new features over &lt;a href="https://spring.io/blog/2014/09/08/spring-boot-1-2-0-m1-available-now"&gt;M1&lt;/a&gt;. Highlights include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Full configuration of Jackson &lt;code&gt;ObjectMapper&lt;/code&gt; features from your &lt;code&gt;application.properties&lt;/code&gt; file.&lt;/li&gt;
-&lt;li&gt;Auto-configuration for Jersey.&lt;/li&gt;
-&lt;li&gt;Support for Log4j2.&lt;/li&gt;
-&lt;li&gt;Support for commons-dbcp2.&lt;/li&gt;
-&lt;li&gt;A new "disk usage" health indicator.&lt;/li&gt;
-&lt;li&gt;Improved RabbitMQ auto-configuration.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For a complete list of changes, and for upgrade instructions, see the &lt;a href="http://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.2-Release-Notes"&gt;Spring Boot 1.2 Release Notes&lt;/a&gt; on the WIKI. The &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.M2/reference/htmlsingle/"&gt;reference documentation&lt;/a&gt; also continues to be updated to cover the new features.&lt;/p&gt;
-
-&lt;p&gt;Thanks again to everyone that has contributed to the release! Please give it a go and report any problems using &lt;a href="http://github.com/spring-projects/spring-boot/issues"&gt;the project Issue tracker&lt;/a&gt; page.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.1.8 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/10/11/spring-boot-1-1-8-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2014-10-11:1785</id>
-    <updated>2014-10-11T00:37:52Z</updated>
-    <content type="html">&lt;p&gt;Spring Boot 1.1.8 has been released and is available now from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;This maintenance release includes a &lt;a href="https://github.com/spring-projects/spring-boot/commit/3135c7f8aeb30b71eccc02bb0bb3817132c41060"&gt;security patch&lt;/a&gt; to the "white label error" page which prevents potential cross-site scripting attacks; as such it is a recommended upgrade for all Spring Boot users. For a complete list of changes please refer to the &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.1.8"&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/1.1.8.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Pivotal at Silicon Valley Code Camp 2014</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/10/10/pivotal-at-silicon-valley-code-camp-2014" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-10-10:1784</id>
-    <updated>2014-10-10T10:24:00Z</updated>
-    <content type="html">&lt;p&gt;Are  you heading to Silicon Valley Code Camp 2014?   If you  are, we invite all of the Java community members to stop by the Pivotal Booth and talk to Pivotal engineers about the latest innovations  in Java SE, in Spring, Groovy, Grails, Redis, RabbitMQ, Tomcat, Cloud Foundry  and Hadoop. The exhibit space is open Saturday 8:00am – 5:00pm, and  Saturday from 8:30am to 3:30pm, so there should be plenty of time to get your  questions answered.  See below for  details about our sessions and awesome giveaways - come  find us! &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;SATURDAY - OCTOBER 11, 2014            &lt;/strong&gt;&lt;br&gt;
-9:45 AM &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Josh Long — Spring  advocate at Pivotal&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.siliconvalley-codecamp.com/Session/2014/building-bootiful-applications-with-spring-boot" target="_blank"&gt;Building "Bootiful Applications with Spring Boot &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Room: 8401&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;11:45 AM &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;John Hann,  — Pivotal&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.siliconvalley-codecamp.com/Session/2014/introducing-ravejs-zero-config-javascript-applications" target="_blank"&gt;Introducing Rave.js: Zero-config JavaScript Applications&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Room: 8401&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;1:45 PM &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ilayaperumal Gopinathan   — Pivotal&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.siliconvalley-codecamp.com/Session/2014/simplifying-big-data-development-using-spring-xd" target="_blank"&gt;Simplifying Big Data development at Spring XD&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt; Room: 8403&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;SUNDAY - OCTOBER 12, 2014&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;9:15 AM &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Cornelia Davis —  Platform Engineer at Pivotal&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.siliconvalley-codecamp.com/Session/2014/the-self-healing-elastic-runtime-that-is-cloud-foundry"&gt;The Self-healing, Elastic Runtime that is Cloud Foundry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Room: Room: 4302&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;10:45 AM&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Cornelia Davis —  Platform Engineer at Pivotal&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.siliconvalley-codecamp.com/Session/2014/running-your-spring-apps-in-the-cloud" target="_blank"&gt;Running Your Spring  Apps in the Cloud&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Room: 4302&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Visit us at the Pivotal Code Camp booth for technical expert conversations on Cloud Foundry, Spring, Groovy, Grails, Redis, RabbitMQ, Tomcat,   Hadoop and much more. &lt;/p&gt;
-
-&lt;p&gt;Also, don't miss the &lt;a href="http://run.pivotal.io"&gt;Pivotal Web Services&lt;/a&gt; Hoodie Push!  &lt;a href="https://spring.io/guides/gs/rest-service/"&gt;Build a REST service with Spring Boot&lt;/a&gt;, push it live to  run.pivotal.io and get a hoodie!  You can  do it ahead of time, and show it running to us, or use our laptops at the  booth. &lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/pieterhumphrey/springio_website_images/master/hoodie.PNG" target="_blank"&gt;&lt;img border="0" width="215" height="254" src="https://raw.githubusercontent.com/pieterhumphrey/springio_website_images/master/hoodie.PNG" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;Save the date for SpringOne2GX 2015!  We hope you will mark your calendar and join  us again! SpringOne2GX 2015 will be held September 14 - 17, 2015 at the  Marriott Marquis in Washington DC.&lt;/p&gt;</content>
   </entry>
 </feed>
 

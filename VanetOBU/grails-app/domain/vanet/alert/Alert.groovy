@@ -7,12 +7,17 @@ class Alert {
 	String message //Utilizado apenas com codigo 4
 	String ip
 	String port
-	String car
+	String carCode
 	Double lat
 	Double lng
-	Date alertDate
+	Long alertDate
+	Long sendDate
+	Long receivedDate
+	Boolean seen = false
 	
     static constraints = {
 		messageCode(inList:[1,2,3,4])
+		receivedDate(nullable:true)
+		port(nullable:true)
     }
 }

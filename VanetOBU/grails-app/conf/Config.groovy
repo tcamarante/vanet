@@ -142,3 +142,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/security/**':				 		 ["ROLE_ADMIN", "ROLE_USER"],
 	'/**':                           		 ["ROLE_ADMIN", "ROLE_USER"]
 ]
+
+vanet.obuUrl="http://localhost:8083/VanetOBU"
+vanet.rsuUrl="http://localhost:8081/VanetRSU"
+vanet.serverUrl="http://localhost:8080/VanetServer"
+vanet.sendRadiusLimit=2000//metros

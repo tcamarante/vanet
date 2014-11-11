@@ -16,6 +16,6 @@
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="VanetOBU"/>
 <stringAttribute key="org.grails.ide.eclipse.core.ORG_SCRIPT" value="run-app"/>
 <stringAttribute key="org.grails.ide.eclipse.core.PROJECT_DIR" value="E:\git\vanet\VanetOBU"/>
-<stringAttribute key="org.grails.ide.eclipse.core.SCRIPT" value="-Dserver.port=8083 run-app"/>
+<stringAttribute key="org.grails.ide.eclipse.core.SCRIPT" value="-Dserver.port=8090 run-app"/>
 <stringAttribute key="process_factory_id" value="org.grails.ide.eclipse.core.processFactory"/>
 </launchConfiguration>

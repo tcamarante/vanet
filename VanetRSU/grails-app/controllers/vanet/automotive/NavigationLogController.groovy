@@ -51,11 +51,12 @@ class NavigationLogController extends RestfulController{
             return
         }
 
-        navigationLogInstance.save flush:true
+//        navigationLogInstance.save flush:true
 		
 		def resp
 		try{
 			// Enviando ao servidor para salvar no banco
+//			resp = rest.post("{grailsApplication.config.vanet.serverUrl}/navigationLog/save"){
 			resp = rest.post("http://localhost:8080/VanetServer/navigationLog/save"){
 				//auth System.getProperty("artifactory.user"), System.getProperty("artifactory.pass")
 				contentType "application/vnd.org.jfrog.artifactory.security.Group+json"

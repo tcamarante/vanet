@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_QvxL8Vx0EeSxwp5Ci09BCg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_QvxL8lx0EeSxwp5Ci09BCg" bindingContexts="_QvxL9Fx0EeSxwp5Ci09BCg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;BootStrap.groovy&quot; tooltip=&quot;VanetOBU/grails-app/conf/BootStrap.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/conf/BootStrap.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;Alert.groovy&quot; tooltip=&quot;VanetOBU/grails-app/domain/vanet/alert/Alert.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/domain/vanet/alert/Alert.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;AccidentDetectionService.groovy&quot; tooltip=&quot;VanetServer/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetServer/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;CarController.groovy&quot; tooltip=&quot;VanetRSU/grails-app/controllers/vanet/automotive/CarController.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetRSU/grails-app/controllers/vanet/automotive/CarController.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory&quot; id=&quot;org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard&quot; name=&quot;Dashboard&quot; tooltip=&quot;Dashboard&quot;>&#xD;&#xA;&lt;persistable openDashboard=&quot;true&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLog.groovy&quot; tooltip=&quot;VanetOBU/grails-app/domain/vanet/automotive/NavigationLog.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/domain/vanet/automotive/NavigationLog.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;AccidentDetectionService.groovy&quot; tooltip=&quot;VanetOBU/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLog.groovy&quot; tooltip=&quot;VanetRSU/grails-app/domain/vanet/automotive/NavigationLog.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetRSU/grails-app/domain/vanet/automotive/NavigationLog.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLog.groovy&quot; tooltip=&quot;VanetServer/grails-app/domain/vanet/automotive/NavigationLog.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetServer/grails-app/domain/vanet/automotive/NavigationLog.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLogController.groovy&quot; tooltip=&quot;VanetServer/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetServer/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;HttpServlet.class&quot; tooltip=&quot;javax.servlet.http.HttpServlet&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=VanetOBU/C:\/Users\/Thiago\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/7.0.53\/tomcat-embed-core-7.0.53.jar&amp;lt;javax.servlet.http(HttpServlet.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLogController.groovy&quot; tooltip=&quot;VanetRSU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetRSU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;CarController.groovy&quot; tooltip=&quot;VanetServer/grails-app/controllers/vanet/automotive/CarController.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetServer/grails-app/controllers/vanet/automotive/CarController.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;Car.groovy&quot; tooltip=&quot;VanetServer/grails-app/domain/vanet/automotive/Car.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetServer/grails-app/domain/vanet/automotive/Car.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLogController.groovy&quot; tooltip=&quot;VanetOBU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;BroadcastService.groovy&quot; tooltip=&quot;VanetOBU/grails-app/services/vanet/alerts/BroadcastService.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/services/vanet/alerts/BroadcastService.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;Alert.groovy&quot; tooltip=&quot;VanetOBU/grails-app/domain/vanet/alert/Alert.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/domain/vanet/alert/Alert.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory&quot; id=&quot;org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard&quot; name=&quot;Dashboard&quot; tooltip=&quot;Dashboard&quot;>&#xD;&#xA;&lt;persistable openDashboard=&quot;true&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;AlertServiceSpec.groovy&quot; tooltip=&quot;VanetOBU/test/unit/vanet/alert/AlertServiceSpec.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/test/unit/vanet/alert/AlertServiceSpec.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;AlertService.groovy&quot; tooltip=&quot;VanetOBU/grails-app/services/vanet/alert/AlertService.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/services/vanet/alert/AlertService.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;AccidentDetectionService.groovy&quot; tooltip=&quot;VanetOBU/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLog.groovy&quot; tooltip=&quot;VanetOBU/grails-app/domain/vanet/automotive/NavigationLog.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/domain/vanet/automotive/NavigationLog.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;CarService.groovy&quot; tooltip=&quot;VanetOBU/grails-app/services/vanet/automotive/CarService.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/services/vanet/automotive/CarService.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;CarServiceSpec.groovy&quot; tooltip=&quot;VanetOBU/test/unit/vanet/automotive/CarServiceSpec.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/test/unit/vanet/automotive/CarServiceSpec.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLogServiceSpec.groovy&quot; tooltip=&quot;VanetOBU/test/unit/vanet/automotive/NavigationLogServiceSpec.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/test/unit/vanet/automotive/NavigationLogServiceSpec.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLogService.groovy&quot; tooltip=&quot;VanetOBU/grails-app/services/vanet/automotive/NavigationLogService.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/services/vanet/automotive/NavigationLogService.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;NavigationLogController.groovy&quot; tooltip=&quot;VanetOBU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;Config.groovy&quot; tooltip=&quot;VanetOBU/grails-app/conf/Config.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/conf/Config.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;PGroup.class&quot; tooltip=&quot;groovyx.gpars.group.PGroup&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=VanetOBU/E:\/Thiago\/GGTS\/grails-2.4.2\/lib\/org.codehaus.gpars\/gpars\/jars\/gpars-1.2.1.jar&amp;lt;groovyx.gpars.group(PGroup.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot; name=&quot;BootStrap.groovy&quot; tooltip=&quot;VanetOBU/grails-app/conf/BootStrap.groovy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VanetOBU/grails-app/conf/BootStrap.groovy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_QvxL8lx0EeSxwp5Ci09BCg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_RDs0k1x0EeSxwp5Ci09BCg" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_QvxL8lx0EeSxwp5Ci09BCg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_RDs0k1x0EeSxwp5Ci09BCg" label="%trimmedwindow.label.eclipseSDK" x="1597" y="-17" width="1024" height="738">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
@@ -92,8 +92,8 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_R9UkRlx0EeSxwp5Ci09BCg" elementId="org.eclipse.wst.server.ui.ServersView" ref="_R9UkMVx0EeSxwp5Ci09BCg"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_R9UkR1x0EeSxwp5Ci09BCg" containerData="8289" selectedElement="_R9UkSFx0EeSxwp5Ci09BCg">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_R9UkSFx0EeSxwp5Ci09BCg" containerData="7061" selectedElement="_R9UkSVx0EeSxwp5Ci09BCg" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_R9UkR1x0EeSxwp5Ci09BCg" containerData="8289" selectedElement="_R9UkTVx0EeSxwp5Ci09BCg">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_R9UkSFx0EeSxwp5Ci09BCg" containerData="6765" selectedElement="_R9UkSVx0EeSxwp5Ci09BCg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_R9UkSVx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_R834QFx0EeSxwp5Ci09BCg"/>
                 <children xsi:type="basic:PartStack" xmi:id="_R9UkSlx0EeSxwp5Ci09BCg" elementId="middleright" toBeRendered="false" containerData="2500">
                   <tags>newtablook</tags>
@@ -101,9 +101,10 @@
                   <children xsi:type="advanced:Placeholder" xmi:id="_R9UkTFx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.texteditor.TemplatesView" toBeRendered="false" ref="_R9UkPFx0EeSxwp5Ci09BCg"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_R9UkTVx0EeSxwp5Ci09BCg" elementId="bottom" containerData="2939" selectedElement="_G_uYwVx1EeSxwp5Ci09BCg">
+              <children xsi:type="basic:PartStack" xmi:id="_R9UkTVx0EeSxwp5Ci09BCg" elementId="bottom" containerData="3235" selectedElement="_R9UkTlx0EeSxwp5Ci09BCg">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_R9UkTlx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.console.ConsoleView" ref="_R9UkMlx0EeSxwp5Ci09BCg"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_R9UkT1x0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.views.AllMarkersView" ref="_R9UkM1x0EeSxwp5Ci09BCg"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_R9UkUFx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.views.ProgressView" ref="_R9UkNFx0EeSxwp5Ci09BCg"/>
@@ -139,57 +140,36 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_R834QFx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.editorss" selectedElement="_R834QVx0EeSxwp5Ci09BCg">
-      <children xsi:type="basic:PartStack" xmi:id="_R834QVx0EeSxwp5Ci09BCg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="__r2skGAkEeSRSPgennYftA">
+      <children xsi:type="basic:PartStack" xmi:id="_R834QVx0EeSxwp5Ci09BCg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_LDIzIGaiEeSqOvxgM9kFiQ">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_AH4XMFx1EeSxwp5Ci09BCg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NavigationLogController.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetOBU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4202&quot; selectionTopPixel=&quot;1609&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.codehaus.groovy.eclipse.editor.GroovyEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_NapnEF7hEeSXK-vJP_fvgQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NavigationLogController.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetRSU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetRSU/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;827&quot; selectionTopPixel=&quot;300&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.codehaus.groovy.eclipse.editor.GroovyEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_2cI0wF9gEeSywdx2IC9Pcg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NavigationLogController.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetServer/grails-app/controllers/vanet/automotive/NavigationLogController.groovy" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetServer/grails-app/controllers/vanet/automotive/NavigationLogController.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;423&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.codehaus.groovy.eclipse.editor.GroovyEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
         <children xsi:type="basic:Part" xmi:id="__r2skGAkEeSRSPgennYftA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AccidentDetectionService.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetOBU/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1812&quot; selectionTopPixel=&quot;690&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.codehaus.groovy.eclipse.editor.GroovyEditor</tags>
-          <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_27TngGAlEeSRSPgennYftA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="NavigationLog.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetOBU/grails-app/domain/vanet/automotive/NavigationLog.groovy" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/domain/vanet/automotive/NavigationLog.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;17&quot; selectionOffset=&quot;293&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3340&quot; selectionTopPixel=&quot;1125&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.codehaus.groovy.eclipse.editor.GroovyEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_HLK-AGK7EeSnme8L6vowLg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AccidentDetectionService.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetServer/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetServer/grails-app/services/vanet/monitoring/AccidentDetectionService.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2455&quot; selectionTopPixel=&quot;1159&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_LDIzIGaiEeSqOvxgM9kFiQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BroadcastService.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetOBU/grails-app/services/vanet/alerts/BroadcastService.groovy" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/services/vanet/alerts/BroadcastService.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5348&quot; selectionTopPixel=&quot;2520&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.codehaus.groovy.eclipse.editor.GroovyEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_eXgP0GK9EeSnme8L6vowLg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Alert.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetOBU/grails-app/domain/vanet/alert/Alert.groovy" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/domain/vanet/alert/Alert.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;224&quot; selectionOffset=&quot;41&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_LQ7twGeCEeSqFIf_t5hX2w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CarService.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetOBU/grails-app/services/vanet/automotive/CarService.groovy" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/services/vanet/automotive/CarService.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;206&quot; selectionTopPixel=&quot;112&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.codehaus.groovy.eclipse.editor.GroovyEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_IrT-QGK_EeSnme8L6vowLg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BootStrap.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetOBU/grails-app/conf/BootStrap.groovy" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/conf/BootStrap.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;54&quot; selectionOffset=&quot;783&quot; selectionTopPixel=&quot;109&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_j09SkGhFEeSkNY8BhGxd_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AlertService.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetOBU/grails-app/services/vanet/alert/AlertService.groovy" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/services/vanet/alert/AlertService.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;310&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.codehaus.groovy.eclipse.editor.GroovyEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_sTb_sGjSEeSqS-fbGvhr1g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Alert.groovy" iconURI="platform:/plugin/org.codehaus.groovy.eclipse.ui/icons/groovy_file.gif" tooltip="VanetOBU/grails-app/domain/vanet/alert/Alert.groovy" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.codehaus.groovy.eclipse.editor.GroovyEditor&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VanetOBU/grails-app/domain/vanet/alert/Alert.groovy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;226&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.codehaus.groovy.eclipse.editor.GroovyEditor</tags>
           <tags>removeOnHide</tags>
@@ -232,6 +212,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_SET9AFx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -311,18 +293,18 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RH6mMlx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQDtEGKxEeSnme8L6vowLg" elementId="new.group"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQDtEWKxEeSnme8L6vowLg" elementId="newWizardDropDown"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQDtEmKxEeSnme8L6vowLg" elementId="new.ext" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQDtE2KxEeSnme8L6vowLg" elementId="save.group" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQDtFGKxEeSnme8L6vowLg" elementId="save"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQDtFWKxEeSnme8L6vowLg" elementId="saveAll"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQDtFmKxEeSnme8L6vowLg" elementId="save.ext" visible="false"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_rQDtF2KxEeSnme8L6vowLg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.gif" tooltip="Print" command="_QyS7lVx0EeSxwp5Ci09BCg"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3AGKxEeSnme8L6vowLg" elementId="print.ext" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3AWKxEeSnme8L6vowLg" elementId="build.group"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3AmKxEeSnme8L6vowLg" elementId="build.ext" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3A2KxEeSnme8L6vowLg" elementId="additions"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxcA4GjFEeSqS-fbGvhr1g" elementId="new.group"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxcA4WjFEeSqS-fbGvhr1g" elementId="newWizardDropDown"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxcA4mjFEeSqS-fbGvhr1g" elementId="new.ext" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxcA42jFEeSqS-fbGvhr1g" elementId="save.group" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxcA5GjFEeSqS-fbGvhr1g" elementId="save"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxcA5WjFEeSqS-fbGvhr1g" elementId="saveAll"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxcA5mjFEeSqS-fbGvhr1g" elementId="save.ext" visible="false"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_UxcA52jFEeSqS-fbGvhr1g" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.gif" tooltip="Print" enabled="false" command="_QyS7lVx0EeSxwp5Ci09BCg"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK0GjFEeSqS-fbGvhr1g" elementId="print.ext" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK0WjFEeSqS-fbGvhr1g" elementId="build.group"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK0mjFEeSqS-fbGvhr1g" elementId="build.ext" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK02jFEeSqS-fbGvhr1g" elementId="additions"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RH6mM1x0EeSxwp5Ci09BCg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -330,57 +312,57 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VvytwF3IEeScB8-vZd1kqA" elementId="org.eclipse.debug.ui.breakpointActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMMGKxEeSnme8L6vowLg" elementId="breakpointGroup"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMMWKxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.SkipAllBreakpoints"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhcGjFEeSqS-fbGvhr1g" elementId="breakpointGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhcWjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.SkipAllBreakpoints"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VvytwV3IEeScB8-vZd1kqA" elementId="org.eclipse.debug.ui.debugActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMMmKxEeSnme8L6vowLg" elementId="renderGroup"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMM2KxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.DropToFrame"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMNGKxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.ToggleStepFilters"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMNWKxEeSnme8L6vowLg" elementId="emptyStepGroup"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMNmKxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.RunToLine"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMN2KxEeSnme8L6vowLg" elementId="stepReturnGroup"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMOGKxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.StepReturn"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMOWKxEeSnme8L6vowLg" elementId="stepOverGroup"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMOmKxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.StepOver"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMO2KxEeSnme8L6vowLg" elementId="stepIntoGroup"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMPGKxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.StepInto"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMPWKxEeSnme8L6vowLg" elementId="threadGroup"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMPmKxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.Resume"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMP2KxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.Suspend"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMQGKxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.Terminate"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMQWKxEeSnme8L6vowLg" elementId="org.eclipse.debug.ui.actions.toolbar.Disconnect"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhcmjFEeSqS-fbGvhr1g" elementId="renderGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0Hhc2jFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.DropToFrame"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhdGjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.ToggleStepFilters"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhdWjFEeSqS-fbGvhr1g" elementId="emptyStepGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhdmjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.RunToLine"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0Hhd2jFEeSqS-fbGvhr1g" elementId="stepReturnGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HheGjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.StepReturn"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HheWjFEeSqS-fbGvhr1g" elementId="stepOverGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhemjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.StepOver"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0Hhe2jFEeSqS-fbGvhr1g" elementId="stepIntoGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhfGjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.StepInto"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhfWjFEeSqS-fbGvhr1g" elementId="threadGroup"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhfmjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.Resume"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0Hhf2jFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.Suspend"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhgGjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.Terminate"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhgWjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.ui.actions.toolbar.Disconnect"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_SGGswFx0EeSxwp5Ci09BCg" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMQmKxEeSnme8L6vowLg" elementId="debug"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMQ2KxEeSnme8L6vowLg" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMRGKxEeSnme8L6vowLg" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMRWKxEeSnme8L6vowLg" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMRmKxEeSnme8L6vowLg" elementId="org.grails.ide.eclipse.ui.internal.inplace.GrailsRunToolbarAction"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMR2KxEeSnme8L6vowLg" elementId="org.springsource.ide.eclipse.commons.launch.relaunch.action"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMSGKxEeSnme8L6vowLg" elementId="org.springsource.ide.eclipse.commons.launch.relaunch.action"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhgmjFEeSqS-fbGvhr1g" elementId="debug"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0Hhg2jFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhhGjFEeSqS-fbGvhr1g" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhhWjFEeSqS-fbGvhr1g" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhhmjFEeSqS-fbGvhr1g" elementId="org.grails.ide.eclipse.ui.internal.inplace.GrailsRunToolbarAction"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0Hhh2jFEeSqS-fbGvhr1g" elementId="org.springsource.ide.eclipse.commons.launch.relaunch.action"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhiGjFEeSqS-fbGvhr1g" elementId="org.springsource.ide.eclipse.commons.launch.relaunch.action"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_SFqA0Fx0EeSxwp5Ci09BCg" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMSWKxEeSnme8L6vowLg" elementId="JavaWizards"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMSmKxEeSnme8L6vowLg" elementId="opengroovyprojectwizard"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMS2KxEeSnme8L6vowLg" elementId="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMTGKxEeSnme8L6vowLg" elementId="org.eclipse.jdt.ui.actions.OpenPackageWizard"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMTWKxEeSnme8L6vowLg" elementId="org.eclipse.jdt.ui.actions.NewTypeDropDown"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhiWjFEeSqS-fbGvhr1g" elementId="JavaWizards"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhimjFEeSqS-fbGvhr1g" elementId="opengroovyprojectwizard"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0Hhi2jFEeSqS-fbGvhr1g" elementId="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhjGjFEeSqS-fbGvhr1g" elementId="org.eclipse.jdt.ui.actions.OpenPackageWizard"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhjWjFEeSqS-fbGvhr1g" elementId="org.eclipse.jdt.ui.actions.NewTypeDropDown"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_SGGswVx0EeSxwp5Ci09BCg" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMTmKxEeSnme8L6vowLg" elementId="Search"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMT2KxEeSnme8L6vowLg" elementId="openType"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMUGKxEeSnme8L6vowLg" elementId="org.eclipse.mylyn.tasks.ui.openTask"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMUWKxEeSnme8L6vowLg" elementId="org.eclipse.search.OpenSearchDialogPage"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhjmjFEeSqS-fbGvhr1g" elementId="Search"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0Hhj2jFEeSqS-fbGvhr1g" elementId="openType"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhkGjFEeSqS-fbGvhr1g" elementId="org.eclipse.mylyn.tasks.ui.openTask"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhkWjFEeSqS-fbGvhr1g" elementId="org.eclipse.search.OpenSearchDialogPage"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_SGixoFx0EeSxwp5Ci09BCg" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMUmKxEeSnme8L6vowLg" elementId="browser"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMU2KxEeSnme8L6vowLg" elementId="org.eclipse.wst.server.ui.internal.webbrowser.action.open"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhkmjFEeSqS-fbGvhr1g" elementId="browser"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0Hhk2jFEeSqS-fbGvhr1g" elementId="org.eclipse.wst.server.ui.internal.webbrowser.action.open"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RH6mNVx0EeSxwp5Ci09BCg" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -388,15 +370,15 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RH6mN1x0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3BGKxEeSnme8L6vowLg" elementId="history.group"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3BWKxEeSnme8L6vowLg" elementId="group.application" visible="false"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3BmKxEeSnme8L6vowLg" elementId="backardHistory"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3B2KxEeSnme8L6vowLg" elementId="forwardHistory"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3CGKxEeSnme8L6vowLg" elementId="pin.group"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_rQM3CWKxEeSnme8L6vowLg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.gif" tooltip="Pin Editor" enabled="false" command="_QyJLaFx0EeSxwp5Ci09BCg"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMVGKxEeSnme8L6vowLg" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMVWKxEeSnme8L6vowLg" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rVHMVmKxEeSnme8L6vowLg" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK1GjFEeSqS-fbGvhr1g" elementId="history.group"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK1WjFEeSqS-fbGvhr1g" elementId="group.application" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK1mjFEeSqS-fbGvhr1g" elementId="backardHistory"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK12jFEeSqS-fbGvhr1g" elementId="forwardHistory"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK2GjFEeSqS-fbGvhr1g" elementId="pin.group"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_UxlK2WjFEeSqS-fbGvhr1g" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.gif" tooltip="Pin Editor" enabled="false" command="_QyJLaFx0EeSxwp5Ci09BCg"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhlGjFEeSqS-fbGvhr1g" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhlWjFEeSqS-fbGvhr1g" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_U0HhlmjFEeSqS-fbGvhr1g" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RH6mOFx0EeSxwp5Ci09BCg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -408,8 +390,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_RH6mPFx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3CmKxEeSnme8L6vowLg" elementId="group.help"/>
-        <children xsi:type="menu:OpaqueToolItem" xmi:id="_rQM3C2KxEeSnme8L6vowLg" elementId="group.application" visible="false"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK2mjFEeSqS-fbGvhr1g" elementId="group.help"/>
+        <children xsi:type="menu:OpaqueToolItem" xmi:id="_UxlK22jFEeSqS-fbGvhr1g" elementId="group.application" visible="false"/>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_RoMowFx0EeSxwp5Ci09BCg" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -434,8 +416,19 @@
         <tags>Draggable</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="_Rrd_MFx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.trim.vertical1" side="Left"/>
-    <trimBars xmi:id="_Rrd_MVx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.trim.vertical2" side="Right"/>
+    <trimBars xmi:id="_Rrd_MFx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.trim.vertical1" toBeRendered="false" side="Left">
+      <children xsi:type="menu:ToolControl" xmi:id="_FGCnoGWnEeSNUp_XdNzIZA" elementId="left(org.grails.ide.eclipse.perspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_FGyOgGWnEeSNUp_XdNzIZA" elementId="bottomleft(org.grails.ide.eclipse.perspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_Rrd_MVx0EeSxwp5Ci09BCg" elementId="org.eclipse.ui.trim.vertical2" toBeRendered="false" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="_FG7_gGWnEeSNUp_XdNzIZA" elementId="bottom(org.grails.ide.eclipse.perspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
   </children>
   <bindingTables xmi:id="_QvxL81x0EeSxwp5Ci09BCg" contributorURI="platform:/plugin/org.eclipse.platform" bindingContext="_QvxL9Fx0EeSxwp5Ci09BCg">
     <bindings xmi:id="_Q0O1N1x0EeSxwp5Ci09BCg" keySequence="ALT+SHIFT+F2" command="_QyABkFx0EeSxwp5Ci09BCg"/>

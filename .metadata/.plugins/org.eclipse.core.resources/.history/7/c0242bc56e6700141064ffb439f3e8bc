@@ -1,0 +1,173 @@
+package vanet.monitoring
+
+import static grails.async.Promises.*
+import grails.transaction.Transactional
+
+import org.apache.commons.lang.RandomStringUtils
+
+import vanet.alert.Alert
+import vanet.automotive.NavigationLog
+
+@Transactional
+class AccidentDetectionService {
+
+	def broadcastService
+	def velocities = [0,15,0,30,0,22.53,0,22.54,0,40,0,60,0,30,0,0,0,0]
+	def airbags = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false]
+	def stop = false
+	
+	Boolean isProbableAccident = true
+	
+	def stopAccidentDetection(){
+		stop = true
+	}
+	
+    def start() {
+		task{
+			def vel1=0, vel2=0, i=0
+			while(!stop){
+				if(i == 14)i=0
+				
+				if(readAirbag(i)){
+					accidentAlert(i)
+				}
+				vel1 = vel2
+				sleep(100)
+				vel2 = readVel(i)
+				
+				println("vel1 = "+vel1+"m/s")
+				println("vel2 = "+vel2+"m/s")
+				println("deltaV = "+(vel2-vel1)+"m/s")
+				def a = (vel2-vel1)/0.1
+				println("accel = "+a+"m/s2")
+				
+				if(a < -62.6){
+					accidentAlert(i)
+				}
+				println("------------------------------------")
+				i++
+			}
+		}
+    }
+	
+	def accidentAlert(NavigationLog navigationLogInstance){
+		def alert = new Alert()
+		alert.code=RandomStringUtils.random(5, true, true)// Gerando uma chave aleatória de 5 caracteres
+		alert.messageCode= 2 // 1-OK, 2-Atencao provavel acidente, 3- Acidente, 4-Outros
+		alert.message= "Provavel acidente detectado!" //Utilizado apenas com codigo 4
+		alert.ip=InetAddress.getLocalHost().getHostAddress().toString()
+		alert.car=navigationLogInstance.car
+		alert.lat=navigationLogInstance.lat
+		alert.lng=navigationLogInstance.lon
+		alert.alertDate=navigationLogInstance.collectTime
+		alert.sendDate=System.currentTimeMillis()
+							
+		alert.save()
+		
+		sendProbableAccidentAlert(alert)
+		
+		// sendVanetAccidentAlert()
+//		println("Possível acidente detectado!")
+		sleep(3)//30 segundos
+		def newNavigationLog = readNewNavigationLog()
+		// Se o ultimo log enviado for o do acidente (equipamento comprometido) ou a velocidade atual for 0
+		if(newNavigationLog.id == navigationLogInstance.id || newNavigationLog.obdSpeed == 0){
+			println "Enviando alerta ao motorista..."
+			def accident = true
+			//def accident = driverAlert("Um acidente foi detectado, você confirma?","Sim","Não",60000)
+			sleep(6)
+			isProbableAccident = false
+			if(accident){
+				println "Acidente"
+//				broadcastService.send("Possível acidente detectado, fique atento!")
+			}else{
+				return
+			}
+		}else{
+			isProbableAccident = false
+			return
+		}
+	}
+	
+	def sendProbableAccidentAlert(Alert alert){
+		println("Possível acidente detectado!")
+		return task{
+			try{
+				while(isInArea(alert.lat, alert.lng)){
+					alert.sendDate = System.currentTimeMillis()
+					broadcastService.sendAlert(alert)
+					sleep(1000)
+				}
+			}catch(Exception e){
+				println e.message
+			}
+		}
+	}
+	
+	def accidentVerify(NavigationLog currentLog) {
+		task{
+			try{
+				if(currentLog){
+	
+					if(currentLog.isAirbagOpen){
+						accidentAlert(currentLog)
+					}else{
+						NavigationLog lastLog = currentLog.lastNavigationLog
+						if(lastLog){
+							def lastVel=lastLog.obdSpeed/3.6
+							println("lastVel = "+lastVel+" m/s")
+							def currentVel=currentLog.obdSpeed/3.6
+							println("currentVel = "+currentVel+" m/s")
+							def deltaSpeed = currentVel-lastVel
+							println("deltaSpeed = "+deltaSpeed+" m/s")
+							def deltaTime = currentLog.collectTime - lastLog.collectTime
+							println("deltaTime = "+deltaTime+" s")
+								
+							def a = deltaSpeed/deltaTime
+							println("accel = "+a+"m/s2")
+							
+							if(a < -62.6){
+								accidentAlert(currentLog)
+							}
+							println("------------------------------------")
+							i++
+						}
+					}
+				}
+			}catch(Exception e){
+				println e.message
+			}
+		}
+	}
+	
+	
+	def readNewNavigationLog(){
+		return NavigationLog.find("from NavigationLog nl order by id desc")
+	}
+	
+	def isInArea(Double lat, Double lng){
+		int raio = grailsApplication.config.vanet.sendRadiusLimit 
+		def nLog = readNewNavigationLog()
+		def distance = calculateDistance(lat, lng, nLog.lat, nLog.lng)
+		return (distance < raio)
+	}
+	
+	def calculateDistance(Long lat1, Long lon1, Long lat2, Long lon2){
+		def R = 6378100 //metros //6371; // km
+		def o1 = Math.toRadians(lat1)
+		def o2 = Math.toRadians(lat2)
+		def deltaO = Math.toRadians(lat2-lat1)
+		def deltaL = Math.toRadians(lon2-lon1)
+		
+		def a = Math.sin(deltaO/2) * Math.sin(deltaO/2) +
+				Math.cos(o1) * Math.cos(o2) *
+				Math.sin(deltaL/2) * Math.sin(deltaL/2);
+		def c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+		
+		return R * c;
+	}
+	
+	def readAirbag(int i){
+		return airbags[i]
+	}
+}

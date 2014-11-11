@@ -1,0 +1,196 @@
+package vanet.alerts
+
+import static grails.async.Promises.*
+import grails.converters.JSON
+import grails.transaction.Transactional
+
+import org.apache.log4j.Level
+import org.apache.log4j.Logger
+
+import vanet.alert.Alert;
+
+@Transactional
+class BroadcastService {
+
+	def grailsApplication
+	def navigationLogService
+	def carService
+	final List<AlertWrapper> alertList = new ArrayList<AlertWrapper>()
+	
+	private class AlertWrapper{
+		Object obj
+		def sendOneMore
+	}
+	
+	def sendAlert(Alert alert, Integer qtd=1, Closure sendOneMore={return false}){
+		for(int i=0; i<qtd; i++){
+			if(sendOneMore()){
+				i=qtd
+			}
+			alertList.add(new AlertWrapper(obj:alert,sendOneMore:sendOneMore))
+		}
+	}
+	
+	def sendInfiniteAlert(Alert alert){
+		sendAlert(alert,1,{return true})
+	}
+	
+	def sendAlertWhileNear(Alert alert){
+		sendAlert(alert,1,{carService.isInArea(alert.lat, alert.lng)})
+	}
+	
+	def stopInfiniteAlert(Alert alert){
+		def pct = alertList.find{it.obj.id == alert.id && it.sendOneMore()==true}
+		pct.sendOneMore = {return false}
+	}
+	
+	def alertSender(){
+		task{
+			println ">>>>>>>> Serviço de envio de alertas Ativado!!!"
+			while(true){
+				try{
+					if(alertList.isEmpty()){
+						sleep(1000)
+					}else{
+						println alertList
+						def a = alertList.first()
+						send(a.obj)
+						if(a.sendOneMore()){
+							alertList.remove(0)
+							alertList.add(a)
+						}else{
+							alertList.remove(0)
+						}
+						// Tempo entre 2 alertas em ms
+						sleep(100)
+					}
+				}catch(Exception e){
+					println e.message()
+				}
+			}
+		}
+	}
+	
+	def send(Object msg, Boolean confirm=true) {
+		//Procurando o servidor UDP utilizando brodcast
+		try {
+			//Abrindo uma porta qualquer para enviar o pacote
+			DatagramSocket c = new DatagramSocket();
+			c.setBroadcast(true);
+
+			//msg = msg+" - "+(new Date()).time.toString()
+			byte[] sendData = (msg as JSON).toString().getBytes();
+
+			//Tentando 255.255.255.255 primeiro
+			try {
+				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("255.255.255.255"), 8888);
+				c.send(sendPacket);
+				System.out.println(getClass().getName() + "CLIENT>>> Requisição enviada para: 255.255.255.255 (DEFAULT)");
+			} catch (Exception e) {
+			}
+
+			// Enviando a mensagem por todas interfaces de rede
+			Enumeration interfaces = NetworkInterface.getNetworkInterfaces();
+			while (interfaces.hasMoreElements()) {
+				NetworkInterface networkInterface = interfaces.nextElement();
+
+				if (networkInterface.isLoopback() || !networkInterface.isUp()) {
+					continue; // Não transmitir na interface loopback
+				}
+
+				for (InterfaceAddress interfaceAddress : networkInterface.getInterfaceAddresses()) {
+					InetAddress broadcast = interfaceAddress.getBroadcast();
+					if (broadcast == null) {
+						continue;
+					}
+
+					// Enviando o pacote broadcast
+					try {
+						DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, broadcast, 8888);
+						c.send(sendPacket);
+					} catch (Exception e) {
+					}
+
+					System.out.println(getClass().getName() + "CLIENT>>> Requisição enviada para: " + broadcast.getHostAddress() + "; Interface: " + networkInterface.getDisplayName());
+				}
+			}
+
+			System.out.println(getClass().getName() + "CLIENT>>> Requisições enviadas para todas as interfaces, esperando resposta.");
+
+			if(confirm){
+			
+				/* Resposta */
+				//Esperando pela resposta
+				byte[] recvBuf = new byte[15000];
+				DatagramPacket receivePacket = new DatagramPacket(recvBuf, recvBuf.length);
+				c.receive(receivePacket);
+	
+				//Nós temos uma resposta
+				System.out.println(getClass().getName() + "CLIENT>>> Broadcast respondido pelo servidor: " + receivePacket.getAddress().getHostAddress());
+	
+				//Verificando se a mensagem é correta
+				String message = new String(receivePacket.getData()).trim();
+				println(message)
+			}
+	
+			//Fechando a porta
+			c.close();
+		} catch (IOException ex) {
+			println ex
+			Logger.getLogger(LoginWindow.class.getName()).log(Level.SEVERE, null, ex);
+		} catch (Exception ex) {
+			println ex
+		}
+	}
+	
+	public void receive() {
+		def p = task{
+			try {
+				//Mantem um canal aberto para ouvir tudo o trafic UDP que é destinado para esta porta
+				DatagramSocket socket = new DatagramSocket(8888, InetAddress.getByName("0.0.0.0"));
+				socket.setBroadcast(true);
+
+				while (true) {
+					System.out.println(getClass().getName() + "SERVER>>>Pronto para receber pacotes Broadcast!");
+
+					//Recebendo um pacote
+					byte[] recvBuf = new byte[15000];
+					DatagramPacket packet = new DatagramPacket(recvBuf, recvBuf.length);
+					socket.receive(packet);
+
+					//Pacote recebido
+					println(getClass().getName() + "SERVER>>>Analisando pacote recebido de: " + packet.getAddress().getHostAddress());
+					println(getClass().getName() + "SERVER>>>Pacotes recebidos; dados: " + new String(packet.getData()));
+
+					//Vendo se o pacote contém o comando correto (mensagem)
+					String message = new String(packet.getData()).trim();
+					println("SERVER"+message)
+					
+					if(message.class == "vanet.alert.Alert"){
+						alertService.alertReceive()
+					}else if(message.class == "vanet.automotive.NavigationLog"){
+						navigationLogService.navigationLogReceive()
+						sendConfirmation(socket)
+					}
+				
+				}
+			} catch (IOException ex) {
+				Logger.getLogger(DiscoveryThread.class.getName()).log(Level.SEVERE, null, ex);
+			}
+		}
+
+		p.onError{ Throwable err ->
+			println "Ocorreu um erro: ${err.message}";
+		}
+	}
+	
+	def sendConfirmation(DatagramSocket socket){
+		byte[] sendData = ("Alerta Recebido. - "+(new Date()).time.toString()).getBytes();
+		
+		//Enviando resposta
+		DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, packet.getAddress(), packet.getPort());
+		socket.send(sendPacket);
+
+		System.out.println(getClass().getName() + "SERVER>>>Sent packet to: " + sendPacket.getAddress().getHostAddress());
+	}
+}

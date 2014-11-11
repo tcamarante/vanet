@@ -77,7 +77,7 @@ class NavigationLogController  extends RestfulController{
 		)
 		
 		// Enviando ao servidor para salvar no banco
-		def resp = rest.post("http://localhost:8090/VanetRSU/navigationLog/save"){
+		def resp = rest.post(grailsApplication.config.vanet.rsuUrl+"/VanetRSU/navigationLog/save"){
 			//auth System.getProperty("artifactory.user"), System.getProperty("artifactory.pass")
 			contentType "application/vnd.org.jfrog.artifactory.security.Group+json"
 			json navigationLogInstance 
@@ -148,19 +148,19 @@ class NavigationLogController  extends RestfulController{
 
 		// Enviando ao servidor para salvar no banco
 		// TODO: contar pacotes enviados
-		def resp
-		try{
-			resp = rest.post("http://localhost:8081/VanetRSU/navigationLog/save"){
-				//auth System.getProperty("artifactory.user"), System.getProperty("artifactory.pass")
-				contentType "application/vnd.org.jfrog.artifactory.security.Group+json"
-				json jsonObject.toString()
-			}
-		}catch(ConnectException e){
-			println("Não foi possível enviar pacote")
-			// TODO: contar pacotes perdidos
-		}
-
-		respond resp.json, [status:CREATED]
+//		def resp
+//		try{
+//			resp = rest.post(grailsApplication.config.vanet.rsuUrl+"/navigationLog/save"){
+//				//auth System.getProperty("artifactory.user"), System.getProperty("artifactory.pass")
+//				contentType "application/vnd.org.jfrog.artifactory.security.Group+json"
+//				json jsonObject.toString()
+//			}
+//		}catch(ConnectException e){
+//			println("Não foi possível enviar pacote")
+//			// TODO: contar pacotes perdidos
+//		}
+//
+//		respond resp.json, [status:CREATED]
 		
 //		[
 //			Throttle Position:144 %,

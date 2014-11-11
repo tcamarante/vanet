@@ -14,6 +14,7 @@ class BootStrap {
 
 	def broadcastService
 	def accidentDetectionService
+	def grailsApplication
 	
     def init = { servletContext ->
 		
@@ -22,28 +23,29 @@ class BootStrap {
 //		def webRootDir = sch.servletContext.getRealPath ("/")
 		def currentCar = new Car(code:InetAddress.getLocalHost().getHostAddress().toString()).save(flush:true)
 		
-		task{
-			def rest = new RestBuilder()
-			Boolean hasCar = false
-			while(!hasCar){
-				println hasCar
-				// Enviando ao servidor para salvar no banco
-				try{
-					def resp = rest.post("http://localhost:8081/VanetRSU/car/save"){
-						contentType "application/vnd.org.jfrog.artifactory.security.Group+json"
-						json currentCar
-					}
-					println resp.statusCode.class
-					if(resp.statusCode == HttpStatus.CREATED){
-						hasCar=true
-					}
-				}catch(Exception e){
-					println("Não foi possível enviar pacote")
-					Thread.currentThread().sleep((long)(1000));
-				}
-			}
-		}
-		
+//		task{
+//			def rest = new RestBuilder()
+//			Boolean hasCar = false
+//			while(!hasCar){
+//				println hasCar
+//				// Enviando ao servidor para salvar no banco
+//				try{
+//					def resp = rest.post(grailsApplication.config.vanet.rsuUrl+"/VanetRSU/car/save"){
+//						contentType "application/vnd.org.jfrog.artifactory.security.Group+json"
+//						json currentCar
+//					}
+//					println resp.statusCode.class
+//					if(resp.statusCode == HttpStatus.CREATED){
+//						hasCar=true
+//					}
+//				}catch(Exception e){
+//					println("Não foi possível enviar pacote")
+//					Thread.currentThread().sleep((long)(1000));
+//				}
+//			}
+//		}
+//		
+		broadcastService.alertSender()
 		broadcastService.receive()
 //		accidentDetectionService.start()
 		
