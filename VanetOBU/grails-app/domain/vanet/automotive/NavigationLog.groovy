@@ -2,6 +2,7 @@ package vanet.automotive
 
 class NavigationLog {
 
+	String code
 	Long collectTime
 	Long obuTime
 	Long rsuTime

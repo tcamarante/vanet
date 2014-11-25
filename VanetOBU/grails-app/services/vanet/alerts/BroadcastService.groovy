@@ -18,41 +18,52 @@ class BroadcastService {
 	def carService
 	def alertService
 	final List<AlertWrapper> alertList = new ArrayList<AlertWrapper>()
+	final List<String> confirmedInfoCode = new ArrayList<String>()
 	
 	private class AlertWrapper{
 		Object obj
 		def sendOneMore
 	}
 	
-	def sendAlert(Alert alert, Integer qtd=1, Closure sendOneMore={return false}){
+	def sendAlert(Object sendObj, Integer qtd=1, Closure sendOneMore={return false}){
 		
 		for(int i=0; i<qtd; i++){
 			def pct = null
 			if(sendOneMore()){
 				// Impedindo que alertas contínuos redundantes sejam inseridos na lista
 				// Ex: dois alertas de acidente de um mesmo veículo
-				if(alert.messageCode == 2 || alert.messageCode == 3){
-					pct = alertList.find{(it.obj.messageCode == 2||it.obj.messageCode == 3) && 
-						it.obj.carCode == alert.carCode && it.sendOneMore()==true}
+				if(sendObj.instanceOf(Alert)){
+					if(sendObj.messageCode == 2 || sendObj.messageCode == 3){
+						pct = alertList.find{(it.obj.messageCode == 2||it.obj.messageCode == 3) && 
+							it.obj.carCode == sendObj.carCode && it.sendOneMore()==true}
+					}
+					i=qtd
 				}
-				i=qtd
 			}
 			if(!pct){
-				alertList.add(new AlertWrapper(obj:alert,sendOneMore:sendOneMore))
+				alertList.add(new AlertWrapper(obj:sendObj,sendOneMore:sendOneMore))
 			}
 		}
 	}
 	
-	def sendInfiniteAlert(Alert alert){
-		sendAlert(alert,1,{return true})
+	def sendInfiniteAlert(Object sendObj){
+		sendAlert(sendObj,1,{return true})
 	}
 	
-	def sendAlertWhileNear(Alert alert){
-		sendAlert(alert,1,{carService.isInArea(alert.lat, alert.lng)})
+	def sendAlertWhileNear(Object sendObj){
+		if(sendObj.lat && sendObj.lng){
+			sendAlert(sendObj,1,{carService.isInArea(sendObj.lat, sendObj.lng)})
+		}else{
+			throw new Exception("ERROR -> Objeto incompatível com o método broadcastService.sendAlertWhileNear(), não peossui coordenadas!!!")
+		}
 	}
 	
-	def stopInfiniteAlert(Alert alert){
-		def pct = alertList.find{it.obj.id == alert.id && it.sendOneMore()==true}
+	def sendLog(Object logObj){
+		// TODO: Verificar lista de pacotes já enviados
+	}
+	
+	def stopInfiniteAlert(Object stopObj){
+		def pct = alertList.find{it.obj.id == stopObj.id && it.sendOneMore()==true && it.obj.class == stopObj.class}
 		pct.sendOneMore = {return false}
 	}
 	
@@ -138,6 +149,8 @@ class BroadcastService {
 
 			if(confirm){
 			
+				// TODO: receber lista de pacotes já recebidos pela RSU
+				
 				/* Resposta */
 				//Esperando pela resposta
 				byte[] recvBuf = new byte[15000];
@@ -212,6 +225,9 @@ class BroadcastService {
 	}
 	
 	def sendConfirmation(DatagramSocket socket, DatagramPacket packet, byte[] sendData=null){
+		
+		// TODO: Enviar lista de pacotes recebidos pelo RSU 
+		
 		if(!sendData){
 			sendData = ("Alerta Recebido. - "+(new Date()).time.toString()).getBytes();
 		}
