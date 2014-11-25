@@ -56,6 +56,10 @@ class BroadcastService {
 		pct.sendOneMore = {return false}
 	}
 	
+	def sendUntilConfirm(Object info){
+		 send(info, true)
+	}
+	
 	def alertSender(){
 		task{
 			println ">>>>>>>> Serviço de envio de alertas Ativado!!!"
@@ -97,10 +101,11 @@ class BroadcastService {
 
 			//Tentando 255.255.255.255 primeiro
 			try {
-				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("255.255.255.255"), 8888);
+				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.188.255"), 8082);
 				c.send(sendPacket);
 				System.out.println(getClass().getName() + "CLIENT>>> Requisição enviada para: 255.255.255.255 (DEFAULT)");
 			} catch (Exception e) {
+				e.printStackTrace();
 			}
 
 			// Enviando a mensagem por todas interfaces de rede
@@ -120,7 +125,7 @@ class BroadcastService {
 
 					// Enviando o pacote broadcast
 					try {
-						DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, broadcast, 8888);
+						DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, broadcast, 8082);
 						c.send(sendPacket);
 					} catch (Exception e) {
 					}
@@ -160,8 +165,8 @@ class BroadcastService {
 		def p = task{
 			try {
 				//Mantem um canal aberto para ouvir tudo o trafic UDP que é destinado para esta porta
-				DatagramSocket socket = new DatagramSocket(8888, InetAddress.getByName("0.0.0.0"));
-				socket.setBroadcast(true);
+				DatagramSocket socket = new DatagramSocket(8082);
+//				socket.setBroadcast(true);
 
 				while (true) {
 					try{
@@ -188,6 +193,9 @@ class BroadcastService {
 						}else if(json."class" == "vanet.automotive.NavigationLog"){
 							navigationLogService.navigationLogReceive()
 							sendConfirmation(socket, packet)
+						}else if(json."class" == "vanet.automotive.Car"){
+							def carInstance = carService.sendToServer()
+							sendConfirmation(socket, packet, (carInstance as JSON).toString().getBytes())
 						}
 					} catch (Exception ex) {
 						ex.printStackTrace()
@@ -203,8 +211,10 @@ class BroadcastService {
 		}
 	}
 	
-	def sendConfirmation(DatagramSocket socket, DatagramPacket packet){
-		byte[] sendData = ("Alerta Recebido. - "+(new Date()).time.toString()).getBytes();
+	def sendConfirmation(DatagramSocket socket, DatagramPacket packet, byte[] sendData=null){
+		if(!sendData){
+			sendData = ("Alerta Recebido. - "+(new Date()).time.toString()).getBytes();
+		}
 		
 		//Enviando resposta
 		DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, packet.getAddress(), packet.getPort());

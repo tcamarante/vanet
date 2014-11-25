@@ -21,7 +21,6 @@ class BootStrap {
 		// Lendo arquivo com informações do veículo
 		// Getting context path here
 //		def webRootDir = sch.servletContext.getRealPath ("/")
-		def currentCar = new Car(code:InetAddress.getLocalHost().getHostAddress().toString()).save(flush:true)
 		
 //		task{
 //			def rest = new RestBuilder()
@@ -47,6 +46,10 @@ class BootStrap {
 //		
 		broadcastService.alertSender()
 		broadcastService.receive()
+		
+		def currentCar = new Car(code:InetAddress.getLocalHost().getHostAddress().toString()).save(flush:true)
+		broadcastService.sendToRsu(currentCar)
+		
 //		accidentDetectionService.start()
 		
 //		broadcastService.send()

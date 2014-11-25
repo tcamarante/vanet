@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wholeword"/>
-		<item value="socket" key="selection"/>
+		<item value="grailsApplication" key="selection"/>
 		<list key="findhistory">
+			<item value="grailsApplication"/>
+			<item value="broadcast"/>
+			<item value="8888"/>
 			<item value="socket"/>
 			<item value="packet"/>
 			<item value="ex."/>
 			<item value="alert"/>
 			<item value="DiscoveryThread"/>
-			<item value="alert.car"/>
-			<item value="send"/>
-			<item value="alert "/>
 		</list>
 		<list key="replacehistory">
 		</list>

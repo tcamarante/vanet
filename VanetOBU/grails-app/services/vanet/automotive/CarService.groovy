@@ -1,5 +1,6 @@
 package vanet.automotive
 
+import grails.plugins.rest.client.RestBuilder
 import grails.transaction.Transactional
 
 @Transactional
@@ -11,7 +12,12 @@ class CarService {
     def isInArea(Double lat, Double lng){
 		int raio = grailsApplication.config.vanet.sendRadiusLimit 
 		def nLog = navigationLogService.readNewNavigationLog()
-		def distance = calculateDistance(lat, lng, nLog.lat, nLog.lon)
+		def distance
+		if(nLog){
+			distance = calculateDistance(lat, lng, nLog.lat, nLog.lon)
+		}else{
+			return true
+		}
 		return (distance < raio)
 	}
 	
@@ -28,5 +34,37 @@ class CarService {
 		def c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 		
 		return R * c;
+	}
+	
+	def sendToServer(def json){
+		if(grailsApplication.config.isRSU){
+			Car carInstance = new Car()
+			bindCar(carInstance,json)
+			
+			carInstance.validate()
+			if (carInstance.hasErrors()) {
+				respond carInstance.errors, [status: NOT_ACCEPTABLE]
+				return
+			}
+			
+			def rest = new RestBuilder()
+			def resp
+			try{
+				resp = rest.post("http://localhost:8080/VanetServer/car/save"){
+					contentType "application/vnd.org.jfrog.artifactory.security.Group+json"
+					json carInstance
+				}
+			}catch(Exception e){
+				println("Não foi possível enviar pacote")
+//				respond e, [status: 500]
+				return null
+	//			Thread.currentThread().sleep((long)(1000));
+			}
+			
+			carInstance.save flush:true
+			return carInstance
+		}else{
+			
+		}
 	}
 }
