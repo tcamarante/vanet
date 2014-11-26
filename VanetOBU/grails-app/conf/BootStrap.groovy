@@ -48,7 +48,7 @@ class BootStrap {
 		broadcastService.receive()
 		
 		def currentCar = new Car(code:InetAddress.getLocalHost().getHostAddress().toString()).save(flush:true)
-		broadcastService.sendToRsu(currentCar)
+//		broadcastService.sendToRsu(currentCar)
 		
 //		accidentDetectionService.start()
 		

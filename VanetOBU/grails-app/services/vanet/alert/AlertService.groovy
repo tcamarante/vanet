@@ -11,6 +11,7 @@ class AlertService {
 		def alertList = Alert.findAll()
 		Alert redundantAlert = Alert.findByCode(alert.code)
 		if(!redundantAlert){
+			alert.receivedDate = System.currentTimeMillis()
 			alert.save(flush:true)
 			broadcastService.sendAlertWhileNear(alert)
 		}

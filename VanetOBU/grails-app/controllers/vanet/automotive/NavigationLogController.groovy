@@ -3,10 +3,11 @@ package vanet.automotive
 
 
 import static org.springframework.http.HttpStatus.*
-import grails.converters.JSON
 import grails.plugins.rest.client.RestBuilder
 import grails.rest.RestfulController
 import grails.transaction.Transactional
+
+import org.apache.commons.lang.RandomStringUtils
 
 @Transactional(readOnly = true)
 class NavigationLogController  extends RestfulController{
@@ -15,6 +16,7 @@ class NavigationLogController  extends RestfulController{
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 	
 	def accidentDetectionService
+	def broadcastService
 	
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -102,6 +104,7 @@ class NavigationLogController  extends RestfulController{
 //		
 	}
 	
+	@Transactional
 	def saveObdLog(){
 		
 		println params
@@ -115,6 +118,7 @@ class NavigationLogController  extends RestfulController{
 		NavigationLog navigationLogInstance = new NavigationLog(
 //			params."Throttle Position", 
 //			params."Engine RPM", 
+			code:carInstance.code + RandomStringUtils.random(5, true, true),
 			obdSpeed:params."Vehicle Speed"?.replace("km/h","").toInteger(), 
 //			params."Trouble Codes", 
 //			params."Mass Air Flow", 
@@ -143,9 +147,13 @@ class NavigationLogController  extends RestfulController{
 
 		navigationLogInstance.save flush:true
 		
-		def jsonObject = JSON.parse((navigationLogInstance as JSON).toString())
-		jsonObject.put("carCode", navigationLogInstance.car.code)
+//		def jsonObject = JSON.parse((navigationLogInstance as JSON).toString())
+//		jsonObject.put("carCode", navigationLogInstance.car.code)
 
+//		broadcastService.sendLog(navigationLogInstance)
+		
+		respond navigationLogInstance, [status:CREATED]
+		
 		// Enviando ao servidor para salvar no banco
 		// TODO: contar pacotes enviados
 //		def resp
@@ -159,7 +167,7 @@ class NavigationLogController  extends RestfulController{
 //			println("Não foi possível enviar pacote")
 //			// TODO: contar pacotes perdidos
 //		}
-//
+
 //		respond resp.json, [status:CREATED]
 		
 //		[

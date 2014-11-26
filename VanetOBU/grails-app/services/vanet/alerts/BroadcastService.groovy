@@ -18,13 +18,18 @@ class BroadcastService {
 	def carService
 	def alertService
 	final List<AlertWrapper> alertList = new ArrayList<AlertWrapper>()
-	final List<String> confirmedInfoCode = new ArrayList<String>()
+	final List<String> confirmedInfoCodeList = new ArrayList<String>()
 	
 	private class AlertWrapper{
 		Object obj
 		def sendOneMore
 	}
 	
+	/**
+	 * Adiciona pacotes na lista de pacotes a serem enviados em broadcast
+	 * @param sendObj
+	 * @return
+	 */
 	def sendAlert(Object sendObj, Integer qtd=1, Closure sendOneMore={return false}){
 		
 		for(int i=0; i<qtd; i++){
@@ -46,10 +51,20 @@ class BroadcastService {
 		}
 	}
 	
+	/**
+	 * Envio indefinido de pacotes em broadcast
+	 * @param sendObj
+	 * @return
+	 */
 	def sendInfiniteAlert(Object sendObj){
 		sendAlert(sendObj,1,{return true})
 	}
 	
+	/**
+	 * Envia a informação em broadcast enquanto estiver à uma certa distância da origem da informação (atualmente 2 Km)
+	 * @param sendObj
+	 * @return
+	 */
 	def sendAlertWhileNear(Object sendObj){
 		if(sendObj.lat && sendObj.lng){
 			sendAlert(sendObj,1,{carService.isInArea(sendObj.lat, sendObj.lng)})
@@ -57,20 +72,51 @@ class BroadcastService {
 			throw new Exception("ERROR -> Objeto incompatível com o método broadcastService.sendAlertWhileNear(), não peossui coordenadas!!!")
 		}
 	}
-	
+
+	/**
+	 * Envia log para o RSU	
+	 * @param logObj
+	 * @return
+	 */
 	def sendLog(Object logObj){
-		// TODO: Verificar lista de pacotes já enviados
+		if(!isSent(logObj.code)){
+			sendAlert(logObj,1,{return isSent(logObj.code)})
+		}
 	}
 	
+	/**
+	 * Verifica se a informação já foi enviada para uma RSU
+	 * @param code
+	 * @return
+	 */
+	def isSent(String code){
+		return confirmedInfoCodeList.find{it = code}
+	}
+	
+	/**
+	 * Para um alerta infinito de um determinado obj
+	 * @param stopObj
+	 * @return
+	 */
 	def stopInfiniteAlert(Object stopObj){
 		def pct = alertList.find{it.obj.id == stopObj.id && it.sendOneMore()==true && it.obj.class == stopObj.class}
 		pct.sendOneMore = {return false}
 	}
 	
+	/**
+	 * Envia um pacote até receber confirmação de um RSU
+	 * @param info
+	 * @return
+	 */
 	def sendUntilConfirm(Object info){
+		//TODO terminar
 		 send(info, true)
 	}
 	
+	/**
+	 * Thread que esvazia a lista de pacotes a enviar
+	 * @return
+	 */
 	def alertSender(){
 		task{
 			println ">>>>>>>> Serviço de envio de alertas Ativado!!!"
@@ -100,6 +146,11 @@ class BroadcastService {
 		}
 	}
 	
+	/**
+	 * Envio de pacotes broadcast
+	 * @param msg
+	 * @return
+	 */
 	def send(Object msg, Boolean confirm=true) {
 		//Procurando o servidor UDP utilizando brodcast
 		try {
@@ -162,6 +213,11 @@ class BroadcastService {
 	
 				//Verificando se a mensagem é correta
 				String message = new String(receivePacket.getData()).trim();
+				ArrayList otherCodeList = message.replaceAll("\\[","").replaceAll("]","").split(",")
+				otherCodeList = (otherCodeList + confirmedInfoCodeList).unique()
+				confirmedInfoCodeList.clear() 
+				// TODO: Receber uns 50 elementos apenas e juntar com os 50 primeiros, descartar o resto
+				confirmedInfoCodeList.addAll(otherCodeList.subList(0,50))
 				println(message)
 			}
 	
@@ -174,6 +230,9 @@ class BroadcastService {
 		}
 	}
 	
+	/**
+	 * Recebimento de broadcast
+	 */
 	public void receive() {
 		def p = task{
 			try {
@@ -204,6 +263,7 @@ class BroadcastService {
 							alertService.alertReceive(alert)
 							sendConfirmation(socket, packet)
 						}else if(json."class" == "vanet.automotive.NavigationLog"){
+							// TODO: terminar
 							navigationLogService.navigationLogReceive()
 							sendConfirmation(socket, packet)
 						}else if(json."class" == "vanet.automotive.Car"){
@@ -224,6 +284,13 @@ class BroadcastService {
 		}
 	}
 	
+	
+	/**
+	 * Envio de confirmação de broadcast
+	 * @param socket
+	 * @param packet
+	 * @return
+	 */
 	def sendConfirmation(DatagramSocket socket, DatagramPacket packet, byte[] sendData=null){
 		
 		// TODO: Enviar lista de pacotes recebidos pelo RSU 
