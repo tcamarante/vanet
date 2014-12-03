@@ -98,7 +98,7 @@ class BroadcastService {
 	 * @param stopObj
 	 * @return
 	 */
-	def stopInfiniteAlert(Object stopObj){
+	def stopInfiniteAlert(Alert stopObj){
 		def pct = alertList.find{it.obj.id == stopObj.id && it.sendOneMore()==true && it.obj.class == stopObj.class}
 		pct.sendOneMore = {return false}
 	}

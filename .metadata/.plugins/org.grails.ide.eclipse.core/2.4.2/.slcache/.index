@@ -4474,3 +4474,8 @@ n:3918:org/codehaus/groovy/grails/plugins/DomainClassGrailsPlugin$_closure4_clos
 n:2016:org/codehaus/groovy/grails/validation/ConstraintEvalUtils$getDefaultConstraints$0
 y:2331:org/codehaus/groovy/grails/validation/ConstraintsEvaluatorFactoryBean
 n:2989:org/codehaus/groovy/grails/plugins/DomainClassGrailsPlugin$_closure4_closure36_closure37
+n:1849:grails/util/PluginBuildSettings$getPluginDirPath$12
+n:1577:java_util_Set$contains$0
+n:1609:java_util_Set$addAll$1
+n:1899:grails/util/PluginBuildSettings$getSupportedPluginInfos$13
+n:1826:grails/util/BuildSettings$getClassesDir$5

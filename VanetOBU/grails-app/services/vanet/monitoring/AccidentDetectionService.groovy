@@ -42,7 +42,6 @@ class AccidentDetectionService {
 								accidentAlert(currentLog)
 							}
 							println("------------------------------------")
-							i++
 						}
 					}
 				}

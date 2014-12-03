@@ -6,9 +6,12 @@ import grails.transaction.Transactional
 class AlertService {
 
 	def broadcastService
+	def navigationLogService
+	def mapService
 	
     def alertReceive(Alert alert) {
-		def alertList = Alert.findAll()
+		def lastLog = navigationLogService.readNewNavigationLog()
+		println "<<<<<< Alerta detectado a"+mapService.distance(alert.lat, alert.lng, lastLog.lat, lastLog.lon)
 		Alert redundantAlert = Alert.findByCode(alert.code)
 		if(!redundantAlert){
 			alert.receivedDate = System.currentTimeMillis()
