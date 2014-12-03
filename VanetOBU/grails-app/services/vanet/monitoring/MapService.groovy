@@ -6,7 +6,7 @@ import grails.transaction.Transactional
 class MapService {
 
     def distance(lon1, lat1, lon2, lat2) {
-		def R = 6371; // km
+		def R = 6371000; // km
 		def dLat = Math.toRadians(lat2-lat1)
 		def dLon = Math.toRadians(lon2-lon1)
 		lat1 = Math.toRadians(lat1)

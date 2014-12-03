@@ -125,7 +125,7 @@ class BroadcastService {
 					if(alertList.isEmpty()){
 						sleep(1000)
 					}else{
-						println alertList
+//						println alertList
 						def a = alertList.first()
 						// Se for alerta de acidente não espera confirmação
 						Boolean confirm = !(a.obj.instanceOf(Alert))
@@ -152,6 +152,8 @@ class BroadcastService {
 	 * @return
 	 */
 	def send(Object msg, Boolean confirm=true) {
+		println "---------------------------------Enviando informação---------------------------------------------------------"
+		println "Vetor atual -> " + alertList
 		//Procurando o servidor UDP utilizando brodcast
 		try {
 			//Abrindo uma porta qualquer para enviar o pacote
@@ -165,7 +167,7 @@ class BroadcastService {
 			try {
 				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.188.255"), 8082);
 				c.send(sendPacket);
-				System.out.println(getClass().getName() + "CLIENT>>> Requisição enviada para: 255.255.255.255 (DEFAULT)");
+				//System.out.println(getClass().getName() + "CLIENT>>> Requisição enviada para: 255.255.255.255 (DEFAULT)");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -192,11 +194,11 @@ class BroadcastService {
 					} catch (Exception e) {
 					}
 
-					System.out.println(getClass().getName() + "CLIENT>>> Requisição enviada para: " + broadcast.getHostAddress() + "; Interface: " + networkInterface.getDisplayName());
+					//System.out.println(getClass().getName() + "CLIENT>>> Requisição enviada para: " + broadcast.getHostAddress() + "; Interface: " + networkInterface.getDisplayName());
 				}
 			}
 
-			System.out.println(getClass().getName() + "CLIENT>>> Requisições enviadas para todas as interfaces, esperando resposta.");
+			//System.out.println(getClass().getName() + "CLIENT>>> Requisições enviadas para todas as interfaces, esperando resposta.");
 
 			if(confirm){
 			
@@ -209,7 +211,7 @@ class BroadcastService {
 				c.receive(receivePacket);
 	
 				//Nós temos uma resposta
-				System.out.println(getClass().getName() + "CLIENT>>> Broadcast respondido pelo servidor: " + receivePacket.getAddress().getHostAddress());
+				//System.out.println(getClass().getName() + "CLIENT>>> Broadcast respondido pelo servidor: " + receivePacket.getAddress().getHostAddress());
 	
 				//Verificando se a mensagem é correta
 				String message = new String(receivePacket.getData()).trim();
@@ -218,7 +220,7 @@ class BroadcastService {
 				confirmedInfoCodeList.clear() 
 				// TODO: Receber uns 50 elementos apenas e juntar com os 50 primeiros, descartar o resto
 				confirmedInfoCodeList.addAll(otherCodeList.subList(0,50))
-				println(message)
+				//println(message)
 			}
 	
 			//Fechando a porta
@@ -242,7 +244,7 @@ class BroadcastService {
 
 				while (true) {
 					try{
-						System.out.println(getClass().getName() + "SERVER>>>Pronto para receber pacotes Broadcast!");
+						//System.out.println(getClass().getName() + "SERVER>>>Pronto para receber pacotes Broadcast!");
 	
 						//Recebendo um pacote
 						byte[] recvBuf = new byte[15000];
@@ -250,12 +252,13 @@ class BroadcastService {
 						socket.receive(packet);
 	
 						//Pacote recebido
-						println(getClass().getName() + "SERVER>>>Analisando pacote recebido de: " + packet.getAddress().getHostAddress());
+						println "---------------------------------Informação recebida---------------------------------------------------------"
+						//println(getClass().getName() + "SERVER>>>Analisando pacote recebido de: " + packet.getAddress().getHostAddress());
 						println(getClass().getName() + "SERVER>>>Pacotes recebidos; dados: " + new String(packet.getData()));
 	
 						//Vendo se o pacote contém o comando correto (mensagem)
 						String message = new String(packet.getData()).trim();
-						println("SERVER"+message)
+						//println("SERVER"+message)
 						JSONObject json = new  JSONObject(message)
 						if(json."class" == "vanet.alert.Alert"){
 							Alert alert = new Alert()
@@ -270,6 +273,7 @@ class BroadcastService {
 							def carInstance = carService.sendToServer()
 							sendConfirmation(socket, packet, (carInstance as JSON).toString().getBytes())
 						}
+						println "---------------------------------fim Informação recebida------------------------------------------------------"
 					} catch (Exception ex) {
 						ex.printStackTrace()
 					}
@@ -303,6 +307,6 @@ class BroadcastService {
 		DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, packet.getAddress(), packet.getPort());
 		socket.send(sendPacket);
 
-		System.out.println(getClass().getName() + "SERVER>>>Sent packet to: " + sendPacket.getAddress().getHostAddress());
+//		System.out.println(getClass().getName() + "SERVER>>>Sent packet to: " + sendPacket.getAddress().getHostAddress());
 	}
 }
