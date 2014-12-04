@@ -21,6 +21,7 @@ class AccidentDetectionService {
 			try{
 				if(currentLog){
 	
+					println("Airbag is open = "+currentLog.isAirbagOpen)
 					if(currentLog.isAirbagOpen){
 						accidentAlert(currentLog)
 					}else{
@@ -33,12 +34,12 @@ class AccidentDetectionService {
 							def deltaSpeed = currentVel-lastVel
 							println("deltaSpeed = "+deltaSpeed+" m/s")
 							def deltaTime = currentLog.collectTime - lastLog.collectTime
-							println("deltaTime = "+deltaTime+" s")
+							println("deltaTime = "+deltaTime+" ms")
 								
 							def a = deltaSpeed/deltaTime
-							println("accel = "+a+"m/s2")
+							println("accel = "+a+"m/ms2")
 							
-							if(a < -62.6){
+							if(a < -0.0626){//-62.6){
 								accidentAlert(currentLog)
 							}
 							println("------------------------------------")

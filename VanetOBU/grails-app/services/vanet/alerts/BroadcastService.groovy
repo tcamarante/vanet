@@ -69,6 +69,7 @@ class BroadcastService {
 		if(sendObj.lat && sendObj.lng){
 			sendAlert(sendObj,1,{carService.isInArea(sendObj.lat, sendObj.lng)})
 		}else{
+			sendAlert(sendObj,1,{return true})
 			throw new Exception("ERROR -> Objeto incompatível com o método broadcastService.sendAlertWhileNear(), não peossui coordenadas!!!")
 		}
 	}

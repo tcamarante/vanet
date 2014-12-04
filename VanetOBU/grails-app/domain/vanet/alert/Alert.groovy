@@ -19,5 +19,7 @@ class Alert {
 		messageCode(inList:[1,2,3,4])
 		receivedDate(nullable:true)
 		port(nullable:true)
+		lat(nullable:true)
+		lng(nullable:true)
     }
 }

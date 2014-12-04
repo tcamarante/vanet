@@ -18,6 +18,9 @@ class CarService {
 		}else{
 			return true
 		}
+		if(!(distance < raio)){
+			println " >>>>>>>>>> Alerta de acidente parou, fora do raio de envio!!!"
+		}
 		return (distance < raio)
 	}
 	

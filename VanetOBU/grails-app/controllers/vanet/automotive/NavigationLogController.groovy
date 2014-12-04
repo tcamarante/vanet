@@ -122,14 +122,14 @@ class NavigationLogController  extends RestfulController{
 			obdSpeed:params."Vehicle Speed"?.replace("km/h","").toInteger(), 
 //			params."Trouble Codes", 
 //			params."Mass Air Flow", 
-			collectTime:params."Obs Time"?.toLong()*1000,// O tempo passado é em segundos por enquanto
+			collectTime:params."Obs Time"?.toLong(),// O tempo passado é em milisegundos por enquanto
 			obuTime: System.currentTimeMillis(),
 			rsuTime:null,
 			serverTime:null,
 			gpsSpeed:params."GPS Speed"?.replace("m/s","")?.toInteger(),
 			lat:params."Latitude",
 			gpsTime:params."GPS Time"?.toLong(),
-			isAirbagOpen:(params."Trouble Codes".find("99 94")!=null),
+			isAirbagOpen:(params."Trouble Codes".find("99 94")!=null||params."Trouble Codes".find("9994")!=null),
 			lon:params."Longitude",
 			lastNavigationLog: NavigationLog.find("from NavigationLog nl where nl.car = :car order by id desc", [car:carInstance]),
 			car: carInstance
