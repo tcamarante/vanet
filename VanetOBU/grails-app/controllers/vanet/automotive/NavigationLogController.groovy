@@ -9,6 +9,8 @@ import grails.transaction.Transactional
 
 import org.apache.commons.lang.RandomStringUtils
 
+import vanet.alert.Alert
+
 @Transactional(readOnly = true)
 class NavigationLogController  extends RestfulController{
 
@@ -108,10 +110,10 @@ class NavigationLogController  extends RestfulController{
 	def saveObdLog(){
 		
 		println params
-		
+		println params.kff1005.class
 		def rest = new RestBuilder()
 		def date = Calendar.instance
-		date.setTimeInMillis(params."Obs Time".toLong()*1000)
+		date.setTimeInMillis(params.time.toLong()*1000)
 		Car carInstance = Car.findAll().first()
 //		def lastLog = NavigationLog.find("from NavigationLog nl where nl.car = :car order by id desc", [car:carInstance])
 		
@@ -119,18 +121,18 @@ class NavigationLogController  extends RestfulController{
 //			params."Throttle Position", 
 //			params."Engine RPM", 
 			code:carInstance.code + RandomStringUtils.random(5, true, true),
-			obdSpeed:params."Vehicle Speed"?.replace("km/h","").toInteger(), 
+			obdSpeed:params.kd,//?.toDouble(),//"Vehicle Speed"?.replace("km/h","").toInteger(), 
 //			params."Trouble Codes", 
 //			params."Mass Air Flow", 
-			collectTime:params."Obs Time"?.toLong(),// O tempo passado é em milisegundos por enquanto
+			collectTime:params.time.toLong(),//"Obs Time"?.toLong(),// O tempo passado é em milisegundos por enquanto
 			obuTime: System.currentTimeMillis(),
 			rsuTime:null,
 			serverTime:null,
-			gpsSpeed:params."GPS Speed"?.replace("m/s","")?.toInteger(),
-			lat:params."Latitude",
-			gpsTime:params."GPS Time"?.toLong(),
-			isAirbagOpen:(params."Trouble Codes".find("99 94")!=null||params."Trouble Codes".find("9994")!=null),
-			lon:params."Longitude",
+			gpsSpeed:params.kff1001.toDouble(),//.toInteger(),//"GPS Speed"?.replace("m/s","")?.toInteger(),
+			lat:params.kff1006.toDouble(),//"Latitude",
+			gpsTime:params."session".toLong(),//"GPS Time"?.toLong(),
+			isAirbagOpen:true,//(params."Trouble Codes".find("99 94")!=null||params."Trouble Codes".find("9994")!=null),
+			lon:params.kff1005.toDouble(),//"Longitude",
 			lastNavigationLog: NavigationLog.find("from NavigationLog nl where nl.car = :car order by id desc", [car:carInstance]),
 			car: carInstance
 		)
@@ -233,6 +235,10 @@ class NavigationLogController  extends RestfulController{
         }
     }
 
+	def testAlert(){
+		broadcastService.testAlert(new Alert(code:RandomStringUtils.random(5, true, true)))
+	}
+	
     protected void notFound() {
         request.withFormat {
             form multipartForm {

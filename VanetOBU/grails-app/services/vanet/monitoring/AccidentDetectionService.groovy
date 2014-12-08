@@ -21,28 +21,28 @@ class AccidentDetectionService {
 			try{
 				if(currentLog){
 	
-					println("Airbag is open = "+currentLog.isAirbagOpen)
+//					println("Airbag is open = "+currentLog.isAirbagOpen)
 					if(currentLog.isAirbagOpen){
 						accidentAlert(currentLog)
 					}else{
 						NavigationLog lastLog = currentLog.lastNavigationLog
 						if(lastLog){
 							def lastVel=lastLog.obdSpeed/3.6
-							println("lastVel = "+lastVel+" m/s")
+//							println("lastVel = "+lastVel+" m/s")
 							def currentVel=currentLog.obdSpeed/3.6
-							println("currentVel = "+currentVel+" m/s")
+//							println("currentVel = "+currentVel+" m/s")
 							def deltaSpeed = currentVel-lastVel
-							println("deltaSpeed = "+deltaSpeed+" m/s")
+//							println("deltaSpeed = "+deltaSpeed+" m/s")
 							def deltaTime = currentLog.collectTime - lastLog.collectTime
-							println("deltaTime = "+deltaTime+" ms")
+//							println("deltaTime = "+deltaTime+" ms")
 								
 							def a = deltaSpeed/deltaTime
-							println("accel = "+a+"m/ms2")
+//							println("accel = "+a+"m/ms2")
 							
 							if(a < -0.0626){//-62.6){
 								accidentAlert(currentLog)
 							}
-							println("------------------------------------")
+//							println("------------------------------------")
 						}
 					}
 				}
@@ -96,7 +96,7 @@ class AccidentDetectionService {
 				return
 			}
 		}else{
-			stopInfiniteAlert(alert)
+			broadcastService.stopInfiniteAlert(alert)
 			return
 		}
 	}

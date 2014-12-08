@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="161" key="DIALOG_Y_ORIGIN"/>
-		<item value="896" key="DIALOG_X_ORIGIN"/>
+		<item value="648" key="DIALOG_Y_ORIGIN"/>
+		<item value="424" key="DIALOG_X_ORIGIN"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wholeword"/>
-		<item value="&lt;&lt;&lt;&lt;" key="selection"/>
+		<item value="sendOneMore" key="selection"/>
 		<list key="findhistory">
-			<item value="&lt;&lt;&lt;&lt;"/>
+			<item value="sendOneMore"/>
 			<item value="stopInfiniteAlert"/>
-			<item value="i"/>
-			<item value="bootstrap"/>
-			<item value="recvBuf"/>
-			<item value="sendAlert"/>
-			<item value="confirmedInfoCode"/>
-			<item value="TODO"/>
+			<item value="Enviando alerta"/>
+			<item value="enviando alerta"/>
+			<item value="enviando"/>
+			<item value="send"/>
+			<item value="alertList"/>
+			<item value="*.id"/>
 		</list>
 		<list key="replacehistory">
 		</list>

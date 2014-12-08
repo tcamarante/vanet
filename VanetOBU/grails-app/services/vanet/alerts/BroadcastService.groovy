@@ -10,6 +10,9 @@ import org.codehaus.groovy.grails.web.json.JSONObject
 import org.codehaus.groovy.grails.web.binding.DataBindingUtils
 import vanet.alert.Alert
 
+import groovyx.gpars.dataflow.DataflowVariable
+import static groovyx.gpars.dataflow.Dataflow.task
+
 @Transactional
 class BroadcastService {
 
@@ -17,7 +20,8 @@ class BroadcastService {
 	def navigationLogService
 	def carService
 	def alertService
-	final List<AlertWrapper> alertList = new ArrayList<AlertWrapper>()
+//	final List<AlertWrapper> alertList = new ArrayList<AlertWrapper>()
+	final def alertList = new DataflowVariable()
 	final List<String> confirmedInfoCodeList = new ArrayList<String>()
 	
 	private class AlertWrapper{
@@ -39,14 +43,16 @@ class BroadcastService {
 				// Ex: dois alertas de acidente de um mesmo veículo
 				if(sendObj.instanceOf(Alert)){
 					if(sendObj.messageCode == 2 || sendObj.messageCode == 3){
-						pct = alertList.find{(it.obj.messageCode == 2||it.obj.messageCode == 3) && 
+						pct = alertList.val.find{(it.obj.messageCode == 2||it.obj.messageCode == 3) && 
 							it.obj.carCode == sendObj.carCode && it.sendOneMore()==true}
 					}
 					i=qtd
 				}
-			}
-			if(!pct){
-				alertList.add(new AlertWrapper(obj:sendObj,sendOneMore:sendOneMore))
+			
+				if(!pct){
+					alertList.val.add(new AlertWrapper(obj:sendObj,sendOneMore:sendOneMore))
+					println "Vetor atual -> "+alertList.val*.obj.id
+				}
 			}
 		}
 	}
@@ -100,7 +106,7 @@ class BroadcastService {
 	 * @return
 	 */
 	def stopInfiniteAlert(Alert stopObj){
-		def pct = alertList.find{it.obj.id == stopObj.id && it.sendOneMore()==true && it.obj.class == stopObj.class}
+		def pct = alertList.val.find{it.obj.id == stopObj.id && it.sendOneMore()==true && it.obj.class == stopObj.class}
 		pct.sendOneMore = {return false}
 	}
 	
@@ -115,27 +121,37 @@ class BroadcastService {
 	}
 	
 	/**
+	 * Verifica se um objeto está na lista de broadcast
+	 * @param obj
+	 * @return
+	 */
+	def Boolean isSending(Object obj){
+		return alertList.val*.obj.code.contains(obj.code)
+	}
+	
+	/**
 	 * Thread que esvazia a lista de pacotes a enviar
 	 * @return
 	 */
 	def alertSender(){
 		task{
 			println ">>>>>>>> Serviço de envio de alertas Ativado!!!"
+			alertList << new ArrayList<AlertWrapper>()
 			while(true){
 				try{
-					if(alertList.isEmpty()){
+					if(alertList.val.isEmpty()){
 						sleep(1000)
 					}else{
-//						println alertList
-						def a = alertList.first()
+//						println alertList.val
+						def a = alertList.val.first()
 						// Se for alerta de acidente não espera confirmação
 						Boolean confirm = !(a.obj.instanceOf(Alert))
 						send(a.obj, confirm)
 						if(a.sendOneMore()){
-							alertList.remove(0)
-							alertList.add(a)
+							alertList.val.remove(0)
+							alertList.val.add(a)
 						}else{
-							alertList.remove(0)
+							alertList.val.remove(0)
 						}
 						// Tempo entre 2 alertas em ms
 						sleep(100)
@@ -154,7 +170,7 @@ class BroadcastService {
 	 */
 	def send(Object msg, Boolean confirm=true) {
 		println "---------------------------------Enviando informação---------------------------------------------------------"
-		println "Vetor atual -> " + alertList
+		println "Vetor atual -> " + alertList.val*.obj.id
 		//Procurando o servidor UDP utilizando brodcast
 		try {
 			//Abrindo uma porta qualquer para enviar o pacote
@@ -240,8 +256,8 @@ class BroadcastService {
 		def p = task{
 			try {
 				//Mantem um canal aberto para ouvir tudo o trafic UDP que é destinado para esta porta
-				DatagramSocket socket = new DatagramSocket(8082);
-//				socket.setBroadcast(true);
+				DatagramSocket socket = new DatagramSocket(8082, InetAddress.getByName("0.0.0.0"));
+				socket.setBroadcast(true);
 
 				while (true) {
 					try{
@@ -252,11 +268,6 @@ class BroadcastService {
 						DatagramPacket packet = new DatagramPacket(recvBuf, recvBuf.length);
 						socket.receive(packet);
 	
-						//Pacote recebido
-						println "---------------------------------Informação recebida---------------------------------------------------------"
-						//println(getClass().getName() + "SERVER>>>Analisando pacote recebido de: " + packet.getAddress().getHostAddress());
-						println(getClass().getName() + "SERVER>>>Pacotes recebidos; dados: " + new String(packet.getData()));
-	
 						//Vendo se o pacote contém o comando correto (mensagem)
 						String message = new String(packet.getData()).trim();
 						//println("SERVER"+message)
@@ -264,9 +275,21 @@ class BroadcastService {
 						if(json."class" == "vanet.alert.Alert"){
 							Alert alert = new Alert()
 							DataBindingUtils.bindObjectToInstance(alert, json)//,include, exclude, filter)
+							if(!isSending(alert)){
+								//Pacote recebido
+								println "---------------------------------Informação recebida---------------------------------------------------------"
+								//println(getClass().getName() + "SERVER>>>Analisando pacote recebido de: " + packet.getAddress().getHostAddress());
+								println(getClass().getName() + "Dados recebidos: " + new String(packet.getData()));
+								
+								println ">>> Recebendo alerta"
+							}
 							alertService.alertReceive(alert)
 							sendConfirmation(socket, packet)
+							if(!isSending(alert)){
+								println "---------------------------------fim Informação recebida------------------------------------------------------"
+							}
 						}else if(json."class" == "vanet.automotive.NavigationLog"){
+							println ">>> Log"
 							// TODO: terminar
 							navigationLogService.navigationLogReceive()
 							sendConfirmation(socket, packet)
@@ -274,7 +297,6 @@ class BroadcastService {
 							def carInstance = carService.sendToServer()
 							sendConfirmation(socket, packet, (carInstance as JSON).toString().getBytes())
 						}
-						println "---------------------------------fim Informação recebida------------------------------------------------------"
 					} catch (Exception ex) {
 						ex.printStackTrace()
 					}
@@ -309,5 +331,9 @@ class BroadcastService {
 		socket.send(sendPacket);
 
 //		System.out.println(getClass().getName() + "SERVER>>>Sent packet to: " + sendPacket.getAddress().getHostAddress());
+	}
+	
+	def testAlert(Object sendObj){
+		alertList.val.add(new AlertWrapper(obj:sendObj,sendOneMore:false))
 	}
 }

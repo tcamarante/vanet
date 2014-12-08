@@ -11,9 +11,10 @@ class AlertService {
 	
     def alertReceive(Alert alert) {
 		def lastLog = navigationLogService.readNewNavigationLog()
-		Alert redundantAlert = Alert.findByCode(alert.code)
+		boolean redundantAlert = broadcastService.isSending(alert)//Alert.findByCode(alert.code)
+		println "<<<<<< Alerta detectado a "+mapService.distance(alert.lat, alert.lng, lastLog.lat, lastLog.lon)+" metros."
 		if(!redundantAlert){
-			println "<<<<<< Alerta detectado a "+mapService.distance(alert.lat, alert.lng, lastLog.lat, lastLog.lon)+" metros."
+			println " Repassando o alerta..."
 			alert.receivedDate = System.currentTimeMillis()
 			alert.save(flush:true)
 			broadcastService.sendAlertWhileNear(alert)

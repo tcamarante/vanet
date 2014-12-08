@@ -34,15 +34,5 @@
 			<type>2</type>
 			<location>E:/Thiago/GGTS/ggts-3.5.1.RELEASE/plugins/org.codehaus.groovy_2.3.3.xx-201406301607-e43j8/plugin_dsld_support</location>
 		</link>
-		<link>
-			<name>.link5</name>
-			<type>2</type>
-			<location>E:/git/vanet/VanetRSU/target/work/plugin-classes</location>
-		</link>
-		<link>
-			<name>.link6</name>
-			<type>2</type>
-			<location>E:/git/vanet/VanetServer/target/work/plugin-classes</location>
-		</link>
 	</linkedResources>
 </projectDescription>

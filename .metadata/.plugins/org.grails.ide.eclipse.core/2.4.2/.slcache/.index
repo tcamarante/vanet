@@ -4480,3 +4480,17 @@ n:1609:java_util_Set$addAll$1
 n:1899:grails/util/PluginBuildSettings$getSupportedPluginInfos$13
 n:1826:grails/util/BuildSettings$getClassesDir$5
 n:1839:grails/util/BuildSettings$getDefaultPluginSet$3
+n:5530:groovyx/gpars/dataflow/DataflowVariable
+n:397:groovyx/gpars/dataflow/DataflowChannel
+n:19481:groovyx/gpars/dataflow/DataflowReadChannel
+n:573:groovyx/gpars/dataflow/SelectableChannel
+n:631:groovyx/gpars/dataflow/DataflowWriteChannel
+n:3243:groovyx/gpars/dataflow/Promise
+n:52003:groovyx/gpars/dataflow/expression/DataflowExpression
+n:2138:groovyx/gpars/serial/WithSerialId
+n:11612:groovyx/gpars/dataflow/Dataflow
+n:22035:groovyx/gpars/group/PGroup
+n:12061:groovyx/gpars/dataflow/operator/DataflowProcessor
+n:7261:groovyx/gpars/dataflow/Select
+n:5257:groovyx/gpars/dataflow/operator/DataflowSelector
+n:3244:groovyx/gpars/dataflow/operator/DataflowOperator
