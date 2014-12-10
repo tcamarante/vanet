@@ -13,6 +13,7 @@ class Alert {
 	Long alertDate
 	Long sendDate
 	Long receivedDate
+	Long sendTime
 	Boolean seen = false
 	
     static constraints = {
@@ -21,5 +22,6 @@ class Alert {
 		port(nullable:true)
 		lat(nullable:true)
 		lng(nullable:true)
+		sendTime(nullable:true)
     }
 }

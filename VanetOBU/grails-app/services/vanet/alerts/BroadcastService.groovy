@@ -146,6 +146,9 @@ class BroadcastService {
 						def a = alertList.val.first()
 						// Se for alerta de acidente não espera confirmação
 						Boolean confirm = !(a.obj.instanceOf(Alert))
+						if(a.obj.instanceOf(Alert)){
+							sendTime = System.currentTimeMillis()
+						}
 						send(a.obj, confirm)
 						if(a.sendOneMore()){
 							alertList.val.remove(0)
@@ -182,7 +185,7 @@ class BroadcastService {
 
 			//Tentando 255.255.255.255 primeiro
 			try {
-				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.188.255"), 8082);
+				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.188.255"), 8083);
 				c.send(sendPacket);
 				//System.out.println(getClass().getName() + "CLIENT>>> Requisição enviada para: 255.255.255.255 (DEFAULT)");
 			} catch (Exception e) {
@@ -206,7 +209,7 @@ class BroadcastService {
 
 					// Enviando o pacote broadcast
 					try {
-						DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, broadcast, 8082);
+						DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, broadcast, 8083);
 						c.send(sendPacket);
 					} catch (Exception e) {
 					}
@@ -279,7 +282,7 @@ class BroadcastService {
 								//Pacote recebido
 								println "---------------------------------Informação recebida---------------------------------------------------------"
 								//println(getClass().getName() + "SERVER>>>Analisando pacote recebido de: " + packet.getAddress().getHostAddress());
-								println(getClass().getName() + "Dados recebidos: " + new String(packet.getData()));
+								println("Dados recebidos: " + new String(packet.getData()));
 								
 								println ">>> Recebendo alerta"
 							}

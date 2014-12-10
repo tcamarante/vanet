@@ -5,7 +5,186 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2014-12-02T23:02:00Z</updated>
+  <updated>2014-12-10T00:49:00Z</updated>
+  <entry>
+    <title>This Week in Spring - December 9th, 2014</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/10/this-week-in-spring-december-9th-2014" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-12-10:1884</id>
+    <updated>2014-12-10T00:49:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! Can you believe we're staring the end of the month (and indeed the year!) down already? Time sure flies when you're having fun, eh?&lt;/p&gt;
+
+&lt;p&gt;This week I'm in Los Angeles talking to teams here at the Pivotal Labs L.A. office about projects they're doing for customers involving Spring and Spring Boot and then it's off to see our pals at TicketMaster. (If you're in the area and want to talk shop, &lt;a href="http://twitter.com/starbuxman"&gt;ping me on Twitter &lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;We've got a lot of stuff to cover this week. Notably, Pieter Humphrey has (as always) slaved over a hot transcoder to get a &lt;em&gt;lot&lt;/em&gt; of great Spring XD content up and available as replays this week. Don't miss out!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  Want the definitive &lt;em&gt;start here&lt;/em&gt; talk for Spring XD? Check out this SpringOne2GX 2014 replay of Spring XD co-leads Dr. Mark Pollack and Mark Fisher's talk, &lt;a href="http://spring.io/blog/2014/12/09/springone2gx-2014-replay-develop-powerful-big-data-applications-easily-with-spring-xd"&gt;&lt;em&gt;Develop powerful Big Data Applications easily with Spring XD&lt;/em&gt;&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;  Spring framework committer &lt;a href="http://spring.io/blog/2014/12/09/spring-framework-4-1-3-released"&gt;Stéphane Nicoll has just announced Spring framework 4.1.3&lt;/a&gt;. Upgrade recommended!&lt;/li&gt;
+&lt;li&gt;  Join Gary Russell on Jan 27th as he shows new reasons why Spring Integration leads the ESB/Integration Framework market (2014 DZone research): &lt;a href="http://spring.io/blog/2014/12/02/webinar-introducing-the-java-dsl-for-spring-integration"&gt;Introducing the Java DSL for Spring Integration&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;  Is in-memory your thing?  Join Luke Shannon Jan 13th and learn about how Spring MVC/Spring Boot applications can leverage GemFire for persistence in his talk &lt;a href="http://spring.io/blog/2014/12/02/webinar-building-scalable-data-applications-with-spring-and-gemfire"&gt;Building Scalable Data Applications with Spring and GemFire&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;  Spring ninja Roy Clarkson has just announced that &lt;a href="http://spring.io/blog/2014/12/09/spring-for-android-2-0-0-m2-released"&gt;Spring for Android M2 is now available&lt;/a&gt;. The new release is packed with new features so check it out now!&lt;/li&gt;
+&lt;li&gt;  The &lt;em&gt;Java Advent Calendar&lt;/em&gt; has a nice post on how to &lt;a href="http://www.javaadvent.com/2014/12/creating-rest-api-with-spring-boot-and.html"&gt;build a simple Java application using Spring Boot and MongoDB&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;  I was giving a workshop last Friday with &lt;a href="http://twitter.com/mstine"&gt;my pal Matt Stine&lt;/a&gt; on how to build microservices with Spring ("what even is... cloud?"). We had numerous great questions from the audience, but at one point we had this whole discussion over how data gets integrated across numerous microservices. Matt and I talked about approaches like CQRS, and I wish we had recorded that part of that discussion because it was a lot of fun. Our pal Chris Richardson, however, &lt;a href="http://www.infoq.com/interviews/cqrs-docker-richardson"&gt; just appeared on InfoQ with an interview on using CQRS for microservices&lt;/a&gt;. So check &lt;em&gt;that&lt;/em&gt; out, instead!&lt;/li&gt;
+&lt;li&gt;  Our pal Manuel Jordan's back at it, this time with a review of &lt;a href="http://manueljordanelera.blogspot.com/2014/12/book-review-learning-spring-boot.html"&gt;Spring team member Greg Turnquist's new book, &lt;em&gt;Learning Spring Boot&lt;/em&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;  Basel Almustafa put together a nice post on how to use Spring Security to secure a web application. I'd probably have used the (in my humble opinion more flexible) &lt;a href="http://www.dzone.com/articles/integrating-spring-security"&gt;Java configuration DSL, but the approach outlined here is certainly tried and true&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;  I liked Jimmy Liu's slide-deck, &lt;a href="http://www.slideshare.net/gn00023040/bootify-your-spring-application"&gt;&lt;em&gt;Bootify Your Spring Applications&lt;/em&gt;&lt;/a&gt;, you might too&lt;/li&gt;
+&lt;li&gt;  Tobias Flohre has put together a &lt;em&gt;very&lt;/em&gt; nice post on &lt;a href="https://blog.codecentric.de/en/2014/11/extending-spring-boot-five-steps-writing-spring-boot-starter/"&gt;how to write your own Spring Boot starter&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;  Check out the replay of &lt;a href="http://spring.io/blog/2014/12/09/springone2gx-2014-replay-spring-xd-a-guided-tour"&gt;Patrick Peralta's and David Turanski's SpringOne2GX talk, &lt;em&gt;Spring XD: a guided tour&lt;/em&gt;&lt;/a&gt;, now available as a replay&lt;/li&gt;
+&lt;li&gt;  Check out Carlos Queiroz's SpringOne2GX 2014 talk, &lt;a href="http://spring.io/blog/2014/12/09/springone2gx-2014-replay-implementing-the-lambda-architecture-with-spring-xd"&gt;&lt;em&gt;Implementing the Lambda Architecture with Spring XD&lt;/em&gt;&lt;/a&gt;, is now available as a replay&lt;/li&gt;
+&lt;li&gt;  If you missed it, Vineet Goel, Girish Lingappa, and Rodrigo Meneses' talk from SpringOne2GX, &lt;a href="http://spring.io/blog/2014/12/09/springone2gx-2014-replay-spring-xd-for-real-time-hadoop-workload-analysis"&gt;&lt;em&gt;Spring XD for real-time Hadoop Workload Analysis&lt;/em&gt;&lt;/a&gt;, is now available online&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 4.1.3 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/09/spring-framework-4-1-3-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2014-12-09:1877</id>
+    <updated>2014-12-09T13:14:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team I am pleased to announce the immediate availability of Spring Framework 4.1.3.&lt;/p&gt;
+
+&lt;p&gt;Spring Framework 4.1.3 is our third maintenance release in the 4.1.x line and comes with &lt;a href="https://jira.spring.io/issues/?jql=fixVersion%3D4.1.3%20AND%20project%3DSPR"&gt;over 50 fixes and improvements&lt;/a&gt;. It was initially scheduled for late December but we decided to release it early to incorporate user-suggested and user-contributed improvements right in time for the scheduled Spring Boot 1.2 release this week.&lt;/p&gt;
+
+&lt;p&gt;We are still planning on another release later this month (4.1.4) at which point 4.1.x will turn into a maintenance branch, with active development on 4.2 happening on master.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2014 Replay: Spring XD - A Guided Tour</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/09/springone2gx-2014-replay-spring-xd-a-guided-tour" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-12-09:1881</id>
+    <updated>2014-12-09T13:09:00Z</updated>
+    <content type="html">&lt;p&gt;Spring XD - A Guided Tour&lt;/p&gt;
+
+&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
+
+&lt;p&gt;Speakers: Patrick Peralta, David Turanski &lt;/p&gt;
+
+&lt;p&gt;Big Data Track &lt;/p&gt;
+
+&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/spring-xd-guided-tour"&gt;http://www.slideshare.net/SpringCentral/spring-xd-guided-tour&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;What happens when a Stream is deployed to a Spring XD cluster? How does Stream processing and data partitioning work? How does the cluster recover when a Spring XD container goes down? How does Spring XD create and manage application contexts? What is a Plugin? How does Spring XD support extensibility? Our experienced guides will take you on a tour of the Spring XD runtime environment, navigating Streams and observing how Modules thrive in their natural habitat. We will explore the role of ZooKeeper, Spring Integration, and Spring Boot through beautiful panoramas, code samples, and daring demonstrations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/lteee9N816k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2014 Replay: Implementing the Lambda Architecture with Spring XD</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/09/springone2gx-2014-replay-implementing-the-lambda-architecture-with-spring-xd" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-12-09:1880</id>
+    <updated>2014-12-09T13:01:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
+
+&lt;p&gt;Speaker: Carlos Queiroz &lt;/p&gt;
+
+&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/spring-one2gx-2014carlosqueiroz"&gt;http://www.slideshare.net/SpringCentral/spring-one2gx-2014carlosqueiroz&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;Big Data Track&lt;/p&gt;
+
+&lt;p&gt;The lambda architecture has been proposed as a general purpose data system that aims to solve the problem of computing arbitrary functions on an arbitrary dataset in (near) real-time. In this talk we introduce the lambda architecture and show how it can be implemented with SpringXD, GemFireXD and Hadoop (HDFS and MapReduce) as the foundation of the architecture implementation. To validate the architecture we introduce a CDR (Call Detail Record) mining application as use case of the lambda architecture. We finalise by showing a demo of the CDR (Call Detail Record) mining application.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/tjwW9oWkH0Q" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2014 Replay: Spring XD for Real-time Hadoop Workload Analysis</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/09/springone2gx-2014-replay-spring-xd-for-real-time-hadoop-workload-analysis" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-12-09:1879</id>
+    <updated>2014-12-09T12:58:00Z</updated>
+    <content type="html">&lt;p&gt; Recorded at SpringOne2GX 2014. &lt;/p&gt;
+
+&lt;p&gt;Speakers: Vineet Goel, Girish Lingappa, Rodrigo Meneses &lt;/p&gt;
+
+&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/spring-one2gx-2014springxdhadoopworkloadanalysis"&gt;http://www.slideshare.net/SpringCentral/spring-one2gx-2014springxdhadoopworkloadanalysis&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;Big Data Track &lt;/p&gt;
+
+&lt;p&gt;As Hadoop goes mainstream in enterprise big data deployments, IT organizations expect and demand enhanced operational management of their Hadoop clusters in production. Admins require more than just cluster health monitoring; they need the ability to do real time workload analysis for performance tuning and troubleshooting. Real-time log analysis of jobs at a user or application level can allow admins to manage and tune workloads better, especially in multi-tenancy Hadoop cluster services. Join us to learn how Pivotal team leveraged Spring XD data ingestion and batch processing framework, GemFire XD &amp;amp; other components to solve this interesting challenge on a large 1000-node (Analytics Workbench) cluster. Using Spring XD to ingest YARN service and MapReduce application logs through a real-time data pipeline into HDFS, the team leveraged familiar SQL-based queries to analyze fine-grained cluster utilization.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/cBcznXjL840" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2014 Replay:  Develop powerful Big Data Applications easily with Spring XD</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/09/springone2gx-2014-replay-develop-powerful-big-data-applications-easily-with-spring-xd" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2014-12-09:1878</id>
+    <updated>2014-12-09T12:55:00Z</updated>
+    <content type="html">&lt;p&gt; Recorded at SpringOne2GX 2014. &lt;/p&gt;
+
+&lt;p&gt;Speakers: Mark Fisher and Mark Pollack &lt;/p&gt;
+
+&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/develop-powerful-big-data-applications-easily-with-springxd"&gt;http://www.slideshare.net/SpringCentral/develop-powerful-big-data-applications-easily-with-springxd&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Big Data Track &lt;/p&gt;
+
+&lt;p&gt;Spring XD aims to provide a one stop shop for writing and deploying Big Data Applications. It provides a scalable, fault tolerant, distributed runtime for Data Ingestion, Analytics, and Workflow Orchestration using a single programming, configuration and extensibility model. By not requiring developers to rationalize all of this themselves across the many different solutions available today, Spring XD greatly reduces the inherent complexity of Big Data development. It's all built on proven projects like Spring Integration, and Spring Batch. You'll see for yourself how this heritage combines to provide a scalable runtime environment, that is easily configured and assembled via a simple DSL.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/mcJXjxZ3f9k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring for Android 2.0.0.M2 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/09/spring-for-android-2-0-0-m2-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Roy Clarkson</name>
+    </author>
+    <id>tag:spring.io,2014-12-09:1876</id>
+    <updated>2014-12-09T09:21:46Z</updated>
+    <content type="html">&lt;p&gt;I am pleased to announce that Spring for Android 2.0.0.M2 is now available in the Spring milestone repository. Highlights include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support for the Android port of &lt;a href="https://hc.apache.org/httpcomponents-client-4.3.x/android-port.html"&gt;HttpClient 4.3&lt;/a&gt; via HttpComponentsClientHttpRequestFactory&lt;/li&gt;
+&lt;li&gt;Support for HttpClient 4.0 included with Android is now deprecated but will remain available through HttpComponentsAndroidClientHttpRequestFactory.&lt;/li&gt;
+&lt;li&gt;HTTP PATCH support in RestTemplate&lt;/li&gt;
+&lt;li&gt;The type conversion package from Spring Core is now available in Spring for Android Core.&lt;/li&gt;
+&lt;li&gt;Many improvements and fixes from Spring 3.2 are now merged into Spring for Android to bring baseline compatibility to Spring 3.2, while certain RestTemplate features from Spring 4.1 have been included to support the new HttpClient.&lt;/li&gt;
+&lt;li&gt;Other bug fixes and improvements&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+&lt;a id="user-content-httpclient-43" class="anchor" href="#httpclient-43" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;HttpClient 4.3&lt;/h3&gt;
+
+&lt;p&gt;If HttpClient 4.3 for Android is available on the classpath it will be configured as the default HTTP client. Include the following dependency in your &lt;code&gt;build.gradle&lt;/code&gt; to utilize the new HttpClient.&lt;/p&gt;
+
+&lt;div class="highlight highlight-groovy"&gt;&lt;pre&gt;dependencies {
+    compile &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;org.apache.httpcomponents:httpclient-android:4.3.5&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;
+}&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;
+&lt;a id="user-content-minimum-version" class="anchor" href="#minimum-version" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Minimum Version&lt;/h3&gt;
+
+&lt;p&gt;The minimum supported version is Android 2.2 (API level 8), however it now accounts for 0.5% of Android devices on the Android developer &lt;a href="https://developer.android.com/about/dashboards/index.html"&gt;Dashboards&lt;/a&gt;. We recommend Android 2.3 as a minimum target for new apps, as third-party libraries such as Jackson 2.4 and OkHttp require Android 2.3 and newer.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a id="user-content-conclusion" class="anchor" href="#conclusion" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;For a complete list of changes, see the &lt;a href="https://jira.spring.io/browse/ANDROID"&gt;Release Notes&lt;/a&gt; in JIRA. The &lt;a href="http://docs.spring.io/spring-android/docs/2.0.0.M2/reference/htmlsingle/"&gt;reference documentation&lt;/a&gt; has also been updated to cover the new features.&lt;/p&gt;
+
+&lt;p&gt;Thanks again to everyone that has contributed to the release! Please try this new milestone and report any problems in &lt;a href="https://jira.spring.io/browse/ANDROID"&gt;JIRA&lt;/a&gt; or on &lt;a href="https://github.com/spring-projects/spring-android/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - December 2, 2014</title>
     <link rel="alternate" href="https://spring.io/blog/2014/12/02/this-week-in-spring-december-2-2014" />
@@ -1753,420 +1932,6 @@ see the evolution of Spring Integration including the Java DSL, as shown at the 
 &lt;p&gt;All these modules now depend on Spring Boot 1.2.0.RC2 with the intention that we move to 1.2.0.RELEASE when it becomes available. Together with the starters (dependency management helpers, also released now at 1.0.0.M3) these represent almost all of Spring Cloud, with the exception of Spring Cloud Connectors, which should see a 1.1.1 release soon.&lt;/p&gt;
 
 &lt;p&gt;We are making good progress towards a release candidate for 1.0.0 in December, and would like to thank the community for contributing on github and getting involved by trying out the early milestones.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - November 25th, 2014</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/11/25/this-week-in-spring-november-25th-2014" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2014-11-25:1860</id>
-    <updated>2014-11-25T00:03:00Z</updated>
-    <content type="html">&lt;p&gt;Egads! Can you believe it's already almost the end of the year? Time has been screaming fast! It's the week of Thanksgiving for those of us in the United States. This is a wonderful time of year to sit back, find a nice &lt;a href="http://spring.io/guides"&gt;Spring IO guide&lt;/a&gt; or blog to read, and then build something awesome.. oh, and it's an ideal time to spend in the company of friends and family and to reflect on those and that for which we're grateful. I'm sure I speak for the Spring team and Pivotal at large when I say that we're grateful for you, our inspiring community, users and customers.&lt;/p&gt;
-
-&lt;p&gt;But if you &lt;em&gt;do&lt;/em&gt; want something to read, too, we have quite a roundup this week! So, without further ado..!&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt; Spring Integration ninja Artem Bilan &lt;a href="https://spring.io/blog/2014/11/24/spring-integration-java-dsl-1-0-ga-released"&gt;just announced the Spring Integration Java Configuration DSL, 1.0.RELEASE&lt;/a&gt;! Hurrah! This release has been a &lt;em&gt;long&lt;/em&gt; time in coming, and I hope you'll check it out! Artem Bilan Gary Russell have done an &lt;em&gt;amazing&lt;/em&gt; job bringing this API to fruition. Check the blog for a list of resources you can consult.&lt;/li&gt;
-&lt;li&gt; Spring XD co-lead Dr. Mark Pollack just announced &lt;a href="https://spring.io/blog/2014/11/19/spring-xd-1-1-m1-and-1-0-2-released"&gt;Spring XD 1.1.M1 and 1.0.2&lt;/a&gt;. 1.1 is marching towards GA and offers support for Apache Spark, Python, Apache Kafka, improved HDFS sink functionality, LDAP authentication, Java configuraton, Redis and JDBC sources, and Zookeeper. And that's just for starters! The good doctor briefly hints at what'll be coming in the next pre-1.1 release! Read the blog for more and for details on what's available in 1.0.2!&lt;/li&gt;
-&lt;li&gt; Spring Boot &lt;a href="https://spring.io/blog/2014/11/23/bootiful-java-ee-support-in-spring-boot-1-2"&gt;co-lead Phil Webb just announced Spring Boot 1.2.0.RC2&lt;/a&gt;, packed with &lt;em&gt;lots&lt;/em&gt; of new features! &lt;a href="http://start.spring.io"&gt;Try it out and kick the tires&lt;/a&gt; now!&lt;/li&gt;
-&lt;li&gt; I wrote about &lt;a href="https://spring.io/blog/2014/11/23/bootiful-java-ee-support-in-spring-boot-1-2"&gt;some of the new features in Spring Boot 1.2 designed to support common Java EE APIs&lt;/a&gt; like JAX-RS and JTA and the new support for &lt;a href="http://undertow.io"&gt;Undertow&lt;/a&gt; HTTP engine which powers RedHat's WildFly application server.&lt;/li&gt;
-&lt;li&gt; The DISID corporation has just released the &lt;a href="https://spring.io/blog/2014/11/21/spring-roo-1-3-0-introduces-jdk-8-support"&gt;first release of Spring Roo under their leadership, 1.3, which brings complete JDK 8 support&lt;/a&gt; for both Spring Roo and Spring Roo-generated applications.&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt; ZeroTurnaround's Adam Koblentz and I did a webinar introducing &lt;a href="https://spring.io/blog/2014/11/24/webinar-replay-spring-boot-and-jrebel-6-0"&gt;how to use Spring Boot and JRebel to reduce iteration time&lt;/a&gt; with reloadable classes.&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt; Check out this replay of Ben Hale's SpringOne2gx 2014 talk, &lt;a href="https://spring.io/blog/2014/11/24/springone2gx-2014-replay-creating-rest-ful-hypermedia-based-micro-services-with-spring-boot"&gt;&lt;em&gt;Creating REST-ful, Hypermedia-based Microservices with Spring Boot&lt;/em&gt;&lt;/a&gt;.&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt; Matt Stine's 2014 talk on developing &lt;a href="https://spring.io/blog/2014/11/24/springone2gx-2014-replay-developing-microservices-for-paas-with-spring-and-cloud-foundry"&gt;PaaS-ready microservces with Spring and Cloud Foundry&lt;/a&gt; is also online.&lt;/li&gt;
-&lt;li&gt; Cornelia Davis' SpringOne2GX 2014 talk on &lt;a href="https://spring.io/blog/2014/11/24/springone2gx-2014-replay-running-your-spring-apps-in-the-cloud"&gt;running Spring applications in the cloud (like Cloud Foundry)&lt;/a&gt; is also online.&lt;/li&gt;
-&lt;li&gt;Watch Spring ninja Greg Turnquist build &lt;a href="https://spring.io/blog/2014/11/20/screencast-how-to-create-a-restful-app-in-five-minutes-or-less"&gt;and run a REST service based on Spring Boot in 5 minutes&lt;/a&gt;. Why? 'Cuz he &lt;em&gt;can&lt;/em&gt;!&lt;/li&gt;
-&lt;li&gt;I gave a quick interview just after speaking at &lt;a href="https://www.voxxed.com/blog/interview/josh-long-booting-productivity-with-spring-and-cloudy-news/"&gt;Geekout UK&lt;/a&gt; on all things Spring, Cloud Foundry, microservice and more. Check it out!&lt;/li&gt;
-&lt;li&gt;Check out this &lt;a href="http://www.activestate.com/blog/2014/08/microservices-and-paas-part-i"&gt;interesting series on building microservices for PaaS&lt;/a&gt; by the Cloud Foundry ecosystem partner ActiveState. The first article is there, scroll down for the next installments in the series.&lt;/li&gt;
-&lt;li&gt;Want to understand the differences between ZookKeeper and Netflix's Consul? &lt;a href="http://www.slideshare.net/IvanGlushkov/zookeeper-vs-consul-41882991"&gt;Check out this neat slide deck&lt;/a&gt; by Ivan Glushkov. 13.&lt;/li&gt;
-&lt;li&gt;Our pal Simon Maple over at &lt;a href="http://zeroturnaround.com"&gt;ZeroTurnaround&lt;/a&gt; put together this look at how to quickly build &lt;a href="http://zeroturnaround.com/rebellabs/what-you-can-build-for-free-in-2-hours-with-spring-boot-twitter-and-facebook/"&gt;a Spring Boot application that talks to Facebook, quickly&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Jacob Severson over on the &lt;em&gt;Object Partners&lt;/em&gt; blog has a great post on &lt;a href="http://www.objectpartners.com/2014/11/18/udp-server-with-spring-boot-and-reactor/"&gt;using the Reactor project (and Spring Boot) to build a UDP service&lt;/a&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;Check out this post on the &lt;em&gt;All and Sundry&lt;/em&gt; blog on how to persist HTTP session state in a backing store like &lt;a href="http://redis.io"&gt;Redis&lt;/a&gt; using &lt;a href="http://www.java-allandsundry.com/2014/11/externalizing-session-state-for-spring.html"&gt;Spring Session&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Check out this blog on how &lt;a href="https://looksok.wordpress.com/2014/11/22/spring-boot-sslhttps-for-embedded-tomcat/"&gt;to setup HTTPS using embedded Apache Tomcat with Spring Boot&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Check out this Chinese-language &lt;a href="http://www.cnblogs.com/smarterplanet/p/4087577.html"&gt;introduction to using Spring Security&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;AirPair has a very interesting post on &lt;a href="https://www.airpair.com/java/posts/spring-streams-memory-efficiency"&gt;using Java 8 &lt;code&gt;Stream&lt;/code&gt;s to &lt;em&gt;stream&lt;/em&gt; data back to the client for memory-intensive usecases&lt;/a&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;As we head into the Thanksgiving holiday here where we'll load up on Turkey and then binge-watch Netflix, remember that new estimates suggest that &lt;a href="http://arstechnica.com/information-technology/2014/11/netflix-takes-up-9-5-of-upstream-traffic-on-the-north-american-internet/"&gt;Netflix takes up 9.5% of &lt;em&gt;upstream&lt;/em&gt; traffic on the North American internet&lt;/a&gt;. Don't even ask about &lt;em&gt;downstream&lt;/em&gt;! To learn about the microservice stack (including Spring and, increasingly, Spring Boot) that Neflix uses to scale and to learn how to integrate it all with Spring Cloud, &lt;a href="https://www.youtube.com/watch?v=VPtlZLdm7Nc"&gt;check out this webinar that I delivered a few months ago&lt;/a&gt;! Once the turkey's done, then come the &lt;em&gt;sales&lt;/em&gt;! China just celebrated a similarly major shopping event where one online e-tailer, Alibaba, raked in $9.3 &lt;em&gt;BILLION&lt;/em&gt; in sales in one day building atop Spring. I wrote about their crazy scale in a blog a last year, &lt;a href="https://spring.io/blog/2013/03/04/spring-at-china-scale-alibaba-group-alipay-taobao-and-tmall/"&gt;Spring at China scale&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Thank you&lt;/em&gt; and happy Thanksgiving!&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Webinar Replay: Spring Boot and JRebel 6.0</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/11/24/webinar-replay-spring-boot-and-jrebel-6-0" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-11-24:1859</id>
-    <updated>2014-11-24T14:29:00Z</updated>
-    <content type="html">&lt;p&gt; Speakers: Josh Long, Pivotal + Adam Koblentz - ZeroTurnaround &lt;/p&gt;
-
-&lt;p&gt;Slides: &lt;a href="https://speakerdeck.com/joshlong/bootiful-jrebel"&gt;https://speakerdeck.com/joshlong/bootiful-jrebel&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring's flexibility with conventional, common sense defaults to make application development not just fly, but pleasant! Spring Boot gives you a huge leg up over normal starter projects, now let's give you another boost by adding JRebel. With JRebel, the average Java developer saves over 1 work-month per year by using JRebel to skip rebuild, restart, and redeploys of their application. JRebel 6 launches on November 4, 2014 and includes complete Spring Boot integration. Join Spring's Josh Long and ZeroTurnaround's Adam Koblentz and learn how to combine Boot with JRebel and get more done, in less time with less configuration.&lt;/p&gt;
-
-&lt;p&gt; Learn more about Spring Boot: &lt;a href="http://projects.spring.io/spring-boot"&gt;http://projects.spring.io/spring-boot&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; Learn more about JRebel: &lt;a href="http://zeroturnaround.com/software/jrebel/display/"&gt;http://zeroturnaround.com/software/jrebel/display/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; 14 day free JRebel trial download: &lt;a href="https://zeroturnaround.com/software/jrebel/trial/"&gt;https://zeroturnaround.com/software/jrebel/trial/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;&lt;iframe width="420" height="315" src="//www.youtube.com/embed/N5FHiONGOsg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Creating REST-ful, Hypermedia-based Micro-services with Spring Boot</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/11/24/springone2gx-2014-replay-creating-rest-ful-hypermedia-based-micro-services-with-spring-boot" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-11-24:1857</id>
-    <updated>2014-11-24T10:59:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014.&lt;/p&gt;
-
-&lt;p&gt;Speaker: Ben Hale @nebhale &lt;/p&gt;
-
-&lt;p&gt; Slides: &lt;a href="http://www.slideshare.net/SpringCentral/creating-restful-hypermediabased-microservices-with-spring-boot"&gt;http://www.slideshare.net/SpringCentral/creating-restful-hypermediabased-microservices-with-spring-boot&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;As data-driven applications become ubiquitous, the services that provide the data are proliferating. As teams become responsible for more and more of these services, it becomes critical that they be designed and implemented in a way that is as lightweight as possible. This session will cover how to design micro-services as RESTful APIs and implement them with minimal code using Spring Boot. It will focus on API design using REST and HATEOAS, with live coding progressing from a tweet-length implementation all the way to a full-fledged app running in the cloud.&lt;/p&gt;
-
-&lt;p&gt; Along the way we'll see how to leverage technologies such as Spring Boot and Reactor to develop microservices targeted at Cloud Foundry.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/zbeMDM-zDNI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Developing Microservices for PaaS with Spring and Cloud Foundry</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/11/24/springone2gx-2014-replay-developing-microservices-for-paas-with-spring-and-cloud-foundry" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-11-24:1856</id>
-    <updated>2014-11-24T10:54:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-
-&lt;p&gt;Speaker: Matt Stine &lt;/p&gt;
-
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/developing-microservices-for-paas-with-spring-and-cloud-foundry"&gt;http://www.slideshare.net/SpringCentral/developing-microservices-for-paas-with-spring-and-cloud-foundry&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;Marc Andressen has famously said "Software is eating the world." What does that mean? We take it to mean that multiple industries with historically entrenched leaders are being disrupted by businesses built around a software core. These software factories are characterized by: tight feedback loops rapid iteration horizontal scaling mobile-first UX continuous delivery These factors have contributed to drive a change in how we approach infrastructure, which has taken the lead in adapting to meet these needs with the move to the cloud, and Platform as a Service (PaaS) offerings like Cloud Foundry have raised the level of abstraction to a focus on an ecosystem of applications and services. However, most applications are still developed as if we're living in the previous generation of both business and infrastructure: the monolithic application. Microservices - small, loosely coupled applications that follow the Unix philosophy of ""doing one thing well"" - represent the application development side of enabling rapid, iterative development, horizontal scale, polyglot clients, and continuous delivery. They also enable us to scale application development and eliminate long term commitments to a single technology stack. While microservices are simple, they are certainly not easy. It's recently been said that "microservices are not a free lunch." Interestingly enough, if you look at the concerns typically expressed about microservices, you'll find that they are exactly the challenges that a PaaS is intended to address. So while microservices do not necessarily imply cloud (and vice versa), there is in fact a symbiotic relationship between the two, with each approach somehow compensating for the limitations of the other, much like the practices of eXtreme Programming do the same. This session will describe architectural patterns for developing microservices: &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Service Decomposition &lt;/li&gt;
-  &lt;li&gt;API Gateways&lt;/li&gt;
-  &lt;li&gt; Stateless / Shared-Nothing&lt;/li&gt;
-  &lt;li&gt; Apps Configuration and Backing Service&lt;/li&gt;
-  &lt;li&gt; Consumption &lt;/li&gt;
-  &lt;li&gt;Fault Tolerance&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; Along the way we'll see how to leverage technologies such as Spring Boot and Reactor to develop microservices targeted at Cloud Foundry.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/iMvCOEsSuAc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Running Your Spring Apps in the Cloud</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/11/24/springone2gx-2014-replay-running-your-spring-apps-in-the-cloud" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-11-24:1855</id>
-    <updated>2014-11-24T10:54:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-
-&lt;p&gt;Speaker: Cornelia Davis &lt;/p&gt;
-
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/running-your-spring-apps-in-the-cloud"&gt;http://www.slideshare.net/SpringCentral/running-your-spring-apps-in-the-cloud&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;The Spring Trader application was debuted at SpringOne 2GX in 2012 and presented an application that demonstrates a multitude of Pivotal Application Fabric components working together – tcServer, RabbitMQ, SQLFire and Gemfire. In this session we will take that application and make (a few) modifications (mostly to config) to get it running on the same components in the cloud, specifically on the Cloud Foundry PaaS. We’ll show you how to use the Spring Cloud project to configure the deployment, how to leverage a cloud services catalog, how to implement a cross-site scripting solution (and why), how to do session state caching and we’ll discuss (the dangers of) auto reconfiguration. If you bring a laptop you can have your own instance of the app running by the end of the session.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/nuiNvI5HYkU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Integration Java DSL 1.0 GA Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/11/24/spring-integration-java-dsl-1-0-ga-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Artem Bilan</name>
-    </author>
-    <id>tag:spring.io,2014-11-24:1854</id>
-    <updated>2014-11-24T10:17:00Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
-
-&lt;p&gt;As we promised in the Release Candidate &lt;a href="https://spring.io/blog/2014/10/31/spring-integration-java-dsl-1-0-rc1-released"&gt;blog post&lt;/a&gt;,
-we are pleased to announce that the Spring Integration Java DSL 1.0 GA is now available.
-As usual, use the &lt;a href="http://repo.springsource.org/release"&gt;Release Repository&lt;/a&gt; with Maven or Gradle,
-or download a
-&lt;a href="http://repo.spring.io/release/org/springframework/integration/spring-integration-java-dsl/1.0.0.RELEASE"&gt;distribution archive&lt;/a&gt;,
-to give it a spin.&lt;/p&gt;
-
-&lt;p&gt;See the project &lt;a href="https://github.com/spring-projects/spring-integration-java-dsl/wiki/Spring-Integration-Java-DSL-Reference"&gt;home page&lt;/a&gt;
-for more information.&lt;/p&gt;
-
-&lt;p&gt;First of all, we are glad to share with you that on Nov 12, 2014, &lt;a href="http://dzone.com/research/guide-to-enterprise-integration"&gt;DZone research&lt;/a&gt;
-recognized Spring Integration as the leader in the ESB / Integration framework space, leading with 42% marketshare,
-in a publication of their recent survey results.
-And the report is the most popular DZone Guide in November, with more than 12 000 downloads already! Don't miss it: very
-exciting. We hope the release of the Spring Integration Java DSL adds more excitement!.&lt;/p&gt;
-
-&lt;p&gt;Many thanks to all contributors, including several who are new to the community.&lt;/p&gt;
-
-&lt;p&gt;The release includes just a few bug fixes, since the release candidate, and a lot of JavaDocs!&lt;/p&gt;
-
-&lt;p&gt;Not specifically related to the the release, I want to present here some resources on
-the matter.&lt;/p&gt;
-
-&lt;p&gt;We are observing many valuable DSL questions on &lt;a href="http://stackoverflow.com/tags/spring-integration"&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://spring.io/team/jlong"&gt;Josh Long&lt;/a&gt;'s
-&lt;a href="https://spring.io/blog/2014/11/15/building-a-spring-integration-4-1-websocket-endpoint"&gt;tech tip&lt;/a&gt; showing how we can use
-together Spring Boot, REST, Spring Integration 4.1 WebSocket support and Spring Integration Java DSL plus Java 8
-features.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;Jdbc Splitter&lt;/code&gt; implementation in the project
-&lt;a href="https://github.com/spring-projects/spring-integration-java-dsl/blob/master/src/test/java/org/springframework/integration/dsl/test/jdbc/JdbcTests.java"&gt;tests&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;My &lt;a href="https://gist.github.com/artembilan/9bd32f5e899ef293b6c2"&gt;gist&lt;/a&gt; to demonstrate how we can use &lt;a href="https://github.com/reactor/reactor"&gt;Reactor&lt;/a&gt; &lt;code&gt;Stream&lt;/code&gt;s together with the Spring Integration Java DSL.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://spring.io/team/dsyer"&gt;Dave Syer&lt;/a&gt; has started to use Spring Integration Java DSL in the
-&lt;a href="https://github.com/spring-cloud/spring-cloud-bus"&gt;Spring Cloud Bus&lt;/a&gt; project.&lt;/p&gt;
-
-&lt;p&gt;Don't miss the &lt;a href="https://github.com/spring-projects/spring-integration-samples/tree/master/dsl/si4demo"&gt;si4demo&lt;/a&gt; to
-see the evolution of Spring Integration including the Java DSL, as shown at the 2014 SpringOne/2GX Conference. (Video should be available soon).&lt;/p&gt;
-
-&lt;p&gt;Especial thanks to &lt;a href="https://twitter.com/bijukunjummen"&gt;Biju Kunjummen&lt;/a&gt; who has done some nice articles on DZone to introduce Spring Integration Java DSL: &lt;a href="http://java.dzone.com/articles/spring-integration-java-dsl"&gt;http://java.dzone.com/articles/spring-integration-java-dsl&lt;/a&gt;, &lt;a href="http://java.dzone.com/articles/spring-integration-java-dsl-0"&gt;http://java.dzone.com/articles/spring-integration-java-dsl-0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And of course, with the latest &lt;a href="https://spring.io/blog/2014/11/19/spring-xd-1-1-m1-and-1-0-2-released"&gt;Spring XD&lt;/a&gt;, we
-can build Modules based on &lt;code&gt;@Configuration&lt;/code&gt; including Spring Integration Java DSL &lt;code&gt;IntegrationFlow&lt;/code&gt; definitions.&lt;/p&gt;
-
-&lt;p&gt;Also see the comprehensive &lt;a href="https://spring.io/blog/2014/11/25/spring-integration-java-dsl-line-by-line-tutorial"&gt;Cafe Demo: Line by line tutorial&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;As always, we look forward to your comments and feedback (&lt;a href="http://stackoverflow.com"&gt;StackOverflow&lt;/a&gt; 
-(&lt;code&gt;spring-integration&lt;/code&gt; tag), &lt;a href="https://jira.spring.io/browse/INTEXT"&gt;Spring JIRA&lt;/a&gt;, 
-&lt;a href="https://github.com/spring-projects/spring-integration-java-dsl/issues"&gt;GitHub&lt;/a&gt;) and we very much welcome 
-&lt;a href="https://github.com/spring-projects/spring-integration/blob/master/CONTRIBUTING.md"&gt;contributions&lt;/a&gt;!&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>"Bootiful" Java EE Support in Spring Boot 1.2</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/11/23/bootiful-java-ee-support-in-spring-boot-1-2" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2014-11-23:1853</id>
-    <updated>2014-11-23T13:37:00Z</updated>
-    <content type="html">&lt;p&gt;In this blog, I want to look at - and demonstrate - some of the &lt;em&gt;many&lt;/em&gt; new features in &lt;a href="http://spring.io/projects/spring-boot"&gt;Spring Boot 1.2&lt;/a&gt; that make the lives of those coming from, or otherwise building on, Java EE easier.  &lt;/p&gt;
-
-&lt;p&gt;It's worth mentioning that a lot of this support has been possible with Spring before, of course, but now with Spring Boot 1.2, it's just so darned easy!&lt;/p&gt;
-
-&lt;p&gt;First, here's an example program with notes after.&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;
-&lt;span class="pl-k"&gt;package&lt;/span&gt; &lt;span class="pl-smp"&gt;demo&lt;/span&gt;;
-
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;org.glassfish.jersey.jackson.JacksonFeature&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;org.glassfish.jersey.server.ResourceConfig&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;org.springframework.boot.SpringApplication&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;org.springframework.boot.autoconfigure.SpringBootApplication&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;org.springframework.jms.annotation.JmsListener&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;org.springframework.jms.core.JmsTemplate&lt;/span&gt;;
-
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;javax.annotation.PostConstruct&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;javax.inject.Inject&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;javax.inject.Named&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;javax.jms.JMSException&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;javax.persistence.*&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;javax.transaction.Transactional&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;javax.ws.rs.*&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;javax.ws.rs.core.MediaType&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;java.io.Serializable&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;java.util.Collection&lt;/span&gt;;
-&lt;span class="pl-k"&gt;import&lt;/span&gt; &lt;span class="pl-smi"&gt;java.util.logging.Logger&lt;/span&gt;;
-
-@&lt;span class="pl-stj"&gt;SpringBootApplication&lt;/span&gt;
-&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;Application&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;JerseyConfig&lt;/span&gt; &lt;span class="pl-s"&gt;extends&lt;/span&gt; &lt;span class="pl-e"&gt;ResourceConfig&lt;/span&gt; {
-
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;JerseyConfig&lt;/span&gt;() {
-            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;register(&lt;span class="pl-stj"&gt;GreetingEndpoint&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class);
-            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;register(&lt;span class="pl-stj"&gt;JacksonFeature&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class);
-        }
-    }
-
-    &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-    &lt;span class="pl-st"&gt;@Transactional&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingService&lt;/span&gt; {
-
-        &lt;span class="pl-st"&gt;@Inject&lt;/span&gt;
-        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;JmsTemplate&lt;/span&gt; jmsTemplate;
-
-        &lt;span class="pl-st"&gt;@PersistenceContext&lt;/span&gt;
-        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;EntityManager&lt;/span&gt; entityManager;
-
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;createGreeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;, &lt;span class="pl-st"&gt;boolean&lt;/span&gt; &lt;span class="pl-v"&gt;fail&lt;/span&gt;) {
-            &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; greeting &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;(name);
-            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;entityManager&lt;span class="pl-k"&gt;.&lt;/span&gt;persist(greeting);
-            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;jmsTemplate&lt;span class="pl-k"&gt;.&lt;/span&gt;convertAndSend(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;greetings&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, greeting);
-            &lt;span class="pl-k"&gt;if&lt;/span&gt; (fail) {
-                &lt;span class="pl-k"&gt;throw&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;RuntimeException&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;simulated error&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
-            }
-        }
-
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;createGreeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;) {
-            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(name, &lt;span class="pl-c1"&gt;false&lt;/span&gt;);
-        }
-
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;Collection&amp;lt;&lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;findAll&lt;/span&gt;() {
-            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;entityManager
-                    .createQuery(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;select g from &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class&lt;span class="pl-k"&gt;.&lt;/span&gt;getName() &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt; g&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-                    .getResultList();
-        }
-
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; &lt;span class="pl-en"&gt;find&lt;/span&gt;(&lt;span class="pl-stj"&gt;Long&lt;/span&gt; &lt;span class="pl-v"&gt;id&lt;/span&gt;) {
-            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;entityManager&lt;span class="pl-k"&gt;.&lt;/span&gt;find(&lt;span class="pl-stj"&gt;Greeting&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class, id);
-        }
-    }
-
-    &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-    &lt;span class="pl-st"&gt;@Path&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/hello&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
-    &lt;span class="pl-st"&gt;@Produces&lt;/span&gt;({&lt;span class="pl-stj"&gt;MediaType&lt;/span&gt;&lt;span class="pl-c1"&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;APPLICATION_JSON&lt;/span&gt;})
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingEndpoint&lt;/span&gt; {
-
-        &lt;span class="pl-st"&gt;@Inject&lt;/span&gt;
-        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;GreetingService&lt;/span&gt; greetingService;
-
-        &lt;span class="pl-st"&gt;@POST&lt;/span&gt;
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;post&lt;/span&gt;(&lt;span class="pl-st"&gt;@QueryParam&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;name&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;) {
-            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(name);
-        }
-
-        &lt;span class="pl-st"&gt;@GET&lt;/span&gt;
-        &lt;span class="pl-st"&gt;@Path&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/{id}&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; &lt;span class="pl-en"&gt;get&lt;/span&gt;(&lt;span class="pl-st"&gt;@PathParam&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;) &lt;span class="pl-stj"&gt;Long&lt;/span&gt; &lt;span class="pl-v"&gt;id&lt;/span&gt;) {
-            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;find(id);
-        }
-    }
-
-    &lt;span class="pl-st"&gt;@Entity&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;Greeting&lt;/span&gt; &lt;span class="pl-s"&gt;implements&lt;/span&gt; &lt;span class="pl-e"&gt;Serializable&lt;/span&gt; {
-
-        &lt;span class="pl-st"&gt;@Id&lt;/span&gt;
-        &lt;span class="pl-st"&gt;@GeneratedValue&lt;/span&gt;
-        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;Long&lt;/span&gt; id;
-
-        &lt;span class="pl-st"&gt;@Override&lt;/span&gt;
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-en"&gt;toString&lt;/span&gt;() {
-            &lt;span class="pl-k"&gt;return&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Greeting{&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt;
-                    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id=&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; id &lt;span class="pl-k"&gt;+&lt;/span&gt;
-                    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;, message='&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; message &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;span class="pl-cce"&gt;\'&lt;/span&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt;
-                    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;'&lt;/span&gt;}&lt;span class="pl-pds"&gt;'&lt;/span&gt;&lt;/span&gt;;
-        }
-
-        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; message;
-
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-en"&gt;getMessage&lt;/span&gt;() {
-            &lt;span class="pl-k"&gt;return&lt;/span&gt; message;
-        }
-
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;Greeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;String&lt;/span&gt; &lt;span class="pl-v"&gt;name&lt;/span&gt;) {
-            &lt;span class="pl-v"&gt;this&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;message &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Hi, &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; name &lt;span class="pl-k"&gt;+&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;!&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;;
-        }
-
-        &lt;span class="pl-en"&gt;Greeting&lt;/span&gt;() {
-        }
-    }
-
-    &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingServiceClient&lt;/span&gt; {
-
-        &lt;span class="pl-st"&gt;@Inject&lt;/span&gt;
-        &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;GreetingService&lt;/span&gt; greetingService;
-
-        &lt;span class="pl-st"&gt;@PostConstruct&lt;/span&gt;
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;afterPropertiesSet&lt;/span&gt;() &lt;span class="pl-s"&gt;throws&lt;/span&gt; &lt;span class="pl-stj"&gt;Exception&lt;/span&gt; {
-            greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Phil&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
-            greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Dave&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
-            &lt;span class="pl-k"&gt;try&lt;/span&gt; {
-                greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;createGreeting(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Josh&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;, &lt;span class="pl-c1"&gt;true&lt;/span&gt;);
-            } &lt;span class="pl-k"&gt;catch&lt;/span&gt; (&lt;span class="pl-stj"&gt;RuntimeException&lt;/span&gt; re) {
-                &lt;span class="pl-stj"&gt;Logger&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;getLogger(&lt;span class="pl-stj"&gt;Application&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class&lt;span class="pl-k"&gt;.&lt;/span&gt;getName())&lt;span class="pl-k"&gt;.&lt;/span&gt;info(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;caught exception...&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
-            }
-            greetingService&lt;span class="pl-k"&gt;.&lt;/span&gt;findAll()&lt;span class="pl-k"&gt;.&lt;/span&gt;forEach(&lt;span class="pl-stj"&gt;System&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;out&lt;span class="pl-k"&gt;::&lt;/span&gt;println);
-        }
-    }
-
-    &lt;span class="pl-st"&gt;@Named&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;GreetingMessageProcessor&lt;/span&gt; {
-
-        &lt;span class="pl-st"&gt;@JmsListener&lt;/span&gt;(&lt;span class="pl-c1"&gt;destination&lt;/span&gt; &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;greetings&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
-        &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;processGreeting&lt;/span&gt;(&lt;span class="pl-stj"&gt;Greeting&lt;/span&gt; &lt;span class="pl-v"&gt;greeting&lt;/span&gt;) &lt;span class="pl-s"&gt;throws&lt;/span&gt; &lt;span class="pl-stj"&gt;JMSException&lt;/span&gt; {
-            &lt;span class="pl-stj"&gt;System&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;out&lt;span class="pl-k"&gt;.&lt;/span&gt;println(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;received message: &lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;+&lt;/span&gt; greeting);
-        }
-    }
-
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;static&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;main&lt;/span&gt;(&lt;span class="pl-st"&gt;String&lt;/span&gt;[] &lt;span class="pl-v"&gt;args&lt;/span&gt;) {
-        &lt;span class="pl-stj"&gt;SpringApplication&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;run(&lt;span class="pl-stj"&gt;Application&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class, args);
-    }
-}
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The complete  code listings, including the very sparce &lt;a href="https://github.com/joshlong/techtips/blob/master/examples/jaxrs-jta-jms-jpa-330-250-undertow/src/main/resources/application.properties"&gt;&lt;code&gt;application.properties&lt;/code&gt;&lt;/a&gt; and the &lt;a href="https://github.com/joshlong/techtips/blob/master/examples/jaxrs-jta-jms-jpa-330-250-undertow/pom.xml"&gt;Maven build&lt;/a&gt;, are available online. &lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-jax-rs-with-jersey" class="anchor" href="#jax-rs-with-jersey" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;JAX-RS with Jersey&lt;/h2&gt;
-
-&lt;p&gt;The example &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-jersey"&gt;demonstrates Boot's new JAX-RS auto-configuration&lt;/a&gt; (in this case, using &lt;a href="https://jersey.java.net/"&gt;Jersey 2.x&lt;/a&gt;) in the &lt;code&gt;GreetingEndpoint&lt;/code&gt;. Note how convenient it is to get it all working! The only thing to be weary of is that you need to specify a &lt;code&gt;ResourceConfig&lt;/code&gt; subclass to let Jersey know which components to register.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-global-transactions-with-jta" class="anchor" href="#global-transactions-with-jta" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Global Transactions with JTA&lt;/h2&gt;
-
-&lt;p&gt;It demonstrates global transactions with the &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-jta"&gt;new auto-configured JTA support&lt;/a&gt;. JTA is a Java API for the X/Open XA protocol which lets multiple, compliant, transaction resources (like a message queue and a database) participate in a single transaction. To do this, we've used the &lt;a href="http://www.atomikos.com/"&gt;Atomikos&lt;/a&gt; standalone JTA provider. We could have as easily used Bitronix, as well; both are auto-configured if you bring the appropriate starter along. In this example, in the &lt;code&gt;GreetingService&lt;/code&gt;, JMS and JPA work is done as part of a global transaction. We demonstrate this by creating 3 transactions and simulating a rollback on the third one. You should see printed to the console that there are two records that come back from the JDBC &lt;code&gt;javax.sql.DataSource&lt;/code&gt; data source and two records that are received from the embedded JMS &lt;code&gt;javax.jms.Destination&lt;/code&gt; destination.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-the-undertow-embedded-web-server" class="anchor" href="#the-undertow-embedded-web-server" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;The Undertow embedded web-server&lt;/h2&gt;
-
-&lt;p&gt;This example also uses the Wildfly (from RedHat) application server's &lt;em&gt;awesome&lt;/em&gt; &lt;a href="http://undertow.io/"&gt;Undertow embedded HTTP server&lt;/a&gt; instead of (the default) Apache Tomcat. It's as easy to use Undertow as it is to use Jetty or Tomcat - just exclude &lt;code&gt;org.springframework.boot:spring-boot-starter-tomcat&lt;/code&gt; and add &lt;code&gt;org.springframework.boot:spring-boot-starter-undertow&lt;/code&gt;! This contribution originated as a third-party PR - thanks Ivan Sopov! It's awesome.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-odds-and-ends" class="anchor" href="#odds-and-ends" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Odds and Ends&lt;/h2&gt;
-
-&lt;p&gt;Just for consistency, the example also uses JSR 330. JSR 330 describes a set of annotations that you can use in proprietary application servers like WebLogic as well as in a portable manner in dependency injection containers like Google Guice or Spring. I also use a JSR 250 annotation (defined as part of Java EE 5) to demonstrate lifecycle hooks.&lt;/p&gt;
-
-&lt;p&gt;This example relies on a Spring Boot &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.RC2/reference/htmlsingle/#howto-configure-a-datasource"&gt;auto-configured and embedded&lt;/a&gt;, in-memory &lt;a href="http://www.h2database.com/html/main.html"&gt;H2&lt;/a&gt; &lt;code&gt;javax.sql.DataSource&lt;/code&gt; and - a Spring Boot &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.RC2/reference/htmlsingle/#boot-features-hornetq"&gt;auto-configured and embedded&lt;/a&gt;, in-memory &lt;a href="http://hornetq.jboss.org"&gt;HornetQ&lt;/a&gt; &lt;code&gt;javax.jms.ConnectionFactory&lt;/code&gt;. If you wanted to connect to traditional, non-embedded instances, it's straightforward to either specify properties in &lt;code&gt;application.yml&lt;/code&gt; or &lt;code&gt;application.properties&lt;/code&gt; like &lt;code&gt;spring.hornetq.host&lt;/code&gt; or simply define &lt;code&gt;@Bean&lt;/code&gt;s of the appropriate type.&lt;/p&gt;
-
-&lt;p&gt;This example &lt;em&gt;also&lt;/em&gt; uses the new &lt;code&gt;@SpringBootApplication&lt;/code&gt; annotation which combines &lt;code&gt;@Configuration&lt;/code&gt;, &lt;code&gt;@EnableAutoConfiguration&lt;/code&gt; and &lt;code&gt;@ComponentScan&lt;/code&gt;. Nice!&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-deployment" class="anchor" href="#deployment" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Deployment&lt;/h2&gt;
-
-&lt;p&gt;Though this example uses a lot of fairly familiar Java EE APIs, this is still just typical Spring Boot, so by default you can run this application using &lt;code&gt;java -jar ee.jar&lt;/code&gt; or easily deploy it to process-centric &lt;a href="http://en.wikipedia.org/wiki/Platform_as_a_service"&gt;platforms-as-a-service&lt;/a&gt; offerings like - Heroku or &lt;a href="http://cloudfoundry.org"&gt;Cloud Foundry&lt;/a&gt;. If you want to deploy it to a standalone application server like (like Apache Tomcat, or Websphere, or anything in between), it's straightforward to convert the build into a &lt;code&gt;.war&lt;/code&gt; and deploy it accordingly to any Servlet 3 container.&lt;/p&gt;
-
-&lt;p&gt;If you deploy the application to a more classic application server, Spring Boot can take advantage of the AS's facilities, instead. For example, it's dead-simple to consume a JNDI-bound &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-jms-jndi"&gt;JMS &lt;code&gt;ConnectionFactory&lt;/code&gt;&lt;/a&gt;, &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-connecting-to-a-jndi-datasource"&gt;JDBC &lt;code&gt;DataSource&lt;/code&gt;&lt;/a&gt; or &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#_using_a_java_ee_managed_transaction_manager"&gt;JTA &lt;code&gt;UserTransaction&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-spring-boot-12-choice-and-power" class="anchor" href="#spring-boot-12-choice-and-power" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Spring Boot 1.2: Choice &lt;em&gt;and&lt;/em&gt; Power&lt;/h2&gt;
-
-&lt;p&gt;I, personally, would question a lot of these APIs. Do you &lt;em&gt;really&lt;/em&gt; need distributed, multi-resource transactions? In today's &lt;a href="http://www.eaipatterns.com/ramblings/18_starbucks.html"&gt;distributed world, consider global transaction managers are an architecture smell&lt;/a&gt;. Do you &lt;em&gt;really&lt;/em&gt; need to use JAX-RS when Spring offers a richer, integrated Spring MVC-based stack complete with MVC, REST, HATEOAS, OAuth and websockets support? JPA's a nice API for talking to a SQL-based &lt;code&gt;javax.sql.DataSource&lt;/code&gt;, but Spring Data repositories (which include support for JPA, of course, but &lt;em&gt;also&lt;/em&gt; for Cassandra, MongoDB, Redis, CouchBase, and an increasingly long list of alternative technologies) reduce much of the boilerplate to a simple interface definition for the common cases. So, do you really need all of this? It might well be that you do, and - as always - the choice is yours. That's why this release is so cool! More power, more choice. &lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-what-else" class="anchor" href="#what-else" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;What Else?&lt;/h2&gt;
-
-&lt;p&gt;A &lt;em&gt;lot&lt;/em&gt;, actually. There are a &lt;em&gt;slew&lt;/em&gt; of new features. I couldn't even begin to cover them all here. So I won't try. Check out the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.2-Release-Notes"&gt;release notes&lt;/a&gt; for the full scoop! &lt;/p&gt;
-
-&lt;p&gt;Spring Boot 1.2 is fast approaching GA, and now's a very good time to &lt;a href="http://start.spring.io"&gt;try the bits, kick the tires&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;file issues&lt;/a&gt; and &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;ask questions&lt;/a&gt;!&lt;/p&gt;</content>
   </entry>
 </feed>
 
