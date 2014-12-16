@@ -5,4 +5,10 @@
 		<item value="E:\git\vanet\VanetRSU"/>
 		<item value="E:\git\vanet\VanetOBU"/>
 	</list>
+	<section name="org.grails.ide.eclipse.ui.internal.inplace.GrailsInplaceDialog">
+		<item value="390" key="size.width"/>
+		<item value="79" key="size.height"/>
+		<item value="2147" key="location.x"/>
+		<item value="488" key="location.y"/>
+	</section>
 </section>

@@ -39,17 +39,23 @@ class BroadcastService {
 		for(int i=0; i<qtd; i++){
 			def pct = null
 			if(sendOneMore()){
-				// Impedindo que alertas contÌnuos redundantes sejam inseridos na lista
-				// Ex: dois alertas de acidente de um mesmo veÌculo
+				// Impedindo que alertas cont√≠nuos redundantes sejam inseridos na lista
+				// Ex: dois alertas de acidente de um mesmo ve√≠culo
 				if(sendObj.instanceOf(Alert)){
+					// Se for um alerta de possival acidente ou de acidente confirmado...
 					if(sendObj.messageCode == 2 || sendObj.messageCode == 3){
+						// Busca algum alerta redundante
 						pct = alertList.val.find{(it.obj.messageCode == 2||it.obj.messageCode == 3) && 
 							it.obj.carCode == sendObj.carCode && it.sendOneMore()==true}
+						// Se o alerta for de poss√≠vel acidente e o novo alerta for de acidente confirmado
+						if(pct && pct.obj.messageCode == 2 && sendObj.messageCode == 3){
+							pct.sendOneMore = {return false}
+						}
 					}
 					i=qtd
 				}
 			
-				if(!pct){
+				if(!pct || (pct.obj.messageCode == 2 && sendObj.messageCode == 3)){
 					alertList.val.add(new AlertWrapper(obj:sendObj,sendOneMore:sendOneMore))
 					println "Vetor atual -> "+alertList.val*.obj.id
 				}
@@ -67,7 +73,7 @@ class BroadcastService {
 	}
 	
 	/**
-	 * Envia a informaÁ„o em broadcast enquanto estiver ‡ uma certa dist‚ncia da origem da informaÁ„o (atualmente 2 Km)
+	 * Envia a informa√ß√£o em broadcast enquanto estiver √† uma certa dist√¢ncia da origem da informa√ß√£o (atualmente 2 Km)
 	 * @param sendObj
 	 * @return
 	 */
@@ -76,7 +82,7 @@ class BroadcastService {
 			sendAlert(sendObj,1,{carService.isInArea(sendObj.lat, sendObj.lng)})
 		}else{
 			sendAlert(sendObj,1,{return true})
-			throw new Exception("ERROR -> Objeto incompatÌvel com o mÈtodo broadcastService.sendAlertWhileNear(), n„o peossui coordenadas!!!")
+			throw new Exception("ERROR -> Objeto incompat√≠vel com o m√©todo broadcastService.sendAlertWhileNear(), n√£o peossui coordenadas!!!")
 		}
 	}
 
@@ -92,7 +98,7 @@ class BroadcastService {
 	}
 	
 	/**
-	 * Verifica se a informaÁ„o j· foi enviada para uma RSU
+	 * Verifica se a informa√ß√£o j√° foi enviada para uma RSU
 	 * @param code
 	 * @return
 	 */
@@ -111,7 +117,7 @@ class BroadcastService {
 	}
 	
 	/**
-	 * Envia um pacote atÈ receber confirmaÁ„o de um RSU
+	 * Envia um pacote at√© receber confirma√ß√£o de um RSU
 	 * @param info
 	 * @return
 	 */
@@ -121,12 +127,12 @@ class BroadcastService {
 	}
 	
 	/**
-	 * Verifica se um objeto est· na lista de broadcast
+	 * Verifica se um objeto est√° na lista de broadcast
 	 * @param obj
 	 * @return
 	 */
 	def Boolean isSending(Object obj){
-		return alertList.val*.obj.code.contains(obj.code)
+		return alertList.val*.obj.code.find{it == obj.code}?true:false
 	}
 	
 	/**
@@ -135,7 +141,7 @@ class BroadcastService {
 	 */
 	def alertSender(){
 		task{
-			println ">>>>>>>> ServiÁo de envio de alertas Ativado!!!"
+			println ">>>>>>>> Servi√ßo de envio de alertas Ativado!!!"
 			alertList << new ArrayList<AlertWrapper>()
 			while(true){
 				try{
@@ -144,10 +150,10 @@ class BroadcastService {
 					}else{
 //						println alertList.val
 						def a = alertList.val.first()
-						// Se for alerta de acidente n„o espera confirmaÁ„o
+						// Se for alerta de acidente n√£o espera confirma√ß√£o
 						Boolean confirm = !(a.obj.instanceOf(Alert))
 						if(a.obj.instanceOf(Alert)){
-							sendTime = System.currentTimeMillis()
+							a.obj.sendTime = System.currentTimeMillis()
 						}
 						send(a.obj, confirm)
 						if(a.sendOneMore()){
@@ -166,28 +172,32 @@ class BroadcastService {
 		}
 	}
 	
-	/**
+		/**
 	 * Envio de pacotes broadcast
 	 * @param msg
 	 * @return
 	 */
 	def send(Object msg, Boolean confirm=true) {
-		println "---------------------------------Enviando informaÁ„o---------------------------------------------------------"
-		println "Vetor atual -> " + alertList.val*.obj.id
+		println "---------------------------------Enviando informacao---------------------------------------------------------"
+		println "Vetor atual -> " + alertList.val*.obj.code
 		//Procurando o servidor UDP utilizando brodcast
 		try {
 			//Abrindo uma porta qualquer para enviar o pacote
 			DatagramSocket c = new DatagramSocket();
 			c.setBroadcast(true);
 
+			if(msg.instanceOf(Alert)){
+				msg.sendTime = System.currentTimeMillis()
+			}
+			
 			//msg = msg+" - "+(new Date()).time.toString()
 			byte[] sendData = (msg as JSON).toString().getBytes();
 
 			//Tentando 255.255.255.255 primeiro
 			try {
-				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.188.255"), 8083);
+				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.187.255"), 8083);
 				c.send(sendPacket);
-				//System.out.println(getClass().getName() + "CLIENT>>> RequisiÁ„o enviada para: 255.255.255.255 (DEFAULT)");
+				//System.out.println(getClass().getName() + "CLIENT>>> Requisicao enviada para: 255.255.255.255 (DEFAULT)");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -195,10 +205,11 @@ class BroadcastService {
 			// Enviando a mensagem por todas interfaces de rede
 			Enumeration interfaces = NetworkInterface.getNetworkInterfaces();
 			while (interfaces.hasMoreElements()) {
+				
 				NetworkInterface networkInterface = interfaces.nextElement();
 
 				if (networkInterface.isLoopback() || !networkInterface.isUp()) {
-					continue; // N„o transmitir na interface loopback
+					continue; // NÔøΩo transmitir na interface loopback
 				}
 
 				for (InterfaceAddress interfaceAddress : networkInterface.getInterfaceAddresses()) {
@@ -207,6 +218,14 @@ class BroadcastService {
 						continue;
 					}
 
+					if(msg.instanceOf(Alert)){
+						msg.sendTime = System.currentTimeMillis()
+					}
+					
+					//msg = msg+" - "+(new Date()).time.toString()
+					sendData = (msg as JSON).toString().getBytes();
+		
+					
 					// Enviando o pacote broadcast
 					try {
 						DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, broadcast, 8083);
@@ -214,27 +233,31 @@ class BroadcastService {
 					} catch (Exception e) {
 					}
 
-					//System.out.println(getClass().getName() + "CLIENT>>> RequisiÁ„o enviada para: " + broadcast.getHostAddress() + "; Interface: " + networkInterface.getDisplayName());
+					//System.out.println(getClass().getName() + "CLIENT>>> Requisicao enviada para: " + broadcast.getHostAddress() + "; Interface: " + networkInterface.getDisplayName());
 				}
 			}
 
-			//System.out.println(getClass().getName() + "CLIENT>>> RequisiÁıes enviadas para todas as interfaces, esperando resposta.");
+			//System.out.println(getClass().getName() + "CLIENT>>> Requisicoes enviadas para todas as interfaces, esperando resposta.");
 
 			if(confirm){
 			
-				// TODO: receber lista de pacotes j· recebidos pela RSU
-				
+				// TODO: receber lista de pacotes ja recebidos pela RSU
 				/* Resposta */
 				//Esperando pela resposta
 				byte[] recvBuf = new byte[15000];
 				DatagramPacket receivePacket = new DatagramPacket(recvBuf, recvBuf.length);
 				c.receive(receivePacket);
 	
-				//NÛs temos uma resposta
+				//Nos temos uma resposta
 				//System.out.println(getClass().getName() + "CLIENT>>> Broadcast respondido pelo servidor: " + receivePacket.getAddress().getHostAddress());
 	
-				//Verificando se a mensagem È correta
+				//Vendo se o pacote cont√©m o comando correto (mensagem)
 				String message = new String(receivePacket.getData()).trim();
+				//println("SERVER"+message)
+				JSONObject json = new  JSONObject(message)
+				if(json."class" == "vanet.alert.Alert"){
+					println "Latencia:"+(System.currentTimeMillis()-json.sendTime)
+				}
 				ArrayList otherCodeList = message.replaceAll("\\[","").replaceAll("]","").split(",")
 				otherCodeList = (otherCodeList + confirmedInfoCodeList).unique()
 				confirmedInfoCodeList.clear() 
@@ -258,7 +281,7 @@ class BroadcastService {
 	public void receive() {
 		def p = task{
 			try {
-				//Mantem um canal aberto para ouvir tudo o trafic UDP que È destinado para esta porta
+				//Mantem um canal aberto para ouvir tudo o trafic UDP que √© destinado para esta porta
 				DatagramSocket socket = new DatagramSocket(8082, InetAddress.getByName("0.0.0.0"));
 				socket.setBroadcast(true);
 
@@ -271,7 +294,7 @@ class BroadcastService {
 						DatagramPacket packet = new DatagramPacket(recvBuf, recvBuf.length);
 						socket.receive(packet);
 	
-						//Vendo se o pacote contÈm o comando correto (mensagem)
+						//Vendo se o pacote cont√©m o comando correto (mensagem)
 						String message = new String(packet.getData()).trim();
 						//println("SERVER"+message)
 						JSONObject json = new  JSONObject(message)
@@ -280,16 +303,16 @@ class BroadcastService {
 							DataBindingUtils.bindObjectToInstance(alert, json)//,include, exclude, filter)
 							if(!isSending(alert)){
 								//Pacote recebido
-								println "---------------------------------InformaÁ„o recebida---------------------------------------------------------"
+								println "---------------------------------Informa√ß√£o recebida---------------------------------------------------------"
 								//println(getClass().getName() + "SERVER>>>Analisando pacote recebido de: " + packet.getAddress().getHostAddress());
 								println("Dados recebidos: " + new String(packet.getData()));
 								
 								println ">>> Recebendo alerta"
 							}
 							alertService.alertReceive(alert)
-							sendConfirmation(socket, packet)
+							sendConfirmation(socket, packet, alert)
 							if(!isSending(alert)){
-								println "---------------------------------fim InformaÁ„o recebida------------------------------------------------------"
+								println "---------------------------------fim Informa√ß√£o recebida------------------------------------------------------"
 							}
 						}else if(json."class" == "vanet.automotive.NavigationLog"){
 							println ">>> Log"
@@ -316,17 +339,19 @@ class BroadcastService {
 	
 	
 	/**
-	 * Envio de confirmaÁ„o de broadcast
+	 * Envio de confirma√ß√£o de broadcast
 	 * @param socket
 	 * @param packet
 	 * @return
 	 */
-	def sendConfirmation(DatagramSocket socket, DatagramPacket packet, byte[] sendData=null){
+	def sendConfirmation(DatagramSocket socket, DatagramPacket packet, Object sendDataObj=null){
 		
 		// TODO: Enviar lista de pacotes recebidos pelo RSU 
 		
-		if(!sendData){
+		if(!sendDataObj){
 			sendData = ("Alerta Recebido. - "+(new Date()).time.toString()).getBytes();
+		}else{
+			sendData = (sendDataObj as JSON).toString().getBytes();
 		}
 		
 		//Enviando resposta

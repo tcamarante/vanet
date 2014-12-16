@@ -24,4 +24,9 @@ class Alert {
 		lng(nullable:true)
 		sendTime(nullable:true)
     }
+	
+	@Override
+	public String toString() {
+		return code;
+	}
 }
