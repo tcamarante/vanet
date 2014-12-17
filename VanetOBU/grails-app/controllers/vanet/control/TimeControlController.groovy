@@ -18,7 +18,11 @@ class TimeControlController  extends RestfulController {
 	}
 	
 	def getTimeDiff(){
-		timeControlService.calculateTimeDiff(params.address)
+		TimeControl timeControlInstance = new TimeControl()
+		bindData(timeControlInstance, timeControlService.calculateTimeDiff(params.address))
+		timeControlInstance.save(flush:true)
+		respond timeControlInstance
+		
 	}
 	
 }

@@ -1,7 +1,7 @@
 package vanet.control
 
-import grails.transaction.Transactional
 import grails.plugins.rest.client.RestBuilder
+import grails.transaction.Transactional
 
 @Transactional
 class TimeControlService {
@@ -10,10 +10,9 @@ class TimeControlService {
 		def rest = new RestBuilder()
 		println url+"/VanetOBU/timeControl/getTime"
 		// Enviando ao servidor para salvar no banco
-		def resp = rest.get(url+"/VanetOBU/timeControl/getTime"){
-			contentType "application/vnd.org.jfrog.artifactory.security.Group+json"
-		}
+		def resp = rest.get(url+"/VanetOBU/timeControl/getTime")
 		println resp.statusCode.class
-		println resp.JSON
+		resp.json.timeDiff = System.currentTimeMillis() - resp.json.time 
+		return resp.json
     }
 }
