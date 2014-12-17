@@ -5,7 +5,71 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2014-12-15T16:21:00Z</updated>
+  <updated>2014-12-17T15:04:00Z</updated>
+  <entry>
+    <title>Spring Security OAuth 2.0.5.RELEASE Available Now</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/17/spring-security-oauth-2-0-5-release-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2014-12-17:1893</id>
+    <updated>2014-12-17T15:04:00Z</updated>
+    <content type="html">&lt;p&gt;Spring Security OAuth 2.0.5.RELEASE is available now in all the usual Maven repositories. This is a bugfix release but nothing critical. We recommend upgrading if you are having trouble with customizing the Java config, since most of the issues resolved relate to that (for instance it is much easier to customize the password encoder for client secrets). There is a small breaking change for anyone using the &lt;code&gt;AuthorizationServerEndpointsConfigurer&lt;/code&gt; directly to configure a &lt;code&gt;ClientDetailsService&lt;/code&gt; (it doesn&amp;rsquo;t work that way, so you would be failing to configure it anyway).&lt;/p&gt;&lt;p&gt;For a range of samples using and displaying all the features of Spring Security OAuth please look in the github project (e.g. at the &lt;a href="https://github.com/spring-projects/spring-security-oauth/tree/master/tests"&gt;integration tests&lt;/a&gt; or the &lt;a href="https://github.com/spring-projects/spring-security-oauth/tree/master/samples"&gt;samples&lt;/a&gt;).&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - December 16th, 2014</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/17/this-week-in-spring-december-16th-2014" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-12-17:1892</id>
+    <updated>2014-12-17T00:18:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! In a few short weeks we&amp;rsquo;ll be in 2015! Will that be exciting? Of course. But this week&amp;rsquo;s pretty exciting as well! So much good stuff this week.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2014/12/11/spring-boot-1-2-0-released"&gt;Spring Boot 1.2.0 is here&lt;/a&gt;! So many new features for Java EE (Servlet 3.1-baseline, JTA, JMS and JNDI support) and improved Jackson output, Actuator endpoints, CLI updates and performance. Spring Cloud is already tracking 1.2 and will be based on this soon, as well. &lt;a href="http://start.spring.io"&gt;Get the bits&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2014/12/11/spring-boot-1-1-10-released"&gt;Spring Boot 1.1.10 is now available with numerous fixes&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Resident mad-scientist Andy Wilkinson just announced &lt;a href="https://spring.io/blog/2014/12/12/spring-io-platform-1-1-0-rc1-released"&gt;the latest cut of the Spring IO platform library&lt;/a&gt;. There are lots of things of note, but in particular it&amp;rsquo;s added support for Spring Integration Flow 1.0, Spring Integration Java DSL 1.0, and Spring Integration Splunk 1.1 and updated revisions for several projects besides.&lt;/li&gt;
+  &lt;li&gt;Spring Security lead &lt;a href="https://spring.io/blog/2014/12/11/spring-security-4-0-0-rc1-released"&gt;Rob Winch has announced Spring Security 4.0.0.RC1&lt;/a&gt;. Read his release-notes and try out the bits soon!&lt;/li&gt;
+  &lt;li&gt;Spring Data ninja Thomas Risbery has just &lt;a href="https://spring.io/blog/2014/12/16/spring-for-apache-hadoop-2-0-4-released"&gt;announced Spring for Apache Hadoop 2.0.4&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Spring Integration lead Gary Russell just &lt;a href="https://spring.io/blog/2014/12/15/spring-integration-spring-amqp-maintenance-releases-available"&gt;announced Spring Integration and Spring AMQP maintenance releases&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Join Gary Russell on Jan 27th as he shows new reasons why Spring Integration leads the ESB/Integration Framework market (2014 DZone research): &lt;a href="http://spring.io/blog/2014/12/02/webinar-introducing-the-java-dsl-for-spring-integration"&gt;Introducing the Java DSL for Spring Integration&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Is in-memory your thing? Join Luke Shannon Jan 13th and learn about how Spring MVC/Spring Boot applications can leverage GemFire for persistence in his talk &lt;a href="http://spring.io/blog/2014/12/02/webinar-building-scalable-data-applications-with-spring-and-gemfire"&gt;Building Scalable Data Applications with Spring and GemFire&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out the replay of Stepane Maldini&amp;rsquo;s webinar introducing &lt;a href="https://spring.io/blog/2014/12/11/webinar-replay-using-reactor-for-asynch-non-blocking-microservices"&gt;Reactor for asynchronous, non-blocking microservices&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://twitter.com/mraible"&gt;Matt Raible&lt;/a&gt; announced an update to his popular AppFuse starter project. One of the major changes: &lt;a href="http://raibledesigns.com/rd/entry/appfuse_reduced"&gt;it now uses the Spring IO platform dependency for ease-of-version and dependency management&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Hat Tip to Spring Data lead Oliver Gierke who sent me this useful post, &lt;a href="http://www.insaneprogramming.be/blog/2014/12/01/mongodb-java-comparison/"&gt;&lt;em&gt;A Simple Use-case Comparison of JVM Libraries for MongoDB&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Dennis wrote about &lt;a href="https://blog.codecentric.de/en/2014/10/log-management-spring-boot-applications-logstash-elastichsearch-kibana/"&gt;Spring Boot and Logstash, Kibana and ElasticSearch&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;CodeCentric &lt;a href="https://blog.codecentric.de/en/2014/11/spring-boot-starter-batch-web-1-3-0-released/"&gt;have released version 1.3.0 of their Spring Batch and Spring Boot-based starter&lt;/a&gt;. It now includes transaction-safe metrics.&lt;/li&gt;
+  &lt;li&gt;Speaking of Spring Boot starters, specifically, did you see &lt;a href="https://blog.codecentric.de/en/2014/11/extending-spring-boot-five-steps-writing-spring-boot-starter/"&gt;Tobias&amp;rsquo; post from last month on writing your own Spring Boot starter&lt;/a&gt;?&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring for Apache Hadoop 2.0.4 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/16/spring-for-apache-hadoop-2-0-4-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Thomas Risberg</name>
+    </author>
+    <id>tag:spring.io,2014-12-16:1891</id>
+    <updated>2014-12-16T18:26:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that Spring for Apache Hadoop 2.0.4 has just been released and is now available from Maven Central and the Spring Repository. This release includes some bug fixes and enhancements to the HDFS writers and partitioning features. We have also added support for Apache Hadoop 2.6.0 and Cloudera CDH has been updated to version 5.2.0. More details can be found in the &lt;a href="http://docs.spring.io/spring-hadoop/docs/2.0.4.RELEASE/changelog.txt"&gt;changelog&lt;/a&gt; or in the &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10801&amp;version=14809"&gt;JIRA release notes&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Here is a complete list of the latest version designation to use for the various distro &amp;ldquo;flavors&amp;rdquo; published. The Apache Hadoop releases are available in Maven Central and all other releases are available in the &lt;a href="http://repo.spring.io/libs-release/"&gt;Spring Repository&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;2.0.4.RELEASE - Apache Hadoop 2.2.x [2.2.0]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-hadoop12 - Apache Hadoop 1.2.x [1.2.1]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-hadoop24 - Apache Hadoop 2.4.x [2.4.1]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-hadoop25 - Apache Hadoop 2.5.x [2.5.1]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-hadoop26 - Apache Hadoop 2.6.x [2.6.0]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-phd1 - Pivotal HD 1.1 [2.0.5-alpha-gphd-2.1.0.0]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-phd20 - Pivotal HD 2.0 [2.2.0-gphd-3.0.1.0]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-phd21 - Pivotal HD 2.1 [2.2.0-gphd-3.1.0.0]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-cdh4 - Cloudera CDH4 MR1 [2.0.0-mr1-cdh4.6.0]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-cdh5 - Cloudera CDH5 YARN [2.5.0-cdh5.2.0]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-hdp13 - Hortonworks Data Platform 1.3 [1.2.0]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-hdp20 - Hortonworks Data Platform 2.0 [2.2.0]&lt;/li&gt;
+  &lt;li&gt;2.0.4.RELEASE-hdp21 - Hortonworks Data Platform 2.1 [2.4.0]&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;We plan on adding support for Hortonworks HDP 2.2 in a future release.&lt;/p&gt;&lt;p&gt;The project page is at - &lt;a href="http://projects.spring.io/spring-hadoop/"&gt;http://projects.spring.io/spring-hadoop/&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Integration, Spring AMQP Maintenance Releases Available</title>
     <link rel="alternate" href="https://spring.io/blog/2014/12/15/spring-integration-spring-amqp-maintenance-releases-available" />
@@ -222,32 +286,22 @@
     </author>
     <id>tag:spring.io,2014-12-10:1884</id>
     <updated>2014-12-10T00:49:00Z</updated>
-    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! Can you believe we're staring the end of the month (and indeed the year!) down already? Time sure flies when you're having fun, eh?&lt;/p&gt;
-
-&lt;p&gt;This week I'm in Los Angeles talking to teams here at the Pivotal Labs L.A. office about projects they're doing for customers involving Spring and Spring Boot and then it's off to see our pals at TicketMaster. (If you're in the area and want to talk shop, &lt;a href="http://twitter.com/starbuxman"&gt;ping me on Twitter &lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;We've got a lot of stuff to cover this week. Notably, Pieter Humphrey has (as always) slaved over a hot transcoder to get a &lt;em&gt;lot&lt;/em&gt; of great Spring XD content up and available as replays this week. Don't miss out!&lt;/p&gt;
-
+    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! In a few short weeks we&amp;rsquo;ll be in 2015! Will that be exciting? Of course. But this week&amp;rsquo;s pretty exciting as well! So much good stuff this week.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;  Want the definitive &lt;em&gt;start here&lt;/em&gt; talk for Spring XD? Check out this SpringOne2GX 2014 replay of Spring XD co-leads Dr. Mark Pollack and Mark Fisher's talk, &lt;a href="http://spring.io/blog/2014/12/09/springone2gx-2014-replay-develop-powerful-big-data-applications-easily-with-spring-xd"&gt;&lt;em&gt;Develop powerful Big Data Applications easily with Spring XD&lt;/em&gt;&lt;/a&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;  Spring framework committer &lt;a href="http://spring.io/blog/2014/12/09/spring-framework-4-1-3-released"&gt;Stéphane Nicoll has just announced Spring framework 4.1.3&lt;/a&gt;. Upgrade recommended!&lt;/li&gt;
-&lt;li&gt;  Join Gary Russell on Jan 27th as he shows new reasons why Spring Integration leads the ESB/Integration Framework market (2014 DZone research): &lt;a href="http://spring.io/blog/2014/12/02/webinar-introducing-the-java-dsl-for-spring-integration"&gt;Introducing the Java DSL for Spring Integration&lt;/a&gt;. &lt;/li&gt;
-&lt;li&gt;  Is in-memory your thing?  Join Luke Shannon Jan 13th and learn about how Spring MVC/Spring Boot applications can leverage GemFire for persistence in his talk &lt;a href="http://spring.io/blog/2014/12/02/webinar-building-scalable-data-applications-with-spring-and-gemfire"&gt;Building Scalable Data Applications with Spring and GemFire&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;  Spring ninja Roy Clarkson has just announced that &lt;a href="http://spring.io/blog/2014/12/09/spring-for-android-2-0-0-m2-released"&gt;Spring for Android M2 is now available&lt;/a&gt;. The new release is packed with new features so check it out now!&lt;/li&gt;
-&lt;li&gt;  The &lt;em&gt;Java Advent Calendar&lt;/em&gt; has a nice post on how to &lt;a href="http://www.javaadvent.com/2014/12/creating-rest-api-with-spring-boot-and.html"&gt;build a simple Java application using Spring Boot and MongoDB&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;  I was giving a workshop last Friday with &lt;a href="http://twitter.com/mstine"&gt;my pal Matt Stine&lt;/a&gt; on how to build microservices with Spring ("what even is... cloud?"). We had numerous great questions from the audience, but at one point we had this whole discussion over how data gets integrated across numerous microservices. Matt and I talked about approaches like CQRS, and I wish we had recorded that part of that discussion because it was a lot of fun. Our pal Chris Richardson, however, &lt;a href="http://www.infoq.com/interviews/cqrs-docker-richardson"&gt; just appeared on InfoQ with an interview on using CQRS for microservices&lt;/a&gt;. So check &lt;em&gt;that&lt;/em&gt; out, instead!&lt;/li&gt;
-&lt;li&gt;  Our pal Manuel Jordan's back at it, this time with a review of &lt;a href="http://manueljordanelera.blogspot.com/2014/12/book-review-learning-spring-boot.html"&gt;Spring team member Greg Turnquist's new book, &lt;em&gt;Learning Spring Boot&lt;/em&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;  Basel Almustafa put together a nice post on how to use Spring Security to secure a web application. I'd probably have used the (in my humble opinion more flexible) &lt;a href="http://www.dzone.com/articles/integrating-spring-security"&gt;Java configuration DSL, but the approach outlined here is certainly tried and true&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;  I liked Jimmy Liu's slide-deck, &lt;a href="http://www.slideshare.net/gn00023040/bootify-your-spring-application"&gt;&lt;em&gt;Bootify Your Spring Applications&lt;/em&gt;&lt;/a&gt;, you might too&lt;/li&gt;
-&lt;li&gt;  Tobias Flohre has put together a &lt;em&gt;very&lt;/em&gt; nice post on &lt;a href="https://blog.codecentric.de/en/2014/11/extending-spring-boot-five-steps-writing-spring-boot-starter/"&gt;how to write your own Spring Boot starter&lt;/a&gt;&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;  Check out the replay of &lt;a href="http://spring.io/blog/2014/12/09/springone2gx-2014-replay-spring-xd-a-guided-tour"&gt;Patrick Peralta's and David Turanski's SpringOne2GX talk, &lt;em&gt;Spring XD: a guided tour&lt;/em&gt;&lt;/a&gt;, now available as a replay&lt;/li&gt;
-&lt;li&gt;  Check out Carlos Queiroz's SpringOne2GX 2014 talk, &lt;a href="http://spring.io/blog/2014/12/09/springone2gx-2014-replay-implementing-the-lambda-architecture-with-spring-xd"&gt;&lt;em&gt;Implementing the Lambda Architecture with Spring XD&lt;/em&gt;&lt;/a&gt;, is now available as a replay&lt;/li&gt;
-&lt;li&gt;  If you missed it, Vineet Goel, Girish Lingappa, and Rodrigo Meneses' talk from SpringOne2GX, &lt;a href="http://spring.io/blog/2014/12/09/springone2gx-2014-replay-spring-xd-for-real-time-hadoop-workload-analysis"&gt;&lt;em&gt;Spring XD for real-time Hadoop Workload Analysis&lt;/em&gt;&lt;/a&gt;, is now available online&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2014/12/11/spring-boot-1-2-0-released"&gt;Spring Boot 1.2.0 is here&lt;/a&gt;! So many new features for Java EE (Servlet 3.1-baseline, JTA, JMS and JNDI support) and improved Jackson output, Actuator endpoints, CLI updates and performance. Spring Cloud is already tracking 1.2 and will be based on this soon, as well. &lt;a href="http://start.spring.io"&gt;Get the bits&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2014/12/11/spring-boot-1-1-10-released"&gt;Spring Boot 1.1.10 is now available with numerous fixes&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Resident mad-scientist Andy Wilkinson just announced &lt;a href="https://spring.io/blog/2014/12/12/spring-io-platform-1-1-0-rc1-released"&gt;the latest cut of the Spring IO platform library&lt;/a&gt;. There are lots of things of note, but in particular it&amp;rsquo;s added support for Spring Integration Flow 1.0, Spring Integration Java DSL 1.0, and Spring Integration Splunk 1.1 and updated revisions for several projects besides.&lt;/li&gt;
+  &lt;li&gt;Spring Security lead &lt;a href="https://spring.io/blog/2014/12/11/spring-security-4-0-0-rc1-released"&gt;Rob Winch has announced Spring Security 4.0.0.RC1&lt;/a&gt;. Read his release-notes and try out the bits soon!&lt;/li&gt;
+  &lt;li&gt;Spring Data ninja Thomas Risbery has just &lt;a href="https://spring.io/blog/2014/12/16/spring-for-apache-hadoop-2-0-4-released"&gt;announced Spring for Apache Hadoop 2.0.4&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Spring Integration lead Gary Russell just &lt;a href="https://spring.io/blog/2014/12/15/spring-integration-spring-amqp-maintenance-releases-available"&gt;announced Spring Integration and Spring AMQP maintenance releases&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Join Gary Russell on Jan 27th as he shows new reasons why Spring Integration leads the ESB/Integration Framework market (2014 DZone research): &lt;a href="http://spring.io/blog/2014/12/02/webinar-introducing-the-java-dsl-for-spring-integration"&gt;Introducing the Java DSL for Spring Integration&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Is in-memory your thing? Join Luke Shannon Jan 13th and learn about how Spring MVC/Spring Boot applications can leverage GemFire for persistence in his talk &lt;a href="http://spring.io/blog/2014/12/02/webinar-building-scalable-data-applications-with-spring-and-gemfire"&gt;Building Scalable Data Applications with Spring and GemFire&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out the replay of Stepane Maldini&amp;rsquo;s webinar introducing &lt;a href="https://spring.io/blog/2014/12/11/webinar-replay-using-reactor-for-asynch-non-blocking-microservices"&gt;Reactor for asynchronous, non-blocking microservices&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://twitter.com/mraible"&gt;Matt Raible&lt;/a&gt; announced an update to his popular AppFuse starter project. One of the major changes: &lt;a href="http://raibledesigns.com/rd/entry/appfuse_reduced"&gt;it now uses the Spring IO platform dependency for ease-of-version and dependency management&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Hat Tip to Spring Data lead Oliver Gierke who sent me this useful post, &lt;a href="http://www.insaneprogramming.be/blog/2014/12/01/mongodb-java-comparison/"&gt;&lt;em&gt;A Simple Use-case Comparison of JVM Libraries for MongoDB&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Dennis wrote about &lt;a href="https://blog.codecentric.de/en/2014/10/log-management-spring-boot-applications-logstash-elastichsearch-kibana/"&gt;Spring Boot and Logstash, Kibana and ElasticSearch&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;CodeCentric &lt;a href="https://blog.codecentric.de/en/2014/11/spring-boot-starter-batch-web-1-3-0-released/"&gt;have released version 1.3.0 of their Spring Batch and Spring Boot-based starter&lt;/a&gt;. It now includes transaction-safe metrics.&lt;/li&gt;
+  &lt;li&gt;Speaking of Spring Boot starters, specifically, did you see &lt;a href="https://blog.codecentric.de/en/2014/11/extending-spring-boot-five-steps-writing-spring-boot-starter/"&gt;Tobias&amp;rsquo; post from last month on writing your own Spring Boot starter&lt;/a&gt;?&lt;/li&gt;
 &lt;/ul&gt;</content>
   </entry>
   <entry>
@@ -813,65 +867,6 @@ The Spring Tool Suite (STS) 3.6.3 and the Groovy/Grails Tool Suite (GGTS) 3.6.3.
 &lt;p&gt;OAuth2 is a lightweight security protocol that is well-suited for use with HTTP, the protocol at the heart of many modern architectures. Spring Security OAuth2 has a load of new features, not the least of which being the `@Configuration` support in version 2.0. Combine these with Spring Boot and you have a platform which can get you a secure HTTP service application in about 20 lines of code. This presentation shows how the combination of rapid development and production-ready features in the modern Spring stack are a perfect mixture for developing secure components in a system composed of microservices. We explore the new features in Spring OAuth2, guide you through the choice of which to use and when, and show how easy they are to enable quickly.  This is the 90 minute version of the same talk that was on the Spring webinar program recently.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/MLfL1NpwUC4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Spring Boot and Netflix OSS</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/12/02/springone2gx-2014-replay-spring-boot-and-netflix-oss" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-12-02:1871</id>
-    <updated>2014-12-02T10:31:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-
-&lt;p&gt;Speaker: Spencer Gibb, Dr. David Syer &lt;/p&gt;
-
-&lt;p&gt; Slides: &lt;a href="http://www.slideshare.net/SpringCentral/syer-gibbcloud"&gt;http://www.slideshare.net/SpringCentral/syer-gibbcloud&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;Learn basic concepts about Spring Boot and Netflix OSS software and how to integrate Netflix OSS technologies into Spring Boot including: distributed configuration using Spring and Archaius Eureka (service registration and discovery) Feign (easy rest clients) Ribbon (client side load balancing) Hystrix (circuit breaker/fault tolerance library) RxJava (Reactive Programming library) Zuul (routing) Turbine and Hystrix Dashboard (service health dashboard)&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/X5DRXCKJH_M" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay:  Building Reactive applications with Reactor and the Reactive Streams standa4d</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/12/02/springone2gx-2014-replay-building-reactive-applications-with-reactor-and-the-reactive-streams-standa4d" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-12-02:1870</id>
-    <updated>2014-12-02T10:21:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-
-&lt;p&gt;Speakers: Jon Brisbin, Stephane Maldini &lt;/p&gt;
-
-&lt;p&gt;Slides:&lt;a href="http://www.slideshare.net/SpringCentral/spring-one2gx-2014reactivestreams-41130280"&gt;http://www.slideshare.net/SpringCentral/spring-one2gx-2014reactivestreams-41130280&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt; This session will introduce attendees to the Reactive Streams project, a new initiative between reactive software's heavy-hitters like Pivotal, Typesafe, Netflix, Twitter, and others. Since Pivotal's own Reactor framework implements this informal standard, we'll demonstrate how to build applications that can connect to other Reactive Streams implementations in a completely non-blocking way.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/AvwZEWu5PPc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>Webinar: Introducing the Java DSL for Spring Integration</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/12/02/webinar-introducing-the-java-dsl-for-spring-integration" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-12-02:1869</id>
-    <updated>2014-12-02T10:02:00Z</updated>
-    <content type="html">&lt;p&gt;Speaker: Gary Russell, Pivotal &lt;/p&gt;
-
-&lt;p&gt;The Spring Integration JavaConfig and DSL extension provides a set of convenient Builders and a fluent API to configure Spring Integration message flows from Spring @Configuration classes. The Java DSL for Spring Integration is essentially a facade for Spring Integration. The DSL provides a simple way to embed Spring Integration Message Flows into your application using the fluent Builder pattern together with existing Java and Annotation configurations from Spring Framework and Spring Integration as well. Another useful tool to simplify configuration is Java 8 Lambdas.&lt;/p&gt;
-
-&lt;p&gt;Tuesday, Jan 27th, 2015 3:00PM GMT (London GMT) &lt;a href="http://connect.pivotal.io/OSS_Webinar_7AMIntroducingtheJavaDSLforSpringIntegration_Register.html"&gt;Register&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Tuesday, Jan 27th, 2015 10:00AM PST (San Francisco GMT-08:00) &lt;a href="http://connect.pivotal.io/OSS_Webinar_10AMIntroducingtheJavaDSLforSpringIntegration_Register.html"&gt;Register&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;</content>
   </entry>
 </feed>
 

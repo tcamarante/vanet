@@ -4499,3 +4499,6 @@ n:2152:org/apache/tools/ant/taskdefs/optional/native2ascii/DefaultNative2Ascii
 n:6755:sun/tools/native2ascii/Main
 n:697:sun/tools/native2ascii/resources/MsgNative2ascii
 n:1239:sun/tools/native2ascii/N2AFilter
+n:9469:org/codehaus/groovy/grails/plugins/web/api/MimeTypesApiSupport
+n:2141:org/codehaus/groovy/grails/web/converters/Converter$CircularReferenceBehaviour
+n:6057:org/codehaus/groovy/grails/web/json/JSONWriter
