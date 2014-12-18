@@ -347,7 +347,7 @@ class BroadcastService {
 	def sendConfirmation(DatagramSocket socket, DatagramPacket packet, Object sendDataObj=null){
 		
 		// TODO: Enviar lista de pacotes recebidos pelo RSU 
-		
+		def sendData
 		if(!sendDataObj){
 			sendData = ("Alerta Recebido. - "+(new Date()).time.toString()).getBytes();
 		}else{

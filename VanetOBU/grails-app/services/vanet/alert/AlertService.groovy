@@ -8,6 +8,7 @@ class AlertService {
 	def broadcastService
 	def navigationLogService
 	def mapService
+	def carService
 	
     def alertReceive(Alert alert) {
 		def lastLog = navigationLogService.readNewNavigationLog()
@@ -18,6 +19,7 @@ class AlertService {
 			println "<<<<<< Alerta detectado! "
 		}
 		alert.receivedDate = System.currentTimeMillis()
+		alert.distance = carService.calculateDistance()
 		alert.save(flush:true)
 		if(!redundantAlert){
 			println " Repassando o alerta..."

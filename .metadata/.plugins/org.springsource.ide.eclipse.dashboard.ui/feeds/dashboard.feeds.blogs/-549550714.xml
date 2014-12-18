@@ -5,7 +5,52 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2014-12-17T15:04:00Z</updated>
+  <updated>2014-12-17T20:03:16Z</updated>
+  <entry>
+    <title>Spring IO Platform 1.1.0 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/17/spring-io-platform-1-1-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2014-12-17:1895</id>
+    <updated>2014-12-17T20:03:16Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that &lt;a href="http://platform.spring.io/platform"&gt;Spring IO Platform&lt;/a&gt; 1.1.0 has been released is available from &lt;a href="https://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3Aio.spring.platform"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;&lt;h3&gt;&lt;a href="#new-projects-in-1-1" class="anchor" name="new-projects-in-1-1"&gt;&lt;/a&gt;New projects in 1.1&lt;/h3&gt;&lt;p&gt;The following projects are new to the Platform in 1.1:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Integration Flow 1.0&lt;/li&gt;
+  &lt;li&gt;Spring Integration Java DSL 1.0&lt;/li&gt;
+  &lt;li&gt;Spring Integration Splunk 1.1&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#projects-upgraded-in-1-1" class="anchor" name="projects-upgraded-in-1-1"&gt;&lt;/a&gt;Projects upgraded in 1.1&lt;/h3&gt;&lt;p&gt;Several projects have new minor versions in 1.1:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Boot 1.2&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Connectors 1.1&lt;/li&gt;
+  &lt;li&gt;Spring Data JPA 1.7&lt;/li&gt;
+  &lt;li&gt;Spring Data MongoDB 1.6&lt;/li&gt;
+  &lt;li&gt;Spring Data Neo4J 3.2&lt;/li&gt;
+  &lt;li&gt;Spring Data Redis 1.4&lt;/li&gt;
+  &lt;li&gt;Spring Data REST 2.2&lt;/li&gt;
+  &lt;li&gt;Spring Data Solr 1.3&lt;/li&gt;
+  &lt;li&gt;Spring Framework 4.1&lt;/li&gt;
+  &lt;li&gt;Spring Integration 4.1&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Numerous third-party dependencies have also been updated.&lt;/p&gt;&lt;h3&gt;&lt;a href="#further-information" class="anchor" name="further-information"&gt;&lt;/a&gt;Further information&lt;/h3&gt;&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/1.1.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring IO Platform 1.0.4 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/17/spring-io-platform-1-0-4-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2014-12-17:1894</id>
+    <updated>2014-12-17T20:02:20Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that &lt;a href="http://platform.spring.io/platform"&gt;Spring IO Platform&lt;/a&gt; 1.0.4 is now available from both &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3Aio.spring.platform"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;This maintenance release upgrades the versions of a number of the projects in the Platform to pick up their latest maintenance releases:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Groovy 2.3.8&lt;/li&gt;
+  &lt;li&gt;Spring Boot 1.1.10&lt;/li&gt;
+  &lt;li&gt;Spring for Apache Hadoop 2.0.4&lt;/li&gt;
+  &lt;li&gt;Spring Security OAuth 2.0.5&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The versions of many third-party dependencies have also been updated.&lt;/p&gt;&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/1.0.4.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Security OAuth 2.0.5.RELEASE Available Now</title>
     <link rel="alternate" href="https://spring.io/blog/2014/12/17/spring-security-oauth-2-0-5-release-available-now" />
@@ -808,65 +853,6 @@ Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This
 &lt;p&gt;With the upcoming Spring Framework 4.1.3 release, thanks to the addition of a Spring context aware &lt;a href="http://wiki.fasterxml.com/HandlerInstantiator"&gt;&lt;code&gt;HandlerInstantiator&lt;/code&gt;&lt;/a&gt; (see &lt;a href="https://jira.spring.io/browse/SPR-10768"&gt;SPR-10768&lt;/a&gt; for more details), you will be able to autowire Jackson handlers (serializers, deserializers, type and type id resolvers).&lt;/p&gt;
 
 &lt;p&gt;This will allow you to build, for example, a custom deserializer that will replace a field containing only a reference in the JSON payload by the full &lt;code&gt;Entity&lt;/code&gt; retrieved from the database.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tool Suite and Groovy/Grails Tool Suite 3.6.3 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/12/02/spring-tool-suite-and-groovy-grails-tool-suite-3-6-3-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2014-12-02:1867</id>
-    <updated>2014-12-02T11:50:07Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-
-&lt;p&gt;I am happy to announce the new release of our Eclipse-based tooling today:
-The Spring Tool Suite (STS) 3.6.3 and the Groovy/Grails Tool Suite (GGTS) 3.6.3.&lt;/p&gt;
-
-&lt;p&gt;Highlights from this release include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Pivotal tc Server updated to 3.0.2 (incl. Spring Insight on Java8)&lt;/li&gt;
-&lt;li&gt;Cloud Foundry for Eclipse now pre-installed&lt;/li&gt;
-&lt;li&gt;Many new Spring Integration extensions supported in the graphical Spring Integration editor&lt;/li&gt;
-&lt;li&gt;Gradle tooling has better handling for auto mapping of jar dependencies to project dependencies&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To download the distributions, please go visit:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Spring Tool Suite: &lt;a href="https://spring.io/tools/sts/all"&gt;https://spring.io/tools/sts/all&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Groovy/Grails Tool Suite: &lt;a href="https://spring.io/tools/ggts/all"&gt;https://spring.io/tools/ggts/all&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Detailed new and noteworthy notes can be found here: &lt;a href="http://docs.spring.io/sts/nan/v363/NewAndNoteworthy.html"&gt;STS/GGTS 3.6.3 New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;STS/GGTS 3.6.4 is scheduled to ship in March 2015, shortly after the Eclipse Luna SR2 release.&lt;/p&gt;
-
-&lt;p&gt;Enjoy!&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Security for Microservices with Spring and OAuth2</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/12/02/springone2gx-2014-replay-security-for-microservices-with-spring-and-oauth2" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2014-12-02:1872</id>
-    <updated>2014-12-02T10:50:00Z</updated>
-    <content type="html">&lt;p&gt; Security for Microservices with Spring and OAuth2 &lt;/p&gt;
-
-&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-
-&lt;p&gt;Speaker: Dr. David Syer &lt;/p&gt;
-
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/syer-microservicesecurity"&gt;http://www.slideshare.net/SpringCentral/syer-microservicesecurity&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;OAuth2 is a lightweight security protocol that is well-suited for use with HTTP, the protocol at the heart of many modern architectures. Spring Security OAuth2 has a load of new features, not the least of which being the `@Configuration` support in version 2.0. Combine these with Spring Boot and you have a platform which can get you a secure HTTP service application in about 20 lines of code. This presentation shows how the combination of rapid development and production-ready features in the modern Spring stack are a perfect mixture for developing secure components in a system composed of microservices. We explore the new features in Spring OAuth2, guide you through the choice of which to use and when, and show how easy they are to enable quickly.  This is the 90 minute version of the same talk that was on the Spring webinar program recently.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/MLfL1NpwUC4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
 </feed>
 

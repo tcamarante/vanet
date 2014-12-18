@@ -14,6 +14,7 @@ class Alert {
 	Long sendDate
 	Long receivedDate
 	Long sendTime
+	Long distance
 	Boolean seen = false
 	
     static constraints = {

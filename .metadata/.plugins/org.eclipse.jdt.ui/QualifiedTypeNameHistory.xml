@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="grails.converters.JSON"/>
 <fullyQualifiedTypeName name="org.apache.log4j.Level"/>
 <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
 <fullyQualifiedTypeName name="vanet.monitoring.AccidentDetectionService"/>
@@ -8,4 +7,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="grails.transaction.Transactional"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="grails.converters.JSON"/>
+<fullyQualifiedTypeName name="vanet.control.TimeControl"/>
 </qualifiedTypeNameHistroy>

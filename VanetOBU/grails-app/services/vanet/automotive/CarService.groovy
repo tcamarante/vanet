@@ -2,6 +2,7 @@ package vanet.automotive
 
 import grails.plugins.rest.client.RestBuilder
 import grails.transaction.Transactional
+import vanet.alert.Alert
 
 @Transactional
 class CarService {
@@ -37,6 +38,15 @@ class CarService {
 		def c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 		
 		return R * c;
+	}
+	
+	def calculateDistance(Alert alert){
+		def navLog = navigationLogService.readNewNavigationLog()
+		if(navLog){
+			return calculateDistance(alert.lat, alert.lng, navLog.lat, navLog.lon)
+		}else{
+			return -1
+		}
 	}
 	
 	def sendToServer(def json){
