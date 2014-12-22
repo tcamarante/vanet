@@ -5,7 +5,54 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2014-12-17T20:03:16Z</updated>
+  <updated>2014-12-19T16:36:48Z</updated>
+  <entry>
+    <title>Spring Cloud 1.0.0.RC1 Available Now</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/19/spring-cloud-1-0-0-rc1-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2014-12-19:1898</id>
+    <updated>2014-12-19T16:36:48Z</updated>
+    <content type="html">&lt;p&gt;Another cheerful holiday message from the Spring team: &lt;a href="http://projects.spring.io/spring-cloud/"&gt;Spring Cloud&lt;/a&gt; 1.0.0.RC1 is now available in the &lt;a href="http://repo.spring.io"&gt;http://repo.spring.io&lt;/a&gt; Maven repository. There are plenty of new features including&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;Support for Hystrix metrics aggregation via an annotation &lt;code&gt;@EnableTurbine&lt;/code&gt; and &lt;code&gt;@EnableTurbineAmqp&lt;/code&gt; (for an AMQP-based collector)&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;A rehaul of the Ribbon configuration making it more friendly for Spring users. You can now configure each Ribbon client in its own &lt;code&gt;ApplicationContext&lt;/code&gt; using &lt;code&gt;@RibbonClient&lt;/code&gt; and override various bits, like the &lt;code&gt;LoadBalancer&lt;/code&gt;, or the &lt;code&gt;ServerListFilter&lt;/code&gt;, by providing &lt;code&gt;@Bean&lt;/code&gt; definitions.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;code&gt;DiscoveryHealthIndicator&lt;/code&gt; is now a composite that users can add information to by declaring &lt;code&gt;@Beans&lt;/code&gt; of type &lt;code&gt;DiscoveryHealthIndicator&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Discovery is now abstracted away from Eureka into a new spring-cloud-commons library, and enabled via new annotations like &lt;code&gt;@EnableDiscoveryClient&lt;/code&gt; (instead of the old &lt;code&gt;@EnableEurekaClient&lt;/code&gt;). The same pattern also applies to circuit breakers&lt;br/&gt;and &lt;code&gt;@EnableCircuitBreaker&lt;/code&gt; replaces &lt;code&gt;@EnableHystrix&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Several improvements to the Zuul proxy, including automatic updates when the Eureka catalog changes, support for form-encoded POSTs, external configuration of the routes and authentication scheme for each client.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Declarative configuration of which routes require OAuth2 authentication in Spring Cloud Security.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Support for labels (like git branches) in the &amp;ldquo;native&amp;rdquo; profile of the Config Server (looks in subdirectory of the search locations).&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Fail fast option in Config Server and Client if the required URI to locate config data is invalid.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;Out of the box support for JSON messages in the Spring Cloud Bus.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;A nice framework for Feign configuration based on a new &lt;code&gt;@FeignClient&lt;/code&gt; annotation (a bit like Spring Data repositories).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Some of the bus and starter modules have been re-organized and renamed, and there is a new (optional) parent pom for user apps. The full list of starters in RC1 is&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter: provides the config client and basic Spring Boot dependencies&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-bus-amqp: for bus clients over AMQP&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-cloudfoundry: Cloud Foundry specific features&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-eureka: service discovery client with Netflix Eureka&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-eureka-server: service discovery server with Netflix Eureka&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-hystrix: circuit break client with Netflix Hystrix&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-hystrix-dashboard: circuit break dashboard with Netflix Hystrix&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-security: single sign on and OAuth2 resource server short cuts&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-turbine: HTTP-based Hystrix metric aggregation with Netflix Turbine 1.0&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-turbine-amqp: AMQP-based Hystrix metric aggregation with Netflix Turbine 2.0&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;spring-cloud-starter-zuul: basic Zuul proxy with auto-registration of discovered services&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;There are loads of samples in the &lt;a href="https://github.com/spring-cloud-samples/"&gt;spring-cloud-samples&lt;/a&gt; repositories. Please try the bits out that you might use and for those of you who already did, thanks, and continue to hit it as hard as you can and come back with feedback. Happy Holidays!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring for Apache Hadoop 2.1.0.M3 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/12/18/spring-for-apache-hadoop-2-1-0-m3-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Thomas Risberg</name>
+    </author>
+    <id>tag:spring.io,2014-12-19:1897</id>
+    <updated>2014-12-18T22:09:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce the third milestone release of Spring for Apache Hadoop 2.1. The release is now available in the &lt;a href="http://repo.spring.io/libs-milestone/org/springframework/data/spring-data-hadoop/2.1.0.M3/"&gt;Spring IO repository&lt;/a&gt;&lt;/p&gt;&lt;p&gt;We have worked on improving the YARN and data store writers. There are also new @Configuration changes and improvements to the Boot auto configuration features. See the &lt;a href="http://docs.spring.io/spring-hadoop/docs/2.1.0.M3/changelog.txt"&gt;full changelog&lt;/a&gt; for more details.&lt;/p&gt;&lt;p&gt;Beginning with the Spring for Apache Hadoop 2.1 version, we now only support Hadoop 2.0 APIs and no longer provide backwards compatibility with older Hadoop v1 distributions. If you need support for older Hadoop versions please use the 2.0.4 or 1.1.0 versions of Spring for Apache Hadoop.&lt;/p&gt;&lt;p&gt;We provide support and &amp;ldquo;flavored&amp;rdquo; versions for the following distributions:&lt;br/&gt;- Apache Hadoop 2.4.1 (2.1.0.M3-hadoop24)&lt;br/&gt;- Apache Hadoop 2.5.1 (2.1.0.M3)&lt;br/&gt;- Apache Hadoop 2.6.0 (2.1.0.M3-hadoop26)&lt;br/&gt;- Pivotal HD 2.1 (2.1.0.M3-phd21)&lt;br/&gt;- Cloudera CDH5 (2.1.0.M3-cdh5)&lt;br/&gt;- Hortonworks HDP 2.1 (2.1.0.M3-hdp21)&lt;/p&gt;&lt;p&gt;The default distribution version is now Apache Hadoop 2.5.1. We continue to update the supported versions and have now added Apache Hadoop 2.6.0. We also added Hortonworks HDP 2.2 to the build and will provide that option as a pre-packaged flavor in the next release.&lt;/p&gt;&lt;p&gt;For more project specific information please see the &lt;a href="http://projects.spring.io/spring-hadoop/"&gt;project page&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring IO Platform 1.1.0 released</title>
     <link rel="alternate" href="https://spring.io/blog/2014/12/17/spring-io-platform-1-1-0-released" />
@@ -490,369 +537,6 @@
 &lt;p&gt;For a complete list of changes, see the &lt;a href="https://jira.spring.io/browse/ANDROID"&gt;Release Notes&lt;/a&gt; in JIRA. The &lt;a href="http://docs.spring.io/spring-android/docs/2.0.0.M2/reference/htmlsingle/"&gt;reference documentation&lt;/a&gt; has also been updated to cover the new features.&lt;/p&gt;
 
 &lt;p&gt;Thanks again to everyone that has contributed to the release! Please try this new milestone and report any problems in &lt;a href="https://jira.spring.io/browse/ANDROID"&gt;JIRA&lt;/a&gt; or on &lt;a href="https://github.com/spring-projects/spring-android/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - December 2, 2014</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/12/02/this-week-in-spring-december-2-2014" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2014-12-02:1875</id>
-    <updated>2014-12-02T23:02:00Z</updated>
-    <content type="html">&lt;p&gt;
-Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I'm at the  &lt;a href="http://www.therichwebexperience.com/conference/fort_lauderdale/2014/12/home"&gt;Rich Web Experience&lt;/a&gt; in Ft. Lauderdale, FL, joining my pal &lt;a href="http://twitter.com/mstine"&gt;Matt Stine&lt;/a&gt; for a workshop on building microservices with &lt;a href="http://spring.io/projects/spring-boot"&gt;Spring Boot&lt;/a&gt;, &lt;a href="http://spring.io/projects/spring-cloud/"&gt;Spring Cloud&lt;/a&gt; and &lt;a href="http://cloudfoundry.org"&gt;Cloud Foundry&lt;/a&gt;.
-
- &lt;/p&gt;&lt;p&gt;
-  So, without further ado, let's get to it:
-&lt;/p&gt;
- 
-
-&lt;p&gt;&lt;/p&gt;&lt;ul&gt;
-    &lt;li&gt;
-      Dr. Dave Syer &lt;a href="https://spring.io/blog/2014/11/25/spring-cloud-1-0-0-m3-available-now"&gt;just announced the M3 release of Spring Cloud&lt;/a&gt;, complete with &lt;em&gt;loads&lt;/em&gt; of cool stuff, including a smarter Ribbon-enabled load-balancing &lt;code&gt;RestTemplate&lt;/code&gt;, a RabbitMQ-based aggregator for Hystrix Metrics based on Turbine 2, Spring Cloud for AWS support, and &lt;em&gt;much&lt;/em&gt; more
-    &lt;/li&gt;
-    &lt;li&gt;
-      Spring ninja Sebastien Deleuze just announced &lt;a href="https://spring.io/blog/2014/12/02/latest-jackson-integration-improvements-in-spring"&gt;some of the amazing new features in Spring's Jackson support&lt;/a&gt;. My favorite? JSON + XML marshalling &lt;em&gt;with&lt;/em&gt; dynamic &lt;em&gt;views&lt;/em&gt;. Views are a  logical subset of attributes from a JSON structure that may be rendered  dynamically.
-    &lt;/li&gt;
-    &lt;li&gt;
-      Check out &lt;a href="https://spring.io/blog/2014/11/26/spring-roo-1-3-1-rc1-available-with-important-bug-fixes"&gt;Spring Roo 1.3.1&lt;/a&gt; and includes bug-fixes for reverse engineering and third party addon installations. Thanks, community and  &lt;a href="http://www.disid.com/"&gt;Disid&lt;/a&gt; in particular for the updates!
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="https://spring.io/blog/2014/12/02/spring-tool-suite-and-groovy-grails-tool-suite-3-6-3-released"&gt;Spring and Groovy &amp;amp; Grails Tool Suite lead Martin Lippert  just announced versions 3.6.3&lt;/a&gt;. The new release includes updated Spring Integration visualizations, a installed-by-default Cloud Foundry plugin and more. Check it out!
-    &lt;/li&gt;
-    &lt;li&gt;
-      Want to learn about the Spring Integration Java configuration DSL in terms of a working, line-by-line example? Check out &lt;a href="https://spring.io/blog/2014/11/25/spring-integration-java-dsl-line-by-line-tutorial"&gt;this post by Java configuration DSL lead Artem Bilan&lt;/a&gt;  and if you want to see how it works on JDK 7 or earlier,  &lt;a href="https://spring.io/blog/2014/12/01/spring-integration-java-dsl-pre-java-8-line-by-line-tutorial"&gt;check out this post&lt;/a&gt;.
-    &lt;/li&gt;
-    &lt;li&gt;
-      Spring Data lead Oliver Gierke just announced the &lt;a href="https://spring.io/blog/2014/12/01/first-milestone-of-spring-data-release-train-fowler-available"&gt;first milestone of the next Spring Data release train, Spring Data Fowler&lt;/a&gt;.
-    &lt;/li&gt;
-    &lt;li&gt;
-      The replay from the &lt;a href="https://spring.io/blog/2014/12/02/springone2gx-2014-replay-security-for-microservices-with-spring-and-oauth2"&gt;good Dr. David Syer's SpringOne2GX 2014 talk on security for microservices&lt;/a&gt; is now available online.
-    &lt;/li&gt;
-    &lt;li&gt;
-      Additionally, check out &lt;a href="https://spring.io/blog/2014/12/02/springone2gx-2014-replay-spring-boot-and-netflix-oss"&gt;Dr. Syer and Spencer Gibb's talk introducing Spring Cloud&lt;/a&gt; to the world at SpringOne2GX 2014!
-    &lt;/li&gt;
-    &lt;li&gt;Check out the SpringOne2GX 2014 replay of Reactor project ninjas Jon Brisbin  and Stephane Maldini's talk: &lt;a href="https://spring.io/blog/2014/12/02/springone2gx-2014-replay-building-reactive-applications-with-reactor-and-the-reactive-streams-standa4d"&gt;Building Reactive applications with Reactor and the Reactive Streams standard&lt;/a&gt;
-&lt;/li&gt;
-    &lt;li&gt;
-      Join Spring Integration project-lead Gary Russell for a not-to-be-missed webinar &lt;a href="https://spring.io/blog/2014/12/02/webinar-introducing-the-java-dsl-for-spring-integration"&gt;on January 27th that introduces the just-released Spring Integration Java configuration DSL&lt;/a&gt;!
-    &lt;/li&gt;
-    &lt;li&gt;
-      You know what they say: go grid or go home! Or something like that…? &lt;em&gt;anyway&lt;/em&gt;, definitely check out my pal Luke Shannon's upcoming webinar &lt;a href="https://spring.io/blog/2014/12/02/webinar-building-scalable-data-applications-with-spring-and-gemfire"&gt;on building scalable data applications with Spring Data Gemfire&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      Adao Feliz put together a nice &lt;a href="http://blog.adaofeliz.com/2014/11/21/first-look-spring-boot-and-docker/"&gt;post on using Spring Boot and Docker&lt;/a&gt;.
-      It's pretty straightforward, so check it out!
-    &lt;/li&gt;
-    &lt;li&gt; The &lt;em&gt;All and Sundry &lt;/em&gt; blog has a nice post
-      &lt;a href="http://www.java-allandsundry.com/2014/11/spring-resttemplate-with-linked-resource.html"&gt;on how to consume linked resources using Spring's &lt;code&gt;RestTemplate&lt;/code&gt;&lt;/a&gt;.
-    &lt;/li&gt;
-    &lt;li&gt;
-      Check out the early bits for the &lt;a href="https://docs.google.com/document/d/1WWoQ_d5nR4-P6VfLbAAbzOZIvRj-Xdff2hsjM_ZWRUQ/mobilebasic?pli=1"&gt;next-gen Cloud Foundry built from the ground up on the Go language and supports Docker as a first-class citizen&lt;/a&gt;. If you know how to use Vagrant, it's dead simple to get a full &lt;em&gt;working&lt;/em&gt; Cloud Foundry cloud running on your laptop if you follow these instructions. Do try it out and let us know!  &lt;/li&gt;
-  &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Latest Jackson integration improvements in Spring</title>
-    <link rel="alternate" href="https://spring.io/blog/2014/12/02/latest-jackson-integration-improvements-in-spring" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Sébastien Deleuze</name>
-    </author>
-    <id>tag:spring.io,2014-11-14:1840</id>
-    <updated>2014-12-02T13:30:00Z</updated>
-    <content type="html">&lt;p&gt;Spring &lt;a href="https://github.com/FasterXML/jackson"&gt;Jackson&lt;/a&gt; support has been improved lately to be more flexible and powerful. This blog post gives you an update about the most useful Jackson related features available in Spring Framework 4.x and Spring Boot. All the code samples are coming from this &lt;a href="https://github.com/sdeleuze/spring-jackson-demo"&gt;spring-jackson-demo&lt;/a&gt; sample application, feel free to have a look at the code.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-json-views" class="anchor" href="#json-views" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;JSON Views&lt;/h2&gt;
-
-&lt;p&gt;It can sometimes be useful to filter contextually objects serialized to the HTTP response body. In order to provide such capabilities, Spring MVC now has builtin support for &lt;a href="http://wiki.fasterxml.com/JacksonJsonViews"&gt;Jackson’s Serialization Views&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The following example illustrates how to use &lt;code&gt;@JsonView&lt;/code&gt; to filter fields depending on the context of serialization - e.g. getting a "summary" view when dealing with collections, and getting a full representation when dealing with a single resource:&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;View&lt;/span&gt; {
-    &lt;span class="pl-s"&gt;interface&lt;/span&gt; &lt;span class="pl-en"&gt;Summary&lt;/span&gt; {}
-}
-
-&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;User&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;Long&lt;/span&gt; id;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; firstname;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; lastname;
-
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; email;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; address;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; postalCode;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; city;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; country;
-}
-
-&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;Message&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;Long&lt;/span&gt; id;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;LocalDate&lt;/span&gt; created;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; title;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;User&lt;/span&gt; author;
-
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-st"&gt;List&amp;lt;&lt;span class="pl-stj"&gt;User&lt;/span&gt;&amp;gt;&lt;/span&gt; recipients;
-
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; body;
-}&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Thanks to Spring MVC &lt;code&gt;@JsonView&lt;/code&gt; support, it is possible to choose, on a per handler method basis, which field should be serialized:&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;@&lt;span class="pl-stj"&gt;RestController&lt;/span&gt;
-&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;MessageController&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@Autowired&lt;/span&gt;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;MessageService&lt;/span&gt; messageService;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-st"&gt;@RequestMapping&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;List&amp;lt;&lt;span class="pl-stj"&gt;Message&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;getAllMessages&lt;/span&gt;() {
-        &lt;span class="pl-k"&gt;return&lt;/span&gt; messageService&lt;span class="pl-k"&gt;.&lt;/span&gt;getAll();
-    }
-
-    &lt;span class="pl-st"&gt;@RequestMapping&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/{id}&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;Message&lt;/span&gt; &lt;span class="pl-en"&gt;getMessage&lt;/span&gt;(&lt;span class="pl-st"&gt;@PathVariable&lt;/span&gt; &lt;span class="pl-stj"&gt;Long&lt;/span&gt; &lt;span class="pl-v"&gt;id&lt;/span&gt;) {
-        &lt;span class="pl-k"&gt;return&lt;/span&gt; messageService&lt;span class="pl-k"&gt;.&lt;/span&gt;get(id);
-    }
-}&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;In this example, if all messages are retrieved, only the most important fields are serialized thanks to the &lt;code&gt;getAllMessages()&lt;/code&gt; method annotated with &lt;code&gt;@JsonView(View.Summary.class)&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class="highlight highlight-javascript"&gt;&lt;pre&gt;[ {
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;created&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;2014-11-14&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;title&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Info&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;author&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; {
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;firstname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Brian&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lastname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Clozel&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-  }
-}, {
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;created&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;2014-11-14&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;title&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Warning&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;author&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; {
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;firstname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Stéphane&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lastname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Nicoll&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-  }
-}, {
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;created&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;2014-11-14&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;title&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Alert&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;author&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; {
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;firstname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Rossen&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lastname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Stoyanchev&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-  }
-} ]&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;In Spring MVC default configuration, &lt;code&gt;MapperFeature.DEFAULT_VIEW_INCLUSION&lt;/code&gt; is set to &lt;code&gt;false&lt;/code&gt;. That means that when enabling a JSON View, non annotated fields or properties like &lt;code&gt;body&lt;/code&gt; or &lt;code&gt;recipients&lt;/code&gt; are not serialized.&lt;/p&gt;
-
-&lt;p&gt;When a specific &lt;code&gt;Message&lt;/code&gt; is retrieved using the &lt;code&gt;getMessage()&lt;/code&gt; handler method (no JSON View specified), all fields are serialized as expected:&lt;/p&gt;
-
-&lt;div class="highlight highlight-javascript"&gt;&lt;pre&gt;{
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;created&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;2014-11-14&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;title&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Info&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;body&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;This is an information message&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;author&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; {
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;firstname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Brian&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lastname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Clozel&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;email&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;bclozel@pivotal.io&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;address&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;1 Jaures street&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;postalCode&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;69003&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;city&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Lyon&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;country&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;France&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-  },
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;recipients&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; [ {
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;2&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;firstname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Stéphane&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lastname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Nicoll&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;email&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;snicoll@pivotal.io&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;address&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;42 Obama street&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;postalCode&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;1000&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;city&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Brussel&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;country&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Belgium&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-  }, {
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;3&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;firstname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Rossen&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;lastname&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;Stoyanchev&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;email&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;rstoyanchev@pivotal.io&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;address&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;3 Warren street&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;postalCode&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;10011&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;city&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;New York&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-    &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;country&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;USA&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;
-  } ]
-}&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Only &lt;strong&gt;one&lt;/strong&gt; class or interface can be specified with the &lt;code&gt;@JsonView&lt;/code&gt; annotation, but you can use inheritance to represent JSON View hierarchies (if a field is part of a JSON View, it will be also part of parent view). For example, this handler method will serialize fields annotated with &lt;code&gt;@JsonView(View.Summary.class)&lt;/code&gt; &lt;strong&gt;and&lt;/strong&gt; &lt;code&gt;@JsonView(View.SummaryWithRecipients.class)&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;View&lt;/span&gt; {
-    &lt;span class="pl-s"&gt;interface&lt;/span&gt; &lt;span class="pl-en"&gt;Summary&lt;/span&gt; {}
-    &lt;span class="pl-s"&gt;interface&lt;/span&gt; &lt;span class="pl-en"&gt;SummaryWithRecipients&lt;/span&gt; &lt;span class="pl-s"&gt;extends&lt;/span&gt; &lt;span class="pl-e"&gt;Summary&lt;/span&gt; {}
-}
-
-&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;Message&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;Long&lt;/span&gt; id;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;LocalDate&lt;/span&gt; created;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; title;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;Summary&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;User&lt;/span&gt; author;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;SummaryWithRecipients&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-st"&gt;List&amp;lt;&lt;span class="pl-stj"&gt;User&lt;/span&gt;&amp;gt;&lt;/span&gt; recipients;
-
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;String&lt;/span&gt; body;
-}
-
-@&lt;span class="pl-stj"&gt;RestController&lt;/span&gt;
-&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;MessageController&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@Autowired&lt;/span&gt;
-    &lt;span class="pl-s"&gt;private&lt;/span&gt; &lt;span class="pl-stj"&gt;MessageService&lt;/span&gt; messageService;
-
-    &lt;span class="pl-st"&gt;@JsonView&lt;/span&gt;(&lt;span class="pl-stj"&gt;View&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;&lt;span class="pl-stj"&gt;SummaryWithRecipients&lt;/span&gt;&lt;span class="pl-k"&gt;.&lt;/span&gt;class)
-    &lt;span class="pl-st"&gt;@RequestMapping&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;/with-recipients&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;)
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;List&amp;lt;&lt;span class="pl-stj"&gt;Message&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-en"&gt;getAllMessagesWithRecipients&lt;/span&gt;() {
-        &lt;span class="pl-k"&gt;return&lt;/span&gt; messageService&lt;span class="pl-k"&gt;.&lt;/span&gt;getAll();
-    }
-}&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;JSON Views could also be specified when using &lt;code&gt;RestTemplate&lt;/code&gt; HTTP client or &lt;code&gt;MappingJackson2JsonView&lt;/code&gt; by wrapping the value to serialize in a &lt;code&gt;MappingJacksonValue&lt;/code&gt; as shown in this &lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/test/java/org/springframework/web/client/RestTemplateIntegrationTests.java#L224"&gt;code sample&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-jsonp" class="anchor" href="#jsonp" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;JSONP&lt;/h2&gt;
-
-&lt;p&gt;As described in the &lt;a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#mvc-ann-jsonp"&gt;reference documentation&lt;/a&gt;, you can enable &lt;a href="http://en.wikipedia.org/wiki/JSONP"&gt;JSONP&lt;/a&gt; for &lt;code&gt;@ResponseBody&lt;/code&gt; and &lt;code&gt;ResponseEntity&lt;/code&gt; methods by declaring an &lt;code&gt;@ControllerAdvice&lt;/code&gt; bean that extends &lt;code&gt;AbstractJsonpResponseBodyAdvice&lt;/code&gt; as shown below:&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;@&lt;span class="pl-stj"&gt;ControllerAdvice&lt;/span&gt;
-&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;JsonpAdvice&lt;/span&gt; &lt;span class="pl-s"&gt;extends&lt;/span&gt; &lt;span class="pl-e"&gt;AbstractJsonpResponseBodyAdvice&lt;/span&gt; {
-
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-en"&gt;JsonpAdvice&lt;/span&gt;() {
-        &lt;span class="pl-v"&gt;super&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;callback&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;);
-    }
-}&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;With such &lt;code&gt;@ControllerAdvice&lt;/code&gt; bean registered, it will be possible to request the JSON webservice from another domain using a &lt;code&gt;&amp;lt;script /&amp;gt;&lt;/code&gt; tag:&lt;/p&gt;
-
-&lt;div class="highlight highlight-html"&gt;&lt;pre&gt;&lt;span class="pl-s2"&gt;&amp;lt;&lt;span class="pl-ent"&gt;script&lt;/span&gt; &lt;span class="pl-e"&gt;type&lt;/span&gt;=&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;application/javascript&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class="pl-s2"&gt;            &lt;span class="pl-e"&gt;src&lt;/span&gt;=&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;http://mydomain.com/1.json?jsonp=parseResponse&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class="pl-s2"&gt;&amp;lt;/&lt;span class="pl-ent"&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;In this example, the received payload would be:&lt;/p&gt;
-
-&lt;div class="highlight highlight-javascript"&gt;&lt;pre&gt;parseResponse({
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;id&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-c1"&gt;1&lt;/span&gt;,
-  &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;created&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt; &lt;span class="pl-k"&gt;:&lt;/span&gt; &lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;2014-11-14&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;,
-  ...
-});&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;JSONP is also supported and automatically enabled when using &lt;code&gt;MappingJackson2JsonView&lt;/code&gt; with a request that has a query parameter named jsonp or callback. The JSONP query parameter name(s) could be customized through the &lt;code&gt;jsonpParameterNames&lt;/code&gt; property.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-xml-support" class="anchor" href="#xml-support" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;XML support&lt;/h2&gt;
-
-&lt;p&gt;Since 2.0 release, Jackson provides first class support for some other data formats than JSON. Spring Framework and Spring Boot provide builtin support for Jackson based XML serialization/deserialization.&lt;/p&gt;
-
-&lt;p&gt;As soon as you include the &lt;a href="https://github.com/FasterXML/jackson-dataformat-xml"&gt;&lt;code&gt;jackson-dataformat-xml&lt;/code&gt;&lt;/a&gt; dependency to your project, it is automatically used instead of JAXB2.&lt;/p&gt;
-
-&lt;p&gt;Using Jackson XML extension has several advantages over JAXB2:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Both Jackson and JAXB annotations are recognized&lt;/li&gt;
-&lt;li&gt;JSON View are supported, allowing you to build easily REST Webservices with the same filtered output for both XML and JSON data formats&lt;/li&gt;
-&lt;li&gt;No need to annotate your class with &lt;code&gt;@XmlRootElement&lt;/code&gt;, each class serializable in JSON will serializable in XML&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You usually also want to make sure that the XML library in use is Woodstox since:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It is faster than Stax implementation provided with the JDK&lt;/li&gt;
-&lt;li&gt;It avoids some known issues like adding unnecessary namespace prefixes&lt;/li&gt;
-&lt;li&gt;Some features like pretty print don't work without it&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In order to use it, simply add the latest &lt;a href="http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.codehaus.woodstox%22%20AND%20a%3A%22woodstox-core-asl%22"&gt;&lt;code&gt;woodstox-core-asl&lt;/code&gt;&lt;/a&gt; dependency available to your project.&lt;/p&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-customizing-the-jackson-objectmapper" class="anchor" href="#customizing-the-jackson-objectmapper" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Customizing the Jackson ObjectMapper&lt;/h2&gt;
-
-&lt;p&gt;Prior to Spring Framework 4.1.1, Jackson &lt;code&gt;HttpMessageConverter&lt;/code&gt;s were using &lt;code&gt;ObjectMapper&lt;/code&gt; default configuration. In order to provide a better and easily customizable default configuration, a new &lt;a href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/http/converter/json/Jackson2ObjectMapperBuilder.html"&gt;&lt;code&gt;Jackson2ObjectMapperBuilder&lt;/code&gt;&lt;/a&gt; has been introduced. It is the JavaConfig equivalent of the well known &lt;a href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/http/converter/json/Jackson2ObjectMapperFactoryBean.html"&gt;&lt;code&gt;Jackson2ObjectMapperFactoryBean&lt;/code&gt;&lt;/a&gt; used in XML configuration.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/http/converter/json/Jackson2ObjectMapperBuilder.html"&gt;&lt;code&gt;Jackson2ObjectMapperBuilder&lt;/code&gt;&lt;/a&gt; provides a nice API to customize various Jackson settings while  retaining Spring Framework provided default ones. It also allows to create &lt;code&gt;ObjectMapper&lt;/code&gt; and &lt;code&gt;XmlMapper&lt;/code&gt; instances based on the same configuration.&lt;/p&gt;
-
-&lt;p&gt;Both &lt;code&gt;Jackson2ObjectMapperBuilder&lt;/code&gt; and &lt;code&gt;Jackson2ObjectMapperFactoryBean&lt;/code&gt; define a better Jackson default configuration. For example, the &lt;a href="http://fasterxml.github.io/jackson-databind/javadoc/2.0.0/com/fasterxml/jackson/databind/DeserializationFeature.html#FAIL_ON_UNKNOWN_PROPERTIES"&gt;&lt;code&gt;DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES&lt;/code&gt;&lt;/a&gt; property set to false, in order to allow deserialization of JSON objects with unmapped properties.&lt;/p&gt;
-
-&lt;p&gt;Jackson support for Java 8 Date &amp;amp; Time API data types is automatically registered when Java 8 is used and &lt;a href="https://github.com/FasterXML/jackson-datatype-jsr310"&gt;&lt;code&gt;jackson-datatype-jsr310&lt;/code&gt;&lt;/a&gt; is on the classpath. Joda-Time support is registered as well when &lt;a href="https://github.com/FasterXML/jackson-datatype-joda"&gt;&lt;code&gt;jackson-datatype-joda&lt;/code&gt;&lt;/a&gt; is part of your project dependencies.&lt;/p&gt;
-
-&lt;p&gt;These classes also allow you to register easily Jackson &lt;a href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/http/converter/json/Jackson2ObjectMapperBuilder.html#mixIn-java.lang.Class-java.lang.Class-"&gt;mixins&lt;/a&gt;, &lt;a href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/http/converter/json/Jackson2ObjectMapperBuilder.html#modules-java.util.List-"&gt;modules&lt;/a&gt;, &lt;a href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/http/converter/json/Jackson2ObjectMapperBuilder.html#serializers-com.fasterxml.jackson.databind.JsonSerializer...-"&gt;serializers&lt;/a&gt; or even property naming strategy like &lt;code&gt;PropertyNamingStrategy.CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES&lt;/code&gt; if you want to have your &lt;code&gt;userName&lt;/code&gt; java property translated to &lt;code&gt;user_name&lt;/code&gt; in JSON.&lt;/p&gt;
-
-&lt;h3&gt;
-&lt;a id="user-content-with-spring-boot" class="anchor" href="#with-spring-boot" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;With Spring Boot&lt;/h3&gt;
-
-&lt;p&gt;As described in the Spring Boot reference documentation, there are various ways to &lt;a href="http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#howto-customize-the-jackson-objectmapper"&gt;customize the Jackson &lt;code&gt;ObjectMapper&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can for example enable/disable Jackson features easily by adding properties like &lt;code&gt;spring.jackson.serialization.indent_output=true&lt;/code&gt; to &lt;a href="http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#boot-features-external-config-application-property-files"&gt;&lt;code&gt;application.properties&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;As an alternative, in the upcoming 1.2 release Spring Boot also allows to customize the Jackson configuration (JSON and XML) used by Spring MVC &lt;code&gt;HttpMessageConverter&lt;/code&gt;s by declaring a &lt;code&gt;Jackson2ObjectMapperBuilder&lt;/code&gt; &lt;code&gt;@Bean&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;@&lt;span class="pl-stj"&gt;Bean&lt;/span&gt;
-&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-stj"&gt;Jackson2ObjectMapperBuilder&lt;/span&gt; jacksonBuilder() {
-    &lt;span class="pl-stj"&gt;Jackson2ObjectMapperBuilder&lt;/span&gt; builder &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;Jackson2ObjectMapperBuilder&lt;/span&gt;();
-    builder&lt;span class="pl-k"&gt;.&lt;/span&gt;indentOutput(&lt;span class="pl-c1"&gt;true&lt;/span&gt;)&lt;span class="pl-k"&gt;.&lt;/span&gt;dateFormat(&lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;SimpleDateFormat&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;yyyy-MM-dd&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;));
-    &lt;span class="pl-k"&gt;return&lt;/span&gt; builder;
-}&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This is useful if you want to use advanced Jackson configuration not exposed through regular configuration keys.&lt;/p&gt;
-
-&lt;h3&gt;
-&lt;a id="user-content-without-spring-boot" class="anchor" href="#without-spring-boot" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Without Spring Boot&lt;/h3&gt;
-
-&lt;p&gt;In a plain Spring Framework application, you can also use &lt;code&gt;Jackson2ObjectMapperBuilder&lt;/code&gt; to customize the XML and JSON &lt;code&gt;HttpMessageConverter&lt;/code&gt;s as shown bellow:&lt;/p&gt;
-
-&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;@&lt;span class="pl-stj"&gt;Configuration&lt;/span&gt;
-@&lt;span class="pl-stj"&gt;EnableWebMvc&lt;/span&gt;
-&lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-s"&gt;class&lt;/span&gt; &lt;span class="pl-en"&gt;WebConfiguration&lt;/span&gt; &lt;span class="pl-s"&gt;extends&lt;/span&gt; &lt;span class="pl-e"&gt;WebMvcConfigurerAdapter&lt;/span&gt; {
-
-    &lt;span class="pl-st"&gt;@Override&lt;/span&gt;
-    &lt;span class="pl-s"&gt;public&lt;/span&gt; &lt;span class="pl-st"&gt;void&lt;/span&gt; &lt;span class="pl-en"&gt;configureMessageConverters&lt;/span&gt;(&lt;span class="pl-st"&gt;List&amp;lt;&lt;span class="pl-st"&gt;HttpMessageConverter&amp;lt;?&amp;gt;&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;span class="pl-v"&gt;converters&lt;/span&gt;) {
-        &lt;span class="pl-stj"&gt;Jackson2ObjectMapperBuilder&lt;/span&gt; builder &lt;span class="pl-k"&gt;=&lt;/span&gt; &lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;Jackson2ObjectMapperBuilder&lt;/span&gt;();
-        builder&lt;span class="pl-k"&gt;.&lt;/span&gt;indentOutput(&lt;span class="pl-c1"&gt;true&lt;/span&gt;)&lt;span class="pl-k"&gt;.&lt;/span&gt;dateFormat(&lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;SimpleDateFormat&lt;/span&gt;(&lt;span class="pl-s1"&gt;&lt;span class="pl-pds"&gt;"&lt;/span&gt;yyyy-MM-dd&lt;span class="pl-pds"&gt;"&lt;/span&gt;&lt;/span&gt;));
-        converters&lt;span class="pl-k"&gt;.&lt;/span&gt;add(&lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;MappingJackson2HttpMessageConverter&lt;/span&gt;(builder&lt;span class="pl-k"&gt;.&lt;/span&gt;build()));
-        converters&lt;span class="pl-k"&gt;.&lt;/span&gt;add(&lt;span class="pl-k"&gt;new&lt;/span&gt; &lt;span class="pl-stj"&gt;MappingJackson2XmlHttpMessageConverter&lt;/span&gt;(builder&lt;span class="pl-k"&gt;.&lt;/span&gt;createXmlMapper(&lt;span class="pl-c1"&gt;true&lt;/span&gt;)&lt;span class="pl-k"&gt;.&lt;/span&gt;build()));
-    }
-}&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;
-&lt;a id="user-content-more-to-come" class="anchor" href="#more-to-come" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;More to come&lt;/h2&gt;
-
-&lt;p&gt;With the upcoming Spring Framework 4.1.3 release, thanks to the addition of a Spring context aware &lt;a href="http://wiki.fasterxml.com/HandlerInstantiator"&gt;&lt;code&gt;HandlerInstantiator&lt;/code&gt;&lt;/a&gt; (see &lt;a href="https://jira.spring.io/browse/SPR-10768"&gt;SPR-10768&lt;/a&gt; for more details), you will be able to autowire Jackson handlers (serializers, deserializers, type and type id resolvers).&lt;/p&gt;
-
-&lt;p&gt;This will allow you to build, for example, a custom deserializer that will replace a field containing only a reference in the JSON payload by the full &lt;code&gt;Entity&lt;/code&gt; retrieved from the database.&lt;/p&gt;</content>
   </entry>
 </feed>
 

@@ -19,8 +19,9 @@ class AlertService {
 			println "<<<<<< Alerta detectado! "
 		}
 		alert.receivedDate = System.currentTimeMillis()
-		alert.distance = carService.calculateDistance()
+		alert.distance = carService.calculateDistance(alert)
 		alert.save(flush:true)
+		println ">>>>>>>>>>>>>>>>>"+(alert.receivedDate - alert.sendTime)
 		if(!redundantAlert){
 			println " Repassando o alerta..."
 			broadcastService.sendAlertWhileNear(alert)

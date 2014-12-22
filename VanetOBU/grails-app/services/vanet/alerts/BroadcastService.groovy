@@ -152,9 +152,9 @@ class BroadcastService {
 						def a = alertList.val.first()
 						// Se for alerta de acidente não espera confirmação
 						Boolean confirm = !(a.obj.instanceOf(Alert))
-						if(a.obj.instanceOf(Alert)){
-							a.obj.sendTime = System.currentTimeMillis()
-						}
+//						if(a.obj.instanceOf(Alert)){
+//							a.obj.sendTime = System.currentTimeMillis()
+//						}
 						send(a.obj, confirm)
 						if(a.sendOneMore()){
 							alertList.val.remove(0)

@@ -63,6 +63,7 @@ class AccidentDetectionService {
 		alert.lng=navigationLogInstance.lon
 		alert.alertDate=navigationLogInstance.collectTime
 		alert.sendDate=System.currentTimeMillis()
+		alert.distance = 0
 							
 		alert.save(flush:true)
 		
@@ -89,6 +90,7 @@ class AccidentDetectionService {
 				confirmedAlert.lng=navigationLogInstance.lon
 				confirmedAlert.alertDate=navigationLogInstance.collectTime
 				confirmedAlert.sendDate=System.currentTimeMillis()
+				confirmedAlert.distance = 0
 									
 				confirmedAlert.save(flush:true)
 				broadcastService.sendAlertWhileNear(confirmedAlert)
