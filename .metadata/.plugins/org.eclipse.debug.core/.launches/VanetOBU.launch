@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.codehaus.groovy.eclipse.groovyConsoleLaunchConfiguration">
 <stringAttribute key="org.codehaus.groovy.eclipse.launch.runType" value=""/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/VanetOBU"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
 <listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
 <listEntry value="E:\git\vanet\VanetOBU\target-eclipse\classes"/>
 <listEntry value="E:\Thiago\GGTS\grails-2.4.2\lib\xalan\serializer\jars\serializer-2.7.1.jar"/>
@@ -144,6 +150,6 @@
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.codehaus.groovy.tools.GroovyStarter"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--classpath &quot;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\asset-pipeline-1.8.11\grails-app\conf;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\asset-pipeline-1.8.11\grails-app\controllers;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\asset-pipeline-1.8.11\grails-app\services;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\asset-pipeline-1.8.11\grails-app\taglib;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\asset-pipeline-1.8.11\src\groovy;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\cache-1.1.7\grails-app\conf;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\cache-1.1.7\grails-app\services;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\cache-1.1.7\grails-app\taglib;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\cache-1.1.7\src\groovy;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\cache-1.1.7\src\java;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\database-migration-1.4.0\grails-app\conf;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\database-migration-1.4.0\grails-app\controllers;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\database-migration-1.4.0\grails-app\views;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\database-migration-1.4.0\src\groovy;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\hibernate4-4.3.5.4\src\java;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\jquery-1.11.1\grails-app\assets;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\jquery-1.11.1\grails-app\conf;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\jquery-1.11.1\grails-app\services;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\jquery-1.11.1\grails-app\taglib;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\jquery-1.11.1\src\groovy;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\scaffolding-2.1.2\src\groovy;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\scaffolding-2.1.2\src\java;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\tomcat-7.0.54\src\groovy;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\tomcat-7.0.54\src\java;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\webxml-1.4.1\grails-app\conf;${workspace_loc:\VanetOBU}\.link_to_grails_plugins\webxml-1.4.1\src\groovy;${workspace_loc:\VanetOBU}\grails-app\conf;${workspace_loc:\VanetOBU}\grails-app\controllers;${workspace_loc:\VanetOBU}\grails-app\domain;${workspace_loc:\VanetOBU}\grails-app\services;${workspace_loc:\VanetOBU}\grails-app\taglib;${workspace_loc:\VanetOBU}\grails-app\utils;${workspace_loc:\VanetOBU}\src\groovy;${workspace_loc:\VanetOBU}\src\java;${workspace_loc:\VanetOBU}\test\integration;${workspace_loc:\VanetOBU}\test\unit;${workspace_loc:\VanetOBU}\target-eclipse\classes&quot; --main groovy.ui.Console"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="VanetOBU"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" -Dgroovy.home=&quot;${groovy_home}&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dgroovy.home=&quot;${groovy_home}&quot;"/>
 <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:\VanetOBU}"/>
 </launchConfiguration>

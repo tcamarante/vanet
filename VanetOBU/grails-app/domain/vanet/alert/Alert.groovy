@@ -10,10 +10,10 @@ class Alert {
 	String carCode
 	Double lat
 	Double lng
-	Long alertDate
-	Long sendDate
-	Long receivedDate
-	Long sendTime
+	Long alertDate // Data de disparo do alerta
+	Long sendDate //
+	Long receivedDate // Data que o alerta foi recebido pelo dispositivo atual
+	Long sendTime // Data que o alerta saiu da ultima OBU que ele esteve
 	Long distance
 	Boolean seen = false
 	

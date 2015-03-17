@@ -17,7 +17,7 @@ class BootStrap {
 	def grailsApplication
 	
     def init = { servletContext ->
-		
+		println new Date()
 		// Lendo arquivo com informações do veículo
 		// Getting context path here
 //		def webRootDir = sch.servletContext.getRealPath ("/")

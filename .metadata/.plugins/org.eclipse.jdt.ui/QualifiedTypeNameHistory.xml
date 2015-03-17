@@ -9,4 +9,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="grails.converters.JSON"/>
 <fullyQualifiedTypeName name="vanet.control.TimeControl"/>
+<fullyQualifiedTypeName name="vanet.alerts.BroadcastService"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

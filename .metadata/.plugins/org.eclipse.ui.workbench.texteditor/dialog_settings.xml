@@ -12,17 +12,17 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
-		<item value="true" key="wholeword"/>
-		<item value="sendTime" key="selection"/>
+		<item value="false" key="wholeword"/>
+		<item value="808" key="selection"/>
 		<list key="findhistory">
-			<item value="sendTime"/>
+			<item value="808"/>
 			<item value="sendAlert"/>
-			<item value="*.id"/>
-			<item value="isSending"/>
-			<item value="alert.save"/>
 			<item value="sendAlertWhileNear"/>
-			<item value="System"/>
-			<item value="currentTimeMillis"/>
+			<item value="accidentAlert"/>
+			<item value="80"/>
+			<item value="table"/>
+			<item value="jquery"/>
+			<item value="property-label"/>
 		</list>
 		<list key="replacehistory">
 		</list>

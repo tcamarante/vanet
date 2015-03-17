@@ -4,4 +4,8 @@
 <home>E:\Thiago\GGTS\grails-2.4.2\</home>
 <name>Grails 2.4.2</name>
 </install>
+<install is-default="false">
+<home>E:\Thiago\GGTS\grails-2.3.6\</home>
+<name>Grails 2.3.6</name>
+</install>
 </installs>

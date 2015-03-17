@@ -35,31 +35,34 @@ class BroadcastService {
 	 * @return
 	 */
 	def sendAlert(Object sendObj, Integer qtd=1, Closure sendOneMore={return false}){
-		
-		for(int i=0; i<qtd; i++){
-			def pct = null
-			if(sendOneMore()){
-				// Impedindo que alertas contínuos redundantes sejam inseridos na lista
-				// Ex: dois alertas de acidente de um mesmo veículo
-				if(sendObj.instanceOf(Alert)){
-					// Se for um alerta de possival acidente ou de acidente confirmado...
-					if(sendObj.messageCode == 2 || sendObj.messageCode == 3){
-						// Busca algum alerta redundante
-						pct = alertList.val.find{(it.obj.messageCode == 2||it.obj.messageCode == 3) && 
-							it.obj.carCode == sendObj.carCode && it.sendOneMore()==true}
-						// Se o alerta for de possível acidente e o novo alerta for de acidente confirmado
-						if(pct && pct.obj.messageCode == 2 && sendObj.messageCode == 3){
-							pct.sendOneMore = {return false}
+		try{
+			for(int i=0; i<qtd; i++){
+				def pct = null
+				if(sendOneMore()){
+					// Impedindo que alertas contínuos redundantes sejam inseridos na lista
+					// Ex: dois alertas de acidente de um mesmo veículo
+					if(sendObj.instanceOf(Alert)){
+						// Se for um alerta de possival acidente ou de acidente confirmado...
+						if(sendObj.messageCode == 2 || sendObj.messageCode == 3){
+							// Busca algum alerta redundante
+							pct = alertList.val.find{(it.obj.messageCode == 2||it.obj.messageCode == 3) && 
+								it.obj.carCode == sendObj.carCode && it?.sendOneMore()==true}
+							// Se o alerta for de possível acidente e o novo alerta for de acidente confirmado
+							if(pct && pct.obj.messageCode == 2 && sendObj.messageCode == 3){
+								pct.sendOneMore = {return false}
+							}
 						}
+						i=qtd
 					}
-					i=qtd
-				}
-			
-				if(!pct || (pct.obj.messageCode == 2 && sendObj.messageCode == 3)){
-					alertList.val.add(new AlertWrapper(obj:sendObj,sendOneMore:sendOneMore))
-					println "Vetor atual -> "+alertList.val*.obj.id
+				
+					if(!pct || (pct.obj.messageCode == 2 && sendObj.messageCode == 3)){
+						alertList.val.add(new AlertWrapper(obj:sendObj,sendOneMore:sendOneMore))
+						println "Vetor atual -> "+alertList.val*.obj.id
+					}
 				}
 			}
+		}catch(Exception e){
+			e.printStackTrace()
 		}
 	}
 	
@@ -112,8 +115,15 @@ class BroadcastService {
 	 * @return
 	 */
 	def stopInfiniteAlert(Alert stopObj){
-		def pct = alertList.val.find{it.obj.id == stopObj.id && it.sendOneMore()==true && it.obj.class == stopObj.class}
+		def pct = alertList.val.find{it.obj.id == stopObj.id && it?.sendOneMore()==true && it.obj.class == stopObj.class}
 		pct.sendOneMore = {return false}
+	}
+	
+	def stopAllAlerts(){
+		alertList.val.collect{
+			stopInfiniteAlert(it.obj)
+		}
+		println "Lista de alertas vazia!"
 	}
 	
 	/**
@@ -156,14 +166,14 @@ class BroadcastService {
 //							a.obj.sendTime = System.currentTimeMillis()
 //						}
 						send(a.obj, confirm)
-						if(a.sendOneMore()){
+						if(a?.sendOneMore()){
 							alertList.val.remove(0)
 							alertList.val.add(a)
 						}else{
 							alertList.val.remove(0)
 						}
 						// Tempo entre 2 alertas em ms
-						sleep(100)
+						sleep(1000)
 					}
 				}catch(Exception e){
 					println e.message()
@@ -195,7 +205,8 @@ class BroadcastService {
 
 			//Tentando 255.255.255.255 primeiro
 			try {
-				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.187.255"), 8083);
+//				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.188.255"), 8082);
+				DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.2.255"), 8082);
 				c.send(sendPacket);
 				//System.out.println(getClass().getName() + "CLIENT>>> Requisicao enviada para: 255.255.255.255 (DEFAULT)");
 			} catch (Exception e) {
@@ -228,7 +239,7 @@ class BroadcastService {
 					
 					// Enviando o pacote broadcast
 					try {
-						DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, broadcast, 8083);
+						DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, broadcast, 8082);
 						c.send(sendPacket);
 					} catch (Exception e) {
 					}

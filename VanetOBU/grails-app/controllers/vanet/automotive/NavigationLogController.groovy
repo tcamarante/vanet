@@ -147,7 +147,7 @@ class NavigationLogController  extends RestfulController{
 			return
 		}
 
-		navigationLogInstance.save flush:true
+		navigationLogInstance.save(flush:true, failOnError:true)
 		
 //		def jsonObject = JSON.parse((navigationLogInstance as JSON).toString())
 //		jsonObject.put("carCode", navigationLogInstance.car.code)
