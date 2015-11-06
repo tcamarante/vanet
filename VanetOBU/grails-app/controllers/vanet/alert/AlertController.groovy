@@ -3,10 +3,9 @@ package vanet.alert
 
 
 import static org.springframework.http.HttpStatus.*
-import vanet.alerts.BroadcastService;
+import grails.converters.JSON
 import grails.transaction.Transactional
 import groovy.sql.Sql
-import groovy.sql.GroovyRowResult
 
 @Transactional(readOnly = true)
 class AlertController {
@@ -23,7 +22,24 @@ class AlertController {
 		params.order = "desc"
         respond Alert.list(params), model:[alertInstanceCount: Alert.count()]
     }
-
+	
+	def index2(Integer max) {
+		params.max = Math.min(max ?: 10, 100)
+		params.sort = "receivedDate"
+		params.order = "desc"
+		respond Alert.list(params), model:[alertInstanceCount: Alert.count()]
+	}
+	
+	def monitoraAlerta() {
+		def alertInstance = Alert.executeQuery("""
+                      select a from Alert as a 
+                      where a.alertDate = (
+                          select max(a2.alertDate) from Alert as a2 
+                      )
+                    """).getAt(0)
+		respond alertInstance, [status:OK]
+	}
+	
     def show() {
 		def alertInstance = Alert.findById(params.id) 
         respond alertInstance

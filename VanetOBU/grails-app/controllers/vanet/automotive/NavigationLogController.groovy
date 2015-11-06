@@ -25,6 +25,16 @@ class NavigationLogController  extends RestfulController{
         respond NavigationLog.list(params), model:[navigationLogInstanceCount: NavigationLog.count()]
     }
 
+	def monitoraPosicao(Integer max) {
+		def navigationLogInstance = NavigationLog.executeQuery("""
+                      select nl from NavigationLog as nl 
+                      where nl.collectTime = (
+                          select max(nl2.collectTime) from NavigationLog as nl2 
+                      )
+                    """).getAt(0)
+		respond navigationLogInstance, [status:OK]
+	}
+	
     def show(NavigationLog navigationLogInstance) {
         respond navigationLogInstance
     }
@@ -131,7 +141,8 @@ class NavigationLogController  extends RestfulController{
 			gpsSpeed:params.kff1001.toDouble(),//.toInteger(),//"GPS Speed"?.replace("m/s","")?.toInteger(),
 			lat:params.kff1006.toDouble(),//"Latitude",
 			gpsTime:params."session".toLong(),//"GPS Time"?.toLong(),
-			isAirbagOpen:true,//(params."Trouble Codes".find("99 94")!=null||params."Trouble Codes".find("9994")!=null),
+			isAirbagOpen:true//false
+			,//(params."Trouble Codes".find("99 94")!=null||params."Trouble Codes".find("9994")!=null),
 			lon:params.kff1005.toDouble(),//"Longitude",
 			lastNavigationLog: NavigationLog.find("from NavigationLog nl where nl.car = :car order by id desc", [car:carInstance]),
 			car: carInstance

@@ -1,0 +1,1 @@
+${navigationLogInstance.lat} ${navigationLogInstance.lon}
