@@ -41,7 +41,7 @@
 <%--		<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime > 1423334426773 and collectTime <= 1423334496774 order by collectTime")}" var="log" status="i">--%>
 <%--		<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime > 1423334445773 and collectTime <= 1423334609773 order by collectTime")}" var="log" status="i">--%>
 
-<%--Experimento 2--%>
+<%--Experimento 2 - vanetObu_exp2_valido--%>
 <%--rep1--%>
 <%--<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime >= 1423688484499 and collectTime <= 1423688825499 order by collectTime")}" var="log" status="i">--%>
 <%--<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime >= 1423688522499 and collectTime <= 1423688562499 order by collectTime")}" var="log" status="i">--%>
@@ -59,13 +59,22 @@
 <%--<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime >= 1423689704499 and collectTime <= 1423689759499 order by collectTime")}" var="log" status="i">--%>
 <%--<g:each in="${NavigationLog.findAll("from NavigationLog where collect_time >= 1423689744232 and collectTime <= 1423689866231 order by collectTime")}" var="log" status="i">--%>
 <%--rep5--%>
-<%--<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime >= 1423690075500 and collectTime <= 1423690291499 order by collectTime")}" var="log" status="i">--%>
+<%--<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime >= 1423690079500 and collectTime <= 1423690241499 order by collectTime")}" var="log" status="i">--%>
 <%--<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime >= 1423690116499 and collectTime <= 1423690157499 order by collectTime")}" var="log" status="i">--%>
-<g:each in="${NavigationLog.findAll("from NavigationLog where collect_time >= 1423690154232 and collectTime <= 1423690264232 order by collectTime")}" var="log" status="i">
+<%--<g:each in="${NavigationLog.findAll("from NavigationLog where collect_time >= 1423690154232 and collectTime <= 1423690264232 order by collectTime")}" var="log" status="i">--%>
+
+<%--Exp3--%>
+<%--Carro 2 - vanetObu --%>
+<%--<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime >= 1427478648548 and collectTime <= 1427478803549 order by collectTime")}" var="log" status="i">--%>
+<%--Carro 3 - vanetObu_exp3_car3--%>
+<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime >= 1426948876310 and collectTime <= 1426949045310 order by collectTime")}" var="log" status="i">
+<%--Carro 4 - vanetObu --%>
+<%--<g:each in="${NavigationLog.findAll("from NavigationLog where collectTime >= 1427478865548 and collectTime <= 1427479075548 order by collectTime")}" var="log" status="i">--%>
+	<g:if test="${i%3 == 0}">
 		var marker${log.id} = new google.maps.Marker({
 			position: new google.maps.LatLng(${log.lat},${log.lon}),
 			map: map,
-			icon:'${resource(dir: 'images', file: 'car2.png')}',
+			icon:'${resource(dir: 'images', file: 'car3.png')}',
 			title: '${i} - ${log.id} - ${log.collectTime}'
 		});
 		
@@ -87,10 +96,11 @@
 		google.maps.event.addListener(marker${log.id}, 'blur', function() {
 			infowindow${log.id}.open(map,marker${log.id});
 		});
-		
+		</g:if>
 	</g:each>
-<%--	Experimento 2 - carro 2--%>
+<%--	Experimento 2 - carro 2 - vanetObu_exp2_valido --%>
 <%--Rep1--%>
+<%--<g:each in="${OtherNavigationLog.findAll("from OtherNavigationLog where collect_time >= 1423688559233 and collectTime <= 1423688702233 order by collectTime")}" var="log" status="i">--%>
 <%--	<g:each in="${OtherNavigationLog.findAll("from OtherNavigationLog where collect_time >= 1423688559233 and collectTime <= 1423688667233 order by collectTime")}" var="log" status="i">--%>
 <%--Rep2--%>
 <%--	<g:each in="${OtherNavigationLog.findAll("from OtherNavigationLog where collect_time >= 1423688939231 and collectTime <= 1423689069231 order by collectTime")}" var="log" status="i">--%>
@@ -99,26 +109,27 @@
 <%--Rep4--%>
 <%--	<g:each in="${OtherNavigationLog.findAll("from OtherNavigationLog where collect_time >= 1423689744232 and collectTime <= 1423689866231 order by collectTime")}" var="log" status="i">--%>
 <%--Rep5--%>
-	<g:each in="${OtherNavigationLog.findAll("from OtherNavigationLog where collect_time >= 1423690154232 and collectTime <= 1423690264232 order by collectTime")}" var="log" status="i">
-		var marker${log.id} = new google.maps.Marker({
-			position: new google.maps.LatLng(${log.lat},${log.lon}),
-			map: map,
-			icon:'${resource(dir: 'images', file: 'fiesta2.png')}',
-			title: '${i} - ${log.id} - ${log.collectTime}'
-		});
-		
-		var infowindow${log.id} = new google.maps.InfoWindow({
-			content: '${i} <br> id:${log.id} <br>Latitude: ${log.lat} <br>Longitude: ${log.lon} <br> ${log.collectTime}'
-		});
-		
-		google.maps.event.addListener(marker${log.id}, 'click', function() {
-			infowindow${log.id}.open(map,marker${log.id});
-		});
-		google.maps.event.addListener(marker${log.id}, 'blur', function() {
-			infowindow${log.id}.open(map,marker${log.id});
-		});
-		
-	</g:each>	
+<%--	<g:each in="${OtherNavigationLog.findAll("from OtherNavigationLog where collectTime >= 1423690154232 and collectTime <= 1423690264232 order by collectTime")}" var="log" status="i">--%>
+<%--	<g:if test="${i%70 == 0}">--%>
+<%--		var marker${log.id} = new google.maps.Marker({--%>
+<%--			position: new google.maps.LatLng(${log.lat},${log.lon}),--%>
+<%--			map: map,--%>
+<%--			icon:'${resource(dir: 'images', file: 'car3.png')}',--%>
+<%--			title: '${i} - ${log.id} - ${log.collectTime}'--%>
+<%--		});--%>
+<%--		--%>
+<%--		var infowindow${log.id} = new google.maps.InfoWindow({--%>
+<%--			content: '${i} <br> id:${log.id} <br>Latitude: ${log.lat} <br>Longitude: ${log.lon} <br> ${log.collectTime}'--%>
+<%--		});--%>
+<%--		--%>
+<%--		google.maps.event.addListener(marker${log.id}, 'click', function() {--%>
+<%--			infowindow${log.id}.open(map,marker${log.id});--%>
+<%--		});--%>
+<%--		google.maps.event.addListener(marker${log.id}, 'blur', function() {--%>
+<%--			infowindow${log.id}.open(map,marker${log.id});--%>
+<%--		});--%>
+<%--	</g:if>--%>
+<%--	</g:each>	--%>
 	}
 
    	google.maps.event.addDomListener(window, 'load', initialize);

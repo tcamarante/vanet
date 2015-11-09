@@ -83,7 +83,7 @@
 					
 <%--						<g:sortableColumn property="lng" title="${message(code: 'alert.lng.label', default: 'Lng')}" />--%>
 					
-						<g:sortableColumn property="sendTime" title="Alerta" />
+						<g:sortableColumn property="sendTime" title="Alert" />
 					
 					</tr>
 				</thead>
@@ -103,7 +103,7 @@
 <%--						<td>${fieldValue(bean: alertInstance, field: "lng")}</td>--%>
 					
 <%--						<td>${fieldValue(bean: alertInstance, field: "sendTime")}</td>--%>
-							<td class="alert" id="${alertInstance.id}">${alertInstance.code+" - "+((alertInstance.messageCode == 2)?"Provável Acidente":((alertInstance.messageCode == 3)?"Acidente":""))+" - "+new Date(alertInstance.sendTime)}</td>
+							<td class="alert" id="${alertInstance.id}">${alertInstance.code+" - "+((alertInstance.messageCode == 2)?"Probable accident":((alertInstance.messageCode == 3)?"Accident":""))+" - "+new Date(alertInstance.sendTime)}</td>
 					
 					</tr>
 				</g:each>
@@ -118,7 +118,7 @@
 			<div id="map_canvas" class="map" ></div>
 			<div class="details">
 				<div id="show-alert" class="content scaffold-show" role="main">
-					<h3>Detalhes</h3>
+					<h3>Details</h3>
 					<table style="width:100%;margin-left:0em;">
 						<tr>
 							<td>
@@ -151,13 +151,13 @@
 						<tr>
 							<td>
 								<g:if test="${alertInstance?.lat}">
-									<b><span id="lat-label" class="property-label"><g:message code="alert.lat.label" default="Lat" /></span></b>
+									<b><span id="lat-label" class="property-label"><g:message code="alert.lat.label" default="Latitude" /></span></b>
 									<span class="property-value" id="lat" aria-labelledby="lat-label"><g:fieldValue bean="${alertInstance}" field="lat"/></span>
 								</g:if>
 							</td>
 							<td>
 								<g:if test="${alertInstance?.lng}">
-									<b><span id="lng-label" class="property-label"><g:message code="alert.lng.label" default="Lng" /></span></b>
+									<b><span id="lng-label" class="property-label"><g:message code="alert.lng.label" default="Longitude" /></span></b>
 									<span class="property-value" id="lng" aria-labelledby="lng-label"><g:fieldValue bean="${alertInstance}" field="lng"/></span>
 								</g:if>
 							</td>

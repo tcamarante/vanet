@@ -21,7 +21,7 @@ class AccidentDetectionService {
 			try{
 				if(currentLog){
 	
-//					println("Airbag is open = "+currentLog.isAirbagOpen)
+					println("Airbag is open = "+currentLog.isAirbagOpen)
 					if(currentLog.isAirbagOpen){
 						accidentAlert(currentLog)
 					}else{
