@@ -28,7 +28,7 @@
 				marker = new google.maps.Marker({
 					position: new google.maps.LatLng(${alertInstance.lat},${alertInstance.lng}),
 					map: map,
-					icon:'${resource(dir: 'images', file: 'car2.png')}',
+					icon:'${resource(dir: 'images', file: 'fiesta2.png')}',
 					title: 'Acidente'
 				});
 	
@@ -67,7 +67,7 @@
 							alertMarker = new google.maps.Marker({
 								position: new google.maps.LatLng(${alertInstance.lat},${alertInstance.lng}),
 								map: map,
-								icon:'${resource(dir: 'images', file: 'car2.png')}',
+								icon:'${resource(dir: 'images', file: 'alerta2.png')}',
 								title: 'Acidente'
 							});
 						    //var latlng = new google.maps.LatLng(lat, lng);
@@ -79,7 +79,7 @@
 			    	    complete: function() {
 			    	    }
 			    	}); 
-			    }, 20000);
+			    }, 2000);
 			}
 
 			function monitoraPosicao() {
@@ -107,8 +107,8 @@
    		</script>
 	</head>
 	<body onload="initialize()">
-			<div id="map_canvas" class="map" ></div>
-			<div class="details">
+			<div id="map_canvas" class="map2" ></div>
+			<div class="details2">
 				<div id="show-alert" class="content scaffold-show" role="main">
 					<h3>Details</h3>
 					<table style="width:100%;margin-left:0em;">

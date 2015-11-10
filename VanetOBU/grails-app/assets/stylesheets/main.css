@@ -48,7 +48,7 @@ body {
 }
 
 #grailsLogo {
-	background-color: #abbf78;
+	background-color: #007838;/*#abbf78;*/
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
@@ -108,7 +108,7 @@ img {
 }
 
 .footer {
-	background: #abbf78;
+	background: ##007838;
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
@@ -422,6 +422,19 @@ div.map{
 	width:47%; 
 }
 
+div.map2{
+	position: absolute;
+	left: 0%;
+	top: 14%;
+	height: 86%;
+	width:100%; 
+}
+
+.dcc_image{
+    width:150px; /* you can use % */
+    height: auto;
+}
+
 div.details{
 	background-color: transparent;
 	position: absolute;
@@ -430,6 +443,16 @@ div.details{
 	height: 20%;
 	width:47%;
 }
+
+div.details{
+	background-color: #000000;
+	position: absolute;
+	left: 50%;
+	top: 65%;
+	height: 20%;
+	width:47%;
+}
+
 
 tr {
 	border: 0;
